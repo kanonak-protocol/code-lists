@@ -1,0 +1,99 @@
+name: Code Lists
+
+# Projects every code list from its source of truth (IANA, SPDX, ISO
+# registries) into a codes.kanonak.org package — ON DEMAND ONLY. There is no
+# schedule: a source revises often and every revision would otherwise become
+# a new package version in this repository, so a person decides when a new
+# projection is actually wanted and runs this workflow.
+#
+# The producers workspace (`producers/`) holds one plugin per list, each
+# implementing the SDK's package-producer contract over a shared reader for
+# the source's format. The runner fetches each source, derives the package
+# version from the source's own version marker (a registry file date, a list
+# version), and:
+#
+#   - if `<list>/<version>.kan.yml` already exists and is byte-identical,
+#     the list is up to date — nothing happens;
+#   - if it exists and differs, the run FAILS: the source changed under the
+#     same version marker, which a person must look at;
+#   - if it does not exist, the runner projects twice (proving determinism),
+#     validates the result against the workspace through the SDK, and writes
+#     the new file.
+#
+# New files are opened as a pull request — never pushed to main, never
+# overwriting an existing version. A person merges; the site deploy
+# publishes. See the `code-lists` vocabulary on kanonak.org for the contract.
+
+on:
+  workflow_dispatch:
+    inputs:
+      lists:
+        description: Space-separated list names to project (empty = all)
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  produce:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install producers
+        working-directory: producers
+        run: npm ci
+
+      - name: Build producers
+        working-directory: producers
+        run: npm run build
+
+      - name: Test producers
+        working-directory: producers
+        run: node --test "dist/test/*.test.js"
+
+      - name: Project code lists
+        working-directory: producers
+        run: node dist/src/run.js ${{ github.event.inputs.lists }}
+
+      - name: Detect new versions
+        id: changes
+        run: |
+          git add -N .
+          if git diff --quiet -- . ':!producers'; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "files<<EOF" >> "$GITHUB_OUTPUT"
+            git diff --name-only -- . ':!producers' >> "$GITHUB_OUTPUT"
+            echo "EOF" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Open pull request
+        if: steps.changes.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: code-lists/update
+          delete-branch: true
+          commit-message: 'code-lists: project new source versions'
+          title: 'code-lists: new source versions'
+          body: |
+            New code-list package versions projected from their sources:
+
+            ```
+            ${{ steps.changes.outputs.files }}
+            ```
+
+            Each file was produced twice (byte-identical), validated against
+            the workspace, and carries its source URL, version and digest in
+            its `CodeList` record. Merging publishes it through the ordinary
+            site deploy. Nothing existing was changed.
+          add-paths: |
+            *
+            !producers/**

@@ -1,0 +1,59 @@
+name: Deploy Publisher Site
+
+# Builds the codes.kanonak.org publisher origin from the generated code-list
+# packages in this repository and deploys it to GitHub Pages. Same shape as
+# the kanonak.org site deploy: one `kanonak publish` produces the human pages
+# and the machine endpoints (.well-known/kanonak.json, kanonak.lock, raw
+# {package}/{version}.kan.yml sources); only CNAME and .nojekyll are
+# GitHub-Pages-specific.
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install the Kanonak CLI
+        run: npm install -g @kanonak-protocol/cli
+
+      - name: Build the publisher origin
+        # The vocabularies the lists are typed with (code-lists, language-tag)
+        # live on kanonak.org and resolve over HTTP.
+        run: kanonak publish --workspace . --out _site
+
+      - name: Add GitHub Pages host specifics
+        run: |
+          cp CNAME _site/CNAME
+          touch _site/.nojekyll
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

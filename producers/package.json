@@ -1,0 +1,20 @@
+{
+  "name": "@kanonak-protocol/code-list-producers",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Producers that project external sources of truth (IANA, SPDX, ISO registries) into kanonak.org code-list packages — one plugin per list, one shared runner.",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "produce": "node dist/src/run.js",
+    "test": "npm run build && node --test \"dist/test/*.test.js\""
+  },
+  "dependencies": {
+    "@kanonak-protocol/sdk": "^5.30.0",
+    "@kanonak-protocol/types": "^5.30.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}

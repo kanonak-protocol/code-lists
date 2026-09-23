@@ -30,13 +30,13 @@ language-tags:
 iana-language-subtag-registry:
   type: cl.CodeList
   label: IANA Language Subtag Registry
-  comment: 'The provenance of this package: projected from the IANA Language Subtag Registry at its 2026-09-17 revision by the language-tags producer in the kanonak-protocol/code-lists repository. Verify against the source by its URL and digest; regenerate by running the producer.'
+  comment: 'The provenance of this package: projected from the IANA Language Subtag Registry at its 2026-09-17 revision by the language-tags producer in the kanonak-protocol/code-lists repository. Verify against each source by its URL and digest; regenerate by running the producer.'
   cl.source:
     type: prov.Standard
     label: IANA Language Subtag Registry
     prov.sourceUrl: https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry
-  cl.sourceVersion: '2026-09-17'
-  cl.sourceDigest: sha256:755fad43283be7b41ebe3c89ad054b6eaf928f404f9c0edb74799e0eab74beb1
+    cl.sourceVersion: '2026-09-17'
+    cl.sourceDigest: sha256:755fad43283be7b41ebe3c89ad054b6eaf928f404f9c0edb74799e0eab74beb1
   cl.producer: language-tags
   cl.entryClass:
     - lt.LanguageSubtag

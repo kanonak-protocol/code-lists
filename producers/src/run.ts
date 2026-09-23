@@ -1,17 +1,18 @@
 /**
- * The runner: project every (or the named) code list into the packages
- * workspace.
+ * The runner: project every (or the named) code list into this repository.
  *
- *   node dist/src/run.js [list ...] [--from <list>=<file>] [--dry-run]
+ *   node dist/src/run.js [list ...] [--from <list>[.<source>]=<file>] [--dry-run]
  *
- * For each list: fetch the source (or read `--from`), derive the package
- * version from the source's own marker, and decide by the target file
+ * For each list: fetch its sources (or read the `--from` files — the source
+ * key may be omitted for a single-source list), derive the package version
+ * from the primary source's own marker, and decide by the target file
  * `<list>/<version>.kan.yml`:
  *
  *   exists, byte-identical → up to date, nothing written;
  *   exists, differs        → FAIL (the source changed under the same marker);
  *   absent                 → project twice (determinism), validate through the
- *                            SDK against the workspace, write.
+ *                            SDK against the workspace (vocabularies resolve
+ *                            from kanonak.org), write.
  *
  * Exit code is non-zero on any failure, so the workflow never opens a pull
  * request for a list that did not validate.
@@ -26,10 +27,10 @@ import {
   buildLocalFirstRepository,
   ValidationSeverity,
 } from '@kanonak-protocol/sdk';
-import { CodeListProducer, fetchSource, snapshotOf, type CodeListDefinition } from './contract.js';
+import { CodeListProducer, fetchSource, snapshotOf, type CodeListDefinition, type SourceFetcher } from './contract.js';
 import { LISTS } from './lists/index.js';
 
-const PACKAGES_ROOT = fileURLToPath(new URL('../../../', import.meta.url));
+const REPO_ROOT = fileURLToPath(new URL('../../../', import.meta.url));
 
 interface Args { names: string[]; from: Map<string, string>; dryRun: boolean }
 
@@ -41,12 +42,21 @@ function parseArgs(argv: string[]): Args {
     else if (a === '--from') {
       const spec = argv[++i];
       const eq = spec?.indexOf('=') ?? -1;
-      if (!spec || eq <= 0) throw new Error('--from expects <list>=<file>');
+      if (!spec || eq <= 0) throw new Error('--from expects <list>[.<source>]=<file>');
       args.from.set(spec.slice(0, eq), spec.slice(eq + 1));
     } else if (a.startsWith('--')) throw new Error(`unknown option ${a}`);
     else args.names.push(a);
   }
   return args;
+}
+
+/** A fetcher honouring `--from` overrides for one list; everything else goes to the network. */
+function fetcherFor(def: CodeListDefinition, from: Map<string, string>): SourceFetcher {
+  return async (spec) => {
+    const file = from.get(`${def.name}.${spec.key}`) ?? (def.sources.length === 1 ? from.get(def.name) : undefined);
+    if (file) return snapshotOf(spec, readFileSync(file, 'utf8'));
+    return fetchSource(spec);
+  };
 }
 
 async function main(): Promise<number> {
@@ -58,9 +68,13 @@ async function main(): Promise<number> {
         return def;
       })
     : [...LISTS];
+  for (const key of args.from.keys()) {
+    const list = key.split('.')[0]!;
+    if (!selected.some((d) => d.name === list)) throw new Error(`--from ${key}: ${list} is not a selected list`);
+  }
 
   const parser = new KanonakParser();
-  const repository = await buildLocalFirstRepository(PACKAGES_ROOT, parser);
+  const repository = await buildLocalFirstRepository(REPO_ROOT, parser);
   const builder = new PackageBuilder(repository, parser);
   const validator = new KanonakObjectValidator(parser);
 
@@ -86,15 +100,12 @@ async function runOne(
     repository: Awaited<ReturnType<typeof buildLocalFirstRepository>>;
   },
 ): Promise<void> {
-  const fromFile = ctx.args.from.get(def.name);
-  const source = fromFile
-    ? async () => snapshotOf(def.sourceUrl, readFileSync(fromFile, 'utf8'))
-    : () => fetchSource(def.sourceUrl);
-  const producer = new CodeListProducer(def, ctx.builder, ctx.parser, source);
+  const producer = new CodeListProducer(def, ctx.builder, ctx.parser, fetcherFor(def, ctx.args.from));
 
   const built = await producer.build();
-  const target = join(PACKAGES_ROOT, def.name, `${built.version}.kan.yml`);
-  const where = `${def.name}@${built.version} (source ${built.sourceVersion}, ${built.snapshot.digest.slice(0, 19)}…, ${built.entryCount} entries)`;
+  const target = join(REPO_ROOT, def.name, `${built.version}.kan.yml`);
+  const digests = Object.values(built.snapshots).map((s) => s.digest.slice(7, 19)).join(', ');
+  const where = `${def.name}@${built.version} (source ${built.sourceVersion}, sha256 ${digests}, ${built.entryCount} entries)`;
 
   if (existsSync(target)) {
     const existing = readFileSync(target, 'utf8');
@@ -103,16 +114,16 @@ async function runOne(
       return;
     }
     throw new Error(
-      `${where}: ${target} exists but differs from the projection. Either the source changed without ` +
+      `${where}: ${target} exists but differs from the projection. Either a source changed without ` +
         `changing its version marker, or the producer changed. A person must decide; nothing was written.`,
     );
   }
 
-  // Determinism: the same snapshot must project to the same bytes.
-  const again = await producer.project(built.snapshot);
-  if (again.yaml !== built.yaml) throw new Error(`${where}: projecting the same source twice gave different bytes`);
+  // Determinism: the same snapshots must project to the same bytes.
+  const again = await producer.project(built.snapshots);
+  if (again.yaml !== built.yaml) throw new Error(`${where}: projecting the same sources twice gave different bytes`);
 
-  // Validate against the workspace exactly as `kanonak validate` would.
+  // Validate exactly as `kanonak validate` would.
   const [result] = await ctx.validator.validateDocumentsAsync([built.document], ctx.repository);
   const errors = result?.result.errors.filter((e) => e.severity === ValidationSeverity.Error) ?? [];
   const warnings = result?.result.warnings.filter((e) => e.severity === ValidationSeverity.Warning) ?? [];

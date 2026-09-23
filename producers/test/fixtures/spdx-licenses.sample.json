@@ -1,0 +1,130 @@
+{
+  "licenseListVersion": "3.29.0",
+  "licenses": [
+    {
+      "reference": "https://spdx.org/licenses/CC0-1.0.html",
+      "isDeprecatedLicenseId": false,
+      "detailsUrl": "https://spdx.org/licenses/CC0-1.0.json",
+      "referenceNumber": 157,
+      "name": "Creative Commons Zero v1.0 Universal",
+      "licenseId": "CC0-1.0",
+      "seeAlso": [
+        "https://creativecommons.org/publicdomain/zero/1.0/legalcode"
+      ],
+      "isOsiApproved": false,
+      "isFsfLibre": true
+    },
+    {
+      "reference": "https://spdx.org/licenses/GPL-2.0-or-later.html",
+      "isDeprecatedLicenseId": false,
+      "detailsUrl": "https://spdx.org/licenses/GPL-2.0-or-later.json",
+      "referenceNumber": 168,
+      "name": "GNU General Public License v2.0 or later",
+      "licenseId": "GPL-2.0-or-later",
+      "seeAlso": [
+        "https://www.gnu.org/licenses/old-licenses/gpl-2.0-standalone.html",
+        "https://opensource.org/license/GPL-2.0",
+        "https://github.com/openjdk/jdk/blob/6162e2c5213c5dd7c1127fd9616b543efa898962/LICENSE"
+      ],
+      "isOsiApproved": true,
+      "isFsfLibre": true
+    },
+    {
+      "reference": "https://spdx.org/licenses/MIT.html",
+      "isDeprecatedLicenseId": false,
+      "detailsUrl": "https://spdx.org/licenses/MIT.json",
+      "referenceNumber": 221,
+      "name": "MIT License",
+      "licenseId": "MIT",
+      "seeAlso": [
+        "https://opensource.org/license/MIT",
+        "https://gitlab.freedesktop.org/xorg/xserver/-/blob/dd5c2595a42d3ff0c4f18d9b53d1f6c3fd934fd4/COPYING#L365-389"
+      ],
+      "isOsiApproved": true,
+      "isFsfLibre": true
+    },
+    {
+      "reference": "https://spdx.org/licenses/BSD-3-Clause.html",
+      "isDeprecatedLicenseId": false,
+      "detailsUrl": "https://spdx.org/licenses/BSD-3-Clause.json",
+      "referenceNumber": 253,
+      "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+      "licenseId": "BSD-3-Clause",
+      "seeAlso": [
+        "https://opensource.org/license/BSD-3-Clause",
+        "https://www.eclipse.org/org/documents/edl-v10.php"
+      ],
+      "isOsiApproved": true,
+      "isFsfLibre": true
+    },
+    {
+      "reference": "https://spdx.org/licenses/GPL-2.0+.html",
+      "isDeprecatedLicenseId": true,
+      "detailsUrl": "https://spdx.org/licenses/GPL-2.0+.json",
+      "referenceNumber": 378,
+      "name": "GNU General Public License v2.0 or later",
+      "licenseId": "GPL-2.0+",
+      "seeAlso": [
+        "https://www.gnu.org/licenses/old-licenses/gpl-2.0-standalone.html",
+        "https://opensource.org/license/GPL-2.0"
+      ],
+      "isOsiApproved": true,
+      "isFsfLibre": true
+    },
+    {
+      "reference": "https://spdx.org/licenses/Apache-2.0.html",
+      "isDeprecatedLicenseId": false,
+      "detailsUrl": "https://spdx.org/licenses/Apache-2.0.json",
+      "referenceNumber": 488,
+      "name": "Apache License 2.0",
+      "licenseId": "Apache-2.0",
+      "seeAlso": [
+        "https://www.apache.org/licenses/LICENSE-2.0",
+        "https://opensource.org/license/apache-2.0"
+      ],
+      "isOsiApproved": true,
+      "isFsfLibre": true
+    },
+    {
+      "reference": "https://spdx.org/licenses/0BSD.html",
+      "isDeprecatedLicenseId": false,
+      "detailsUrl": "https://spdx.org/licenses/0BSD.json",
+      "referenceNumber": 547,
+      "name": "BSD Zero Clause License",
+      "licenseId": "0BSD",
+      "seeAlso": [
+        "http://landley.net/toybox/license.html",
+        "https://opensource.org/license/0BSD"
+      ],
+      "isOsiApproved": true
+    },
+    {
+      "reference": "https://spdx.org/licenses/GPL-2.0.html",
+      "isDeprecatedLicenseId": true,
+      "detailsUrl": "https://spdx.org/licenses/GPL-2.0.json",
+      "referenceNumber": 618,
+      "name": "GNU General Public License v2.0 only",
+      "licenseId": "GPL-2.0",
+      "seeAlso": [
+        "https://www.gnu.org/licenses/old-licenses/gpl-2.0-standalone.html",
+        "https://opensource.org/license/GPL-2.0"
+      ],
+      "isOsiApproved": true,
+      "isFsfLibre": true
+    },
+    {
+      "reference": "https://spdx.org/licenses/3D-Slicer-1.0.html",
+      "isDeprecatedLicenseId": false,
+      "detailsUrl": "https://spdx.org/licenses/3D-Slicer-1.0.json",
+      "referenceNumber": 622,
+      "name": "3D Slicer License v1.0",
+      "licenseId": "3D-Slicer-1.0",
+      "seeAlso": [
+        "https://slicer.org/LICENSE",
+        "https://github.com/Slicer/Slicer/blob/main/License.txt"
+      ],
+      "isOsiApproved": false
+    }
+  ],
+  "releaseDate": "2026-09-16T00:00:00Z"
+}

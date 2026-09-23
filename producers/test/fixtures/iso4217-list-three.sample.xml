@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ISO_4217 Pblshd="2026-01-01">
+	<HstrcCcyTbl>
+		<HstrcCcyNtry>
+			<CtryNm>AFGHANISTAN</CtryNm>
+			<CcyNm>Afghani</CcyNm>
+			<Ccy>AFA</Ccy>
+			<CcyNbr>004</CcyNbr>
+			<WthdrwlDt>2003-01</WthdrwlDt>
+		</HstrcCcyNtry>
+		<HstrcCcyNtry>
+			<CtryNm>ANGOLA</CtryNm>
+			<CcyNm>Kwanza</CcyNm>
+			<Ccy>AOK</Ccy>
+			<CcyNbr>024</CcyNbr>
+			<WthdrwlDt>1991-03</WthdrwlDt>
+		</HstrcCcyNtry>
+		<HstrcCcyNtry>
+			<CtryNm>ANGOLA</CtryNm>
+			<CcyNm>New Kwanza</CcyNm>
+			<Ccy>AON</Ccy>
+			<CcyNbr>024</CcyNbr>
+			<WthdrwlDt>2000-02</WthdrwlDt>
+		</HstrcCcyNtry>
+		<HstrcCcyNtry>
+			<CtryNm>ANGOLA</CtryNm>
+			<CcyNm>Kwanza Reajustado</CcyNm>
+			<Ccy>AOR</Ccy>
+			<CcyNbr>982</CcyNbr>
+			<WthdrwlDt>2000-02</WthdrwlDt>
+		</HstrcCcyNtry>
+		<HstrcCcyNtry>
+			<CtryNm>AUSTRIA</CtryNm>
+			<CcyNm>Schilling</CcyNm>
+			<Ccy>ATS</Ccy>
+			<CcyNbr>040</CcyNbr>
+			<WthdrwlDt>2002-03</WthdrwlDt>
+		</HstrcCcyNtry>
+		<HstrcCcyNtry>
+			<CtryNm>CROATIA</CtryNm>
+			<CcyNm>Croatian Dinar</CcyNm>
+			<Ccy>HRD</Ccy>
+			<CcyNbr>191</CcyNbr>
+			<WthdrwlDt>1995-01</WthdrwlDt>
+		</HstrcCcyNtry>
+		<HstrcCcyNtry>
+			<CtryNm>CROATIA</CtryNm>
+			<CcyNm>Croatian Kuna</CcyNm>
+			<Ccy>HRK</Ccy>
+			<CcyNbr>191</CcyNbr>
+			<WthdrwlDt>2015-06</WthdrwlDt>
+		</HstrcCcyNtry>
+		<HstrcCcyNtry>
+			<CtryNm>CROATIA</CtryNm>
+			<CcyNm>Kuna</CcyNm>
+			<Ccy>HRK</Ccy>
+			<CcyNbr>191</CcyNbr>
+			<WthdrwlDt>2023-01</WthdrwlDt>
+		</HstrcCcyNtry>
+		<HstrcCcyNtry>
+			<CtryNm>GERMANY</CtryNm>
+			<CcyNm>Deutsche Mark</CcyNm>
+			<Ccy>DEM</Ccy>
+			<CcyNbr>276</CcyNbr>
+			<WthdrwlDt>2002-03</WthdrwlDt>
+		</HstrcCcyNtry>
+		<HstrcCcyNtry>
+			<CtryNm>VENEZUELA</CtryNm>
+			<CcyNm>Bolivar</CcyNm>
+			<Ccy>VEB</Ccy>
+			<CcyNbr>862</CcyNbr>
+			<WthdrwlDt>2008-01</WthdrwlDt>
+		</HstrcCcyNtry>
+		<HstrcCcyNtry>
+			<CtryNm>VENEZUELA</CtryNm>
+			<CcyNm>Bolivar Fuerte</CcyNm>
+			<Ccy>VEF</Ccy>
+			<CcyNbr>937</CcyNbr>
+			<WthdrwlDt>2011-12</WthdrwlDt>
+		</HstrcCcyNtry>
+		<HstrcCcyNtry>
+			<CtryNm>ZIMBABWE</CtryNm>
+			<CcyNm>Rhodesian Dollar</CcyNm>
+			<Ccy>ZWC</Ccy>
+			<CcyNbr>716</CcyNbr>
+			<WthdrwlDt>1989-12</WthdrwlDt>
+		</HstrcCcyNtry>
+		<HstrcCcyNtry>
+			<CtryNm>ZIMBABWE</CtryNm>
+			<CcyNm>Zimbabwe Dollar (old)</CcyNm>
+			<Ccy>ZWD</Ccy>
+			<CcyNbr>716</CcyNbr>
+			<WthdrwlDt>2006-08</WthdrwlDt>
+		</HstrcCcyNtry>
+		<HstrcCcyNtry>
+			<CtryNm>ZIMBABWE</CtryNm>
+			<CcyNm>Zimbabwe Dollar</CcyNm>
+			<Ccy>ZWD</Ccy>
+			<CcyNbr>716</CcyNbr>
+			<WthdrwlDt>2008-08</WthdrwlDt>
+		</HstrcCcyNtry>
+		<HstrcCcyNtry>
+			<CtryNm>ZIMBABWE</CtryNm>
+			<CcyNm>Zimbabwe Dollar (new)</CcyNm>
+			<Ccy>ZWN</Ccy>
+			<CcyNbr>942</CcyNbr>
+			<WthdrwlDt>2006-09</WthdrwlDt>
+		</HstrcCcyNtry>
+		<HstrcCcyNtry>
+			<CtryNm>ZIMBABWE</CtryNm>
+			<CcyNm>Zimbabwe Dollar</CcyNm>
+			<Ccy>ZWR</Ccy>
+			<CcyNbr>935</CcyNbr>
+			<WthdrwlDt>2009-06</WthdrwlDt>
+		</HstrcCcyNtry>
+		<HstrcCcyNtry>
+			<CtryNm>ZIMBABWE</CtryNm>
+			<CcyNm>Zimbabwe Dollar</CcyNm>
+			<Ccy>ZWL</Ccy>
+			<CcyNbr>932</CcyNbr>
+			<WthdrwlDt>2024-09</WthdrwlDt>
+		</HstrcCcyNtry>
+		</HstrcCcyTbl>
+</ISO_4217>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<registry xmlns="http://www.iana.org/assignments" id="media-types">
+  <title>Media Types</title>
+  <updated>2026-09-22</updated>
+  
+  
+ 
+  <registry id="application">
+    <title>application</title>
+    <record updated="2016-12-21">
+      <name>font-woff - DEPRECATED in favor of font/woff</name>
+      <xref type="person" data="W3C" />
+      <xref type="rfc" data="rfc8081" />
+      <file type="template">application/font-woff</file>
+    </record>
+    <record updated="2022-03-08">
+      <name>javascript (OBSOLETED in favor of text/javascript)</name>
+      <xref type="rfc" data="rfc4329" />
+      <xref type="rfc" data="rfc9239" />
+      <file type="template">application/javascript</file>
+    </record>
+    <record updated="2017-07-21">
+      <name>json</name>
+      <xref type="rfc" data="rfc8259" />
+      <file type="template">application/json</file>
+    </record>
+    <record>
+      <name>pdf</name>
+      <xref type="rfc" data="rfc8118" />
+      <file type="template">application/pdf</file>
+    </record>
+    <record updated="2022-12-15">
+      <name>remote-printing (OBSOLETE)</name>
+      <xref type="rfc" data="rfc1486" />
+      <xref type="person" data="Marshall_Rose" />
+      <xref type="uri" data="https://datatracker.ietf.org/doc/status-change-int-tlds-to-historic">Moving TPC.INT and NSAP.INT infrastructure domains to historic</xref>
+      <file type="template">application/remote-printing</file>
+    </record>
+    <record>
+      <name>vnd.ms-excel</name>
+      <xref type="person" data="Sukvinder_S._Gill" />
+      <file type="template">application/vnd.ms-excel</file>
+    </record>
+    </registry>
+  
+  
+  <registry id="audio">
+    <title>audio</title>
+    <record>
+      <name>ogg</name>
+      <xref type="rfc" data="rfc5334" />
+      <xref type="rfc" data="rfc7845" />
+      <file type="template">audio/ogg</file>
+    </record>
+    </registry>
+  
+  <registry id="example">
+    <title>example</title>
+    </registry>
+  
+  <registry id="font">
+    <title>font</title>
+    <record date="2016-12-21">
+      <name>woff</name>
+      <xref type="rfc" data="rfc8081" />
+      <file type="template">font/woff</file>
+    </record>
+    </registry>
+  
+  <registry id="haptics">
+    <title>haptics</title>
+    <record date="2024-06-25">
+      <name>ivs</name>
+      <xref type="rfc" data="rfc9695" />
+      <file type="template">haptics/ivs</file>
+    </record>
+    </registry>
+
+
+  <registry id="image">
+    <title>image</title>
+    <record date="2016-05-16">
+      <name>emf</name>
+      <xref type="rfc" data="rfc7903"/>
+      <file type="template">image/emf</file>
+    </record>
+    <record date="2016-05-24">
+      <name>x-emf - DEPRECATED in favor of image/emf</name>
+      <xref type="rfc" data="rfc7903"/>
+      <file type="template" name="image/x-emf">image/emf</file>
+    </record>
+
+    <record updated="2021-12-07">
+      <name>png</name>
+      <xref type="person" data="W3C" />
+      <xref type="person" data="PNG_WG" />
+      <xref type="uri" data="https://www.w3.org/TR/PNG/">PNG</xref>
+      <file type="template">image/png</file>
+    </record>
+    <record>
+      <name>svg+xml</name>
+      <xref type="person" data="W3C" />
+      <xref type="uri" data="http://www.w3.org/TR/SVG/mimereg.html" />
+      <file type="template">image/svg+xml</file>
+    </record>
+    </registry>
+  
+  
+  <registry id="message">
+    <title>message</title>
+    <record updated="2021-10-06">
+      <name>http</name>
+      <xref type="rfc" data="rfc9112" />
+      <file type="template">message/http</file>
+    </record>
+    </registry>
+  
+  
+  <registry id="model">
+    <title>model</title>
+    <record date="2017-11-06">
+      <name>gltf-binary</name>
+      <xref type="person" data="Khronos" />
+      <xref type="person" data="Saurabh_Bhatia" />
+      <file type="template">model/gltf-binary</file>
+    </record>
+    </registry>
+  
+  
+  <registry id="multipart">
+    <title>multipart</title>
+    <record updated="2015-04-15">
+      <name>form-data</name>
+      <xref type="rfc" data="rfc7578" />
+      <file type="template">multipart/form-data</file>
+    </record>
+    </registry>
+  
+  
+  <registry id="text">
+    <title>text</title>
+    <record updated="2022-03-08">
+      <name>javascript</name>
+      <xref type="rfc" data="rfc9239" />
+      <file type="template">text/javascript</file>
+    </record>
+    <record>
+      <name>plain</name>
+      <xref type="rfc" data="rfc2046" />
+      <xref type="rfc" data="rfc3676" />
+      <xref type="rfc" data="rfc5147" />
+      <file type="template">text/plain</file>
+    </record>
+    </registry>
+  
+  
+  <registry id="video">
+    <title>video</title>
+    <record>
+      <name>mp4</name>
+      <xref type="rfc" data="rfc4337" />
+      <xref type="rfc" data="rfc6381" />
+      <file type="template">video/mp4</file>
+    </record>
+    </registry>
+
+  </registry>

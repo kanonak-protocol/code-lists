@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "@kanonak-protocol/sdk": "^5.30.0",
-    "@kanonak-protocol/types": "^5.30.0"
+    "@kanonak-protocol/types": "^5.30.0",
+    "fast-xml-parser": "^5.11.1"
   },
   "devDependencies": {
     "@types/node": "^22.0.0",

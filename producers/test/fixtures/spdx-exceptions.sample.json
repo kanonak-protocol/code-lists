@@ -1,0 +1,53 @@
+{
+  "licenseListVersion": "3.29.0",
+  "exceptions": [
+    {
+      "reference": "https://spdx.org/licenses/Classpath-exception-2.0.html",
+      "isDeprecatedLicenseId": false,
+      "detailsUrl": "https://spdx.org/licenses/Classpath-exception-2.0.json",
+      "referenceNumber": 35,
+      "name": "Classpath exception 2.0",
+      "licenseExceptionId": "Classpath-exception-2.0",
+      "seeAlso": [
+        "http://www.gnu.org/software/classpath/license.html",
+        "https://fedoraproject.org/wiki/Licensing/GPL_Classpath_Exception"
+      ]
+    },
+    {
+      "reference": "https://spdx.org/licenses/Nokia-Qt-exception-1.1.html",
+      "isDeprecatedLicenseId": true,
+      "detailsUrl": "https://spdx.org/licenses/Nokia-Qt-exception-1.1.json",
+      "referenceNumber": 36,
+      "name": "Nokia Qt LGPL exception 1.1",
+      "licenseExceptionId": "Nokia-Qt-exception-1.1",
+      "seeAlso": [
+        "https://www.keepassx.org/dev/projects/keepassx/repository/revisions/b8dfb9cc4d5133e0f09cd7533d15a4f1c19a40f2/entry/LICENSE.NOKIA-LGPL-EXCEPTION"
+      ]
+    },
+    {
+      "reference": "https://spdx.org/licenses/LLVM-exception.html",
+      "isDeprecatedLicenseId": false,
+      "detailsUrl": "https://spdx.org/licenses/LLVM-exception.json",
+      "referenceNumber": 42,
+      "name": "LLVM Exception",
+      "licenseExceptionId": "LLVM-exception",
+      "seeAlso": [
+        "http://llvm.org/foundation/relicensing/LICENSE.txt",
+        "https://web.archive.org/web/20240423023852/https://foundation.llvm.org/relicensing/LICENSE.txt"
+      ]
+    },
+    {
+      "reference": "https://spdx.org/licenses/389-exception.html",
+      "isDeprecatedLicenseId": false,
+      "detailsUrl": "https://spdx.org/licenses/389-exception.json",
+      "referenceNumber": 72,
+      "name": "389 Directory Server Exception",
+      "licenseExceptionId": "389-exception",
+      "seeAlso": [
+        "http://directory.fedoraproject.org/wiki/GPL_Exception_License_Text",
+        "https://web.archive.org/web/20080828121337/http://directory.fedoraproject.org/wiki/GPL_Exception_License_Text"
+      ]
+    }
+  ],
+  "releaseDate": "2026-09-16T00:00:00Z"
+}

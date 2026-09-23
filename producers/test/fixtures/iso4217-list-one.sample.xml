@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ISO_4217 Pblshd="2026-09-17">
+	<CcyTbl>
+		<CcyNtry>
+			<CtryNm>AFGHANISTAN</CtryNm>
+			<CcyNm>Afghani</CcyNm>
+			<Ccy>AFN</Ccy>
+			<CcyNbr>971</CcyNbr>
+			<CcyMnrUnts>2</CcyMnrUnts>
+		</CcyNtry>
+		<CcyNtry>
+			<CtryNm>ALBANIA</CtryNm>
+			<CcyNm>Lek</CcyNm>
+			<Ccy>ALL</Ccy>
+			<CcyNbr>008</CcyNbr>
+			<CcyMnrUnts>2</CcyMnrUnts>
+		</CcyNtry>
+		<CcyNtry>
+			<CtryNm>ANTARCTICA</CtryNm>
+			<CcyNm>No universal currency</CcyNm>
+		</CcyNtry>
+		<CcyNtry>
+			<CtryNm>AUSTRIA</CtryNm>
+			<CcyNm>Euro</CcyNm>
+			<Ccy>EUR</Ccy>
+			<CcyNbr>978</CcyNbr>
+			<CcyMnrUnts>2</CcyMnrUnts>
+		</CcyNtry>
+		<CcyNtry>
+			<CtryNm>GERMANY</CtryNm>
+			<CcyNm>Euro</CcyNm>
+			<Ccy>EUR</Ccy>
+			<CcyNbr>978</CcyNbr>
+			<CcyMnrUnts>2</CcyMnrUnts>
+		</CcyNtry>
+		<CcyNtry>
+			<CtryNm>JAPAN</CtryNm>
+			<CcyNm>Yen</CcyNm>
+			<Ccy>JPY</Ccy>
+			<CcyNbr>392</CcyNbr>
+			<CcyMnrUnts>0</CcyMnrUnts>
+		</CcyNtry>
+		<CcyNtry>
+			<CtryNm>KUWAIT</CtryNm>
+			<CcyNm>Kuwaiti Dinar</CcyNm>
+			<Ccy>KWD</Ccy>
+			<CcyNbr>414</CcyNbr>
+			<CcyMnrUnts>3</CcyMnrUnts>
+		</CcyNtry>
+		<CcyNtry>
+			<CtryNm>SWITZERLAND</CtryNm>
+			<CcyNm>Swiss Franc</CcyNm>
+			<Ccy>CHF</Ccy>
+			<CcyNbr>756</CcyNbr>
+			<CcyMnrUnts>2</CcyMnrUnts>
+		</CcyNtry>
+		<CcyNtry>
+			<CtryNm>SWITZERLAND</CtryNm>
+			<CcyNm IsFund="true">WIR Euro</CcyNm>
+			<Ccy>CHE</Ccy>
+			<CcyNbr>947</CcyNbr>
+			<CcyMnrUnts>2</CcyMnrUnts>
+		</CcyNtry>
+		<CcyNtry>
+			<CtryNm>SWITZERLAND</CtryNm>
+			<CcyNm IsFund="true">WIR Franc</CcyNm>
+			<Ccy>CHW</Ccy>
+			<CcyNbr>948</CcyNbr>
+			<CcyMnrUnts>2</CcyMnrUnts>
+		</CcyNtry>
+		<CcyNtry>
+			<CtryNm>UNITED STATES OF AMERICA (THE)</CtryNm>
+			<CcyNm>US Dollar</CcyNm>
+			<Ccy>USD</Ccy>
+			<CcyNbr>840</CcyNbr>
+			<CcyMnrUnts>2</CcyMnrUnts>
+		</CcyNtry>
+		<CcyNtry>
+			<CtryNm>UNITED STATES OF AMERICA (THE)</CtryNm>
+			<CcyNm IsFund="true">US Dollar (Next day)</CcyNm>
+			<Ccy>USN</Ccy>
+			<CcyNbr>997</CcyNbr>
+			<CcyMnrUnts>2</CcyMnrUnts>
+		</CcyNtry>
+		<CcyNtry>
+			<CtryNm>URUGUAY</CtryNm>
+			<CcyNm>Peso Uruguayo</CcyNm>
+			<Ccy>UYU</Ccy>
+			<CcyNbr>858</CcyNbr>
+			<CcyMnrUnts>2</CcyMnrUnts>
+		</CcyNtry>
+		<CcyNtry>
+			<CtryNm>URUGUAY</CtryNm>
+			<CcyNm IsFund="true">Uruguay Peso en Unidades Indexadas (UI)</CcyNm>
+			<Ccy>UYI</Ccy>
+			<CcyNbr>940</CcyNbr>
+			<CcyMnrUnts>0</CcyMnrUnts>
+		</CcyNtry>
+		<CcyNtry>
+			<CtryNm>URUGUAY</CtryNm>
+			<CcyNm IsFund="true">Unidad Previsional</CcyNm>
+			<Ccy>UYW</Ccy>
+			<CcyNbr>927</CcyNbr>
+			<CcyMnrUnts>4</CcyMnrUnts>
+		</CcyNtry>
+		</CcyTbl>
+</ISO_4217>

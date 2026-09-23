@@ -1,6 +1,9 @@
 {
   "version": 1,
   "featured_packages": [
-    "language-tags"
+    "language-tags",
+    "spdx-licenses",
+    "media-types",
+    "currencies"
   ]
 }

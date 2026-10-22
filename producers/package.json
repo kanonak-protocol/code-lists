@@ -10,8 +10,8 @@
     "test": "npm run build && node --test \"dist/test/*.test.js\""
   },
   "dependencies": {
-    "@kanonak-protocol/sdk": "^5.30.0",
-    "@kanonak-protocol/types": "^5.30.0",
+    "@kanonak-protocol/sdk": "^6.9.0",
+    "@kanonak-protocol/types": "^6.9.0",
     "fast-xml-parser": "^5.11.1"
   },
   "devDependencies": {

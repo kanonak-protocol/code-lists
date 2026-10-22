@@ -1,7 +1,7 @@
 language-tags:
   type: Package
   publisher: codes.kanonak.org
-  version: 2026.9.17
+  version: 1.20260917.0
   imports:
     - publisher: kanonak.org
       packages:
@@ -58,7 +58,7 @@ ab:
   label: Abkhazian
   cl.code: ab
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Cyrl
+  lt.suppressScript: script-cyrl
 ae:
   type: lt.LanguageSubtag
   label: Avestan
@@ -69,7 +69,7 @@ af:
   label: Afrikaans
   cl.code: af
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 ak:
   type: lt.LanguageSubtag
   label: Akan
@@ -81,7 +81,7 @@ am:
   label: Amharic
   cl.code: am
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Ethi
+  lt.suppressScript: script-ethi
 an:
   type: lt.LanguageSubtag
   label: Aragonese
@@ -92,14 +92,14 @@ ar:
   label: Arabic
   cl.code: ar
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Arab
+  lt.suppressScript: script-arab
   lt.scope: lt.Macrolanguage
 as:
   type: lt.LanguageSubtag
   label: Assamese
   cl.code: as
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Beng
+  lt.suppressScript: script-beng
 av:
   type: lt.LanguageSubtag
   label: Avaric
@@ -110,7 +110,7 @@ ay:
   label: Aymara
   cl.code: ay
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
   lt.scope: lt.Macrolanguage
 az:
   type: lt.LanguageSubtag
@@ -128,13 +128,13 @@ be:
   label: Belarusian
   cl.code: be
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Cyrl
+  lt.suppressScript: script-cyrl
 bg:
   type: lt.LanguageSubtag
   label: Bulgarian
   cl.code: bg
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Cyrl
+  lt.suppressScript: script-cyrl
 bh:
   type: lt.LanguageSubtag
   label: Bihari languages
@@ -160,7 +160,7 @@ bn:
   cl.altLabel: Bangla
   cl.code: bn
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Beng
+  lt.suppressScript: script-beng
 bo:
   type: lt.LanguageSubtag
   label: Tibetan
@@ -176,7 +176,7 @@ bs:
   label: Bosnian
   cl.code: bs
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
   lt.macrolanguage: sh
 ca:
   type: lt.LanguageSubtag
@@ -184,7 +184,7 @@ ca:
   cl.altLabel: Valencian
   cl.code: ca
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 ce:
   type: lt.LanguageSubtag
   label: Chechen
@@ -195,7 +195,7 @@ ch:
   label: Chamorro
   cl.code: ch
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 co:
   type: lt.LanguageSubtag
   label: Corsican
@@ -212,7 +212,7 @@ cs:
   label: Czech
   cl.code: cs
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 cu:
   type: lt.LanguageSubtag
   label: Church Slavic
@@ -233,19 +233,19 @@ cy:
   label: Welsh
   cl.code: cy
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 da:
   type: lt.LanguageSubtag
   label: Danish
   cl.code: da
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 de:
   type: lt.LanguageSubtag
   label: German
   cl.code: de
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 dv:
   type: lt.LanguageSubtag
   label: Dhivehi
@@ -254,13 +254,13 @@ dv:
     - Maldivian
   cl.code: dv
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Thaa
+  lt.suppressScript: script-thaa
 dz:
   type: lt.LanguageSubtag
   label: Dzongkha
   cl.code: dz
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Tibt
+  lt.suppressScript: script-tibt
 ee:
   type: lt.LanguageSubtag
   label: Ewe
@@ -271,45 +271,45 @@ el:
   label: Modern Greek (1453-)
   cl.code: el
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Grek
+  lt.suppressScript: script-grek
 en:
   type: lt.LanguageSubtag
   label: English
   cl.code: en
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 eo:
   type: lt.LanguageSubtag
   label: Esperanto
   cl.code: eo
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 es:
   type: lt.LanguageSubtag
   label: Spanish
   cl.altLabel: Castilian
   cl.code: es
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 et:
   type: lt.LanguageSubtag
   label: Estonian
   cl.code: et
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
   lt.scope: lt.Macrolanguage
 eu:
   type: lt.LanguageSubtag
   label: Basque
   cl.code: eu
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 fa:
   type: lt.LanguageSubtag
   label: Persian
   cl.code: fa
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Arab
+  lt.suppressScript: script-arab
   lt.scope: lt.Macrolanguage
 ff:
   type: lt.LanguageSubtag
@@ -322,37 +322,37 @@ fi:
   label: Finnish
   cl.code: fi
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 fj:
   type: lt.LanguageSubtag
   label: Fijian
   cl.code: fj
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 fo:
   type: lt.LanguageSubtag
   label: Faroese
   cl.code: fo
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 fr:
   type: lt.LanguageSubtag
   label: French
   cl.code: fr
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 fy:
   type: lt.LanguageSubtag
   label: Western Frisian
   cl.code: fy
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 ga:
   type: lt.LanguageSubtag
   label: Irish
   cl.code: ga
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 gd:
   type: lt.LanguageSubtag
   label: Scottish Gaelic
@@ -364,26 +364,26 @@ gl:
   label: Galician
   cl.code: gl
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 gn:
   type: lt.LanguageSubtag
   label: Guarani
   cl.code: gn
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
   lt.scope: lt.Macrolanguage
 gu:
   type: lt.LanguageSubtag
   label: Gujarati
   cl.code: gu
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Gujr
+  lt.suppressScript: script-gujr
 gv:
   type: lt.LanguageSubtag
   label: Manx
   cl.code: gv
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 ha:
   type: lt.LanguageSubtag
   label: Hausa
@@ -394,13 +394,13 @@ he:
   label: Hebrew
   cl.code: he
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Hebr
+  lt.suppressScript: script-hebr
 hi:
   type: lt.LanguageSubtag
   label: Hindi
   cl.code: hi
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Deva
+  lt.suppressScript: script-deva
 ho:
   type: lt.LanguageSubtag
   label: Hiri Motu
@@ -411,7 +411,7 @@ hr:
   label: Croatian
   cl.code: hr
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
   lt.macrolanguage: sh
 ht:
   type: lt.LanguageSubtag
@@ -419,20 +419,20 @@ ht:
   cl.altLabel: Haitian Creole
   cl.code: ht
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 hu:
   type: lt.LanguageSubtag
   label: Hungarian
   cl.code: hu
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 hy:
   type: lt.LanguageSubtag
   label: Armenian
   comment: see also hyw
   cl.code: hy
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Armn
+  lt.suppressScript: script-armn
 hz:
   type: lt.LanguageSubtag
   label: Herero
@@ -449,7 +449,7 @@ id:
   label: Indonesian
   cl.code: id
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
   lt.macrolanguage: ms
 ie:
   type: lt.LanguageSubtag
@@ -482,7 +482,7 @@ in:
   owl.deprecated: true
   lt.deprecatedOn: '1989-01-01'
   prov.supersededBy: id
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
   lt.macrolanguage: ms
 io:
   type: lt.LanguageSubtag
@@ -494,13 +494,13 @@ is:
   label: Icelandic
   cl.code: is
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 it:
   type: lt.LanguageSubtag
   label: Italian
   cl.code: it
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 iu:
   type: lt.LanguageSubtag
   label: Inuktitut
@@ -515,13 +515,13 @@ iw:
   owl.deprecated: true
   lt.deprecatedOn: '1989-01-01'
   prov.supersededBy: he
-  lt.suppressScript: script-Hebr
+  lt.suppressScript: script-hebr
 ja:
   type: lt.LanguageSubtag
   label: Japanese
   cl.code: ja
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Jpan
+  lt.suppressScript: script-jpan
 ji:
   type: lt.LanguageSubtag
   label: Yiddish
@@ -549,7 +549,7 @@ ka:
   label: Georgian
   cl.code: ka
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Geor
+  lt.suppressScript: script-geor
 kg:
   type: lt.LanguageSubtag
   label: Kongo
@@ -573,33 +573,33 @@ kk:
   label: Kazakh
   cl.code: kk
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Cyrl
+  lt.suppressScript: script-cyrl
 kl:
   type: lt.LanguageSubtag
   label: Kalaallisut
   cl.altLabel: Greenlandic
   cl.code: kl
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 km:
   type: lt.LanguageSubtag
   label: Khmer
   cl.altLabel: Central Khmer
   cl.code: km
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Khmr
+  lt.suppressScript: script-khmr
 kn:
   type: lt.LanguageSubtag
   label: Kannada
   cl.code: kn
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Knda
+  lt.suppressScript: script-knda
 ko:
   type: lt.LanguageSubtag
   label: Korean
   cl.code: ko
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Kore
+  lt.suppressScript: script-kore
 kr:
   type: lt.LanguageSubtag
   label: Kanuri
@@ -639,14 +639,14 @@ la:
   label: Latin
   cl.code: la
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 lb:
   type: lt.LanguageSubtag
   label: Luxembourgish
   cl.altLabel: Letzeburgesch
   cl.code: lb
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 lg:
   type: lt.LanguageSubtag
   label: Ganda
@@ -666,19 +666,19 @@ ln:
   label: Lingala
   cl.code: ln
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 lo:
   type: lt.LanguageSubtag
   label: Lao
   cl.code: lo
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Laoo
+  lt.suppressScript: script-laoo
 lt:
   type: lt.LanguageSubtag
   label: Lithuanian
   cl.code: lt
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 lu:
   type: lt.LanguageSubtag
   label: Luba-Katanga
@@ -689,21 +689,21 @@ lv:
   label: Latvian
   cl.code: lv
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
   lt.scope: lt.Macrolanguage
 mg:
   type: lt.LanguageSubtag
   label: Malagasy
   cl.code: mg
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
   lt.scope: lt.Macrolanguage
 mh:
   type: lt.LanguageSubtag
   label: Marshallese
   cl.code: mh
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 mi:
   type: lt.LanguageSubtag
   label: Maori
@@ -714,13 +714,13 @@ mk:
   label: Macedonian
   cl.code: mk
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Cyrl
+  lt.suppressScript: script-cyrl
 ml:
   type: lt.LanguageSubtag
   label: Malayalam
   cl.code: ml
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Mlym
+  lt.suppressScript: script-mlym
 mn:
   type: lt.LanguageSubtag
   label: Mongolian
@@ -736,57 +736,57 @@ mo:
   owl.deprecated: true
   lt.deprecatedOn: '2008-11-22'
   prov.supersededBy: ro
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 mr:
   type: lt.LanguageSubtag
   label: Marathi
   cl.code: mr
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Deva
+  lt.suppressScript: script-deva
 ms:
   type: lt.LanguageSubtag
   label: Malay (macrolanguage)
   cl.code: ms
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
   lt.scope: lt.Macrolanguage
 mt:
   type: lt.LanguageSubtag
   label: Maltese
   cl.code: mt
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 my:
   type: lt.LanguageSubtag
   label: Burmese
   cl.code: my
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Mymr
+  lt.suppressScript: script-mymr
 na:
   type: lt.LanguageSubtag
   label: Nauru
   cl.code: na
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 nb:
   type: lt.LanguageSubtag
   label: Norwegian Bokmål
   cl.code: nb
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
   lt.macrolanguage: 'no'
 nd:
   type: lt.LanguageSubtag
   label: North Ndebele
   cl.code: nd
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 ne:
   type: lt.LanguageSubtag
   label: Nepali (macrolanguage)
   cl.code: ne
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Deva
+  lt.suppressScript: script-deva
   lt.scope: lt.Macrolanguage
 ng:
   type: lt.LanguageSubtag
@@ -799,27 +799,27 @@ nl:
   cl.altLabel: Flemish
   cl.code: nl
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 nn:
   type: lt.LanguageSubtag
   label: Norwegian Nynorsk
   cl.code: nn
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
   lt.macrolanguage: 'no'
 'no':
   type: lt.LanguageSubtag
   label: Norwegian
   cl.code: 'no'
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
   lt.scope: lt.Macrolanguage
 nr:
   type: lt.LanguageSubtag
   label: South Ndebele
   cl.code: nr
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 nv:
   type: lt.LanguageSubtag
   label: Navajo
@@ -834,7 +834,7 @@ ny:
     - Nyanja
   cl.code: ny
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 oc:
   type: lt.LanguageSubtag
   label: Occitan (post 1500)
@@ -851,7 +851,7 @@ om:
   label: Oromo
   cl.code: om
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
   lt.scope: lt.Macrolanguage
 or:
   type: lt.LanguageSubtag
@@ -859,7 +859,7 @@ or:
   cl.altLabel: Odia (macrolanguage)
   cl.code: or
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Orya
+  lt.suppressScript: script-orya
   lt.scope: lt.Macrolanguage
 os:
   type: lt.LanguageSubtag
@@ -877,7 +877,7 @@ pa:
   cl.altLabel: Punjabi
   cl.code: pa
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Guru
+  lt.suppressScript: script-guru
 pi:
   type: lt.LanguageSubtag
   label: Pali
@@ -888,40 +888,40 @@ pl:
   label: Polish
   cl.code: pl
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 ps:
   type: lt.LanguageSubtag
   label: Pushto
   cl.altLabel: Pashto
   cl.code: ps
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Arab
+  lt.suppressScript: script-arab
   lt.scope: lt.Macrolanguage
 pt:
   type: lt.LanguageSubtag
   label: Portuguese
   cl.code: pt
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 qu:
   type: lt.LanguageSubtag
   label: Quechua
   cl.code: qu
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
   lt.scope: lt.Macrolanguage
 rm:
   type: lt.LanguageSubtag
   label: Romansh
   cl.code: rm
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 rn:
   type: lt.LanguageSubtag
   label: Rundi
   cl.code: rn
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 ro:
   type: lt.LanguageSubtag
   label: Romanian
@@ -930,19 +930,19 @@ ro:
     - Moldovan
   cl.code: ro
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 ru:
   type: lt.LanguageSubtag
   label: Russian
   cl.code: ru
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Cyrl
+  lt.suppressScript: script-cyrl
 rw:
   type: lt.LanguageSubtag
   label: Kinyarwanda
   cl.code: rw
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 sa:
   type: lt.LanguageSubtag
   label: Sanskrit
@@ -970,7 +970,7 @@ sg:
   label: Sango
   cl.code: sg
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 sh:
   type: lt.LanguageSubtag
   label: Serbo-Croatian
@@ -984,25 +984,25 @@ si:
   cl.altLabel: Sinhalese
   cl.code: si
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Sinh
+  lt.suppressScript: script-sinh
 sk:
   type: lt.LanguageSubtag
   label: Slovak
   cl.code: sk
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 sl:
   type: lt.LanguageSubtag
   label: Slovenian
   cl.code: sl
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 sm:
   type: lt.LanguageSubtag
   label: Samoan
   cl.code: sm
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 sn:
   type: lt.LanguageSubtag
   label: Shona
@@ -1013,13 +1013,13 @@ so:
   label: Somali
   cl.code: so
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 sq:
   type: lt.LanguageSubtag
   label: Albanian
   cl.code: sq
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
   lt.scope: lt.Macrolanguage
 sr:
   type: lt.LanguageSubtag
@@ -1033,13 +1033,13 @@ ss:
   label: Swati
   cl.code: ss
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 st:
   type: lt.LanguageSubtag
   label: Southern Sotho
   cl.code: st
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 su:
   type: lt.LanguageSubtag
   label: Sundanese
@@ -1050,26 +1050,26 @@ sv:
   label: Swedish
   cl.code: sv
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 sw:
   type: lt.LanguageSubtag
   label: Swahili (macrolanguage)
   cl.code: sw
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
   lt.scope: lt.Macrolanguage
 ta:
   type: lt.LanguageSubtag
   label: Tamil
   cl.code: ta
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Taml
+  lt.suppressScript: script-taml
 te:
   type: lt.LanguageSubtag
   label: Telugu
   cl.code: te
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Telu
+  lt.suppressScript: script-telu
 tg:
   type: lt.LanguageSubtag
   label: Tajik
@@ -1080,13 +1080,13 @@ th:
   label: Thai
   cl.code: th
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Thai
+  lt.suppressScript: script-thai
 ti:
   type: lt.LanguageSubtag
   label: Tigrinya
   cl.code: ti
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Ethi
+  lt.suppressScript: script-ethi
 tk:
   type: lt.LanguageSubtag
   label: Turkmen
@@ -1097,31 +1097,31 @@ tl:
   label: Tagalog
   cl.code: tl
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 tn:
   type: lt.LanguageSubtag
   label: Tswana
   cl.code: tn
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 to:
   type: lt.LanguageSubtag
   label: Tonga (Tonga Islands)
   cl.code: to
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 tr:
   type: lt.LanguageSubtag
   label: Turkish
   cl.code: tr
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 ts:
   type: lt.LanguageSubtag
   label: Tsonga
   cl.code: ts
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 tt:
   type: lt.LanguageSubtag
   label: Tatar
@@ -1149,13 +1149,13 @@ uk:
   label: Ukrainian
   cl.code: uk
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Cyrl
+  lt.suppressScript: script-cyrl
 ur:
   type: lt.LanguageSubtag
   label: Urdu
   cl.code: ur
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Arab
+  lt.suppressScript: script-arab
 uz:
   type: lt.LanguageSubtag
   label: Uzbek
@@ -1167,13 +1167,13 @@ ve:
   label: Venda
   cl.code: ve
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 vi:
   type: lt.LanguageSubtag
   label: Vietnamese
   cl.code: vi
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 vo:
   type: lt.LanguageSubtag
   label: Volapük
@@ -1194,13 +1194,13 @@ xh:
   label: Xhosa
   cl.code: xh
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 yi:
   type: lt.LanguageSubtag
   label: Yiddish
   cl.code: yi
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Hebr
+  lt.suppressScript: script-hebr
   lt.scope: lt.Macrolanguage
 yo:
   type: lt.LanguageSubtag
@@ -1225,7 +1225,7 @@ zu:
   label: Zulu
   cl.code: zu
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 aaa:
   type: lt.LanguageSubtag
   label: Ghotuo
@@ -10310,7 +10310,7 @@ dsb:
   label: Lower Sorbian
   cl.code: dsb
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 dse:
   type: lt.LanguageSubtag
   label: Dutch Sign Language
@@ -11707,13 +11707,13 @@ frr:
   label: Northern Frisian
   cl.code: frr
   lt.added: '2006-03-08'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 frs:
   type: lt.LanguageSubtag
   label: Eastern Frisian
   cl.code: frs
   lt.added: '2006-03-08'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 frt:
   type: lt.LanguageSubtag
   label: Fortsenal
@@ -13279,7 +13279,7 @@ gsw:
     - Alsatian
   cl.code: gsw
   lt.added: '2006-03-08'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 gta:
   type: lt.LanguageSubtag
   label: Guató
@@ -14459,7 +14459,7 @@ hsb:
   label: Upper Sorbian
   cl.code: hsb
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 hsh:
   type: lt.LanguageSubtag
   label: Hungarian Sign Language
@@ -18169,7 +18169,7 @@ kok:
   label: Konkani (macrolanguage)
   cl.code: kok
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Deva
+  lt.suppressScript: script-deva
   lt.scope: lt.Macrolanguage
 kol:
   type: lt.LanguageSubtag
@@ -21557,7 +21557,7 @@ mai:
   label: Maithili
   cl.code: mai
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Deva
+  lt.suppressScript: script-deva
 maj:
   type: lt.LanguageSubtag
   label: Jalapa De Díaz Mazatec
@@ -22082,7 +22082,7 @@ men:
   label: Mende (Sierra Leone)
   cl.code: men
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 meo:
   type: lt.LanguageSubtag
   label: Kedah Malay
@@ -25315,7 +25315,7 @@ nds:
   cl.altLabel: Low Saxon
   cl.code: nds
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 ndt:
   type: lt.LanguageSubtag
   label: Ndunga
@@ -25855,7 +25855,7 @@ niu:
   label: Niuean
   cl.code: niu
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 niv:
   type: lt.LanguageSubtag
   label: Gilyak
@@ -26666,7 +26666,7 @@ nqo:
   cl.altLabel: N’Ko
   cl.code: nqo
   lt.added: '2006-06-05'
-  lt.suppressScript: script-Nkoo
+  lt.suppressScript: script-nkoo
 nqq:
   type: lt.LanguageSubtag
   label: Kyan-Karyaw Naga
@@ -26844,7 +26844,7 @@ nso:
     - Sepedi
   cl.code: nso
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 nsp:
   type: lt.LanguageSubtag
   label: Nepalese Sign Language
@@ -34713,7 +34713,7 @@ tem:
   label: Timne
   cl.code: tem
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 ten:
   type: lt.LanguageSubtag
   label: Tama (Colombia)
@@ -35274,7 +35274,7 @@ tkl:
   label: Tokelau
   cl.code: tkl
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 tkm:
   type: lt.LanguageSubtag
   label: Takelma
@@ -35501,7 +35501,7 @@ tmh:
   label: Tamashek
   cl.code: tmh
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
   lt.scope: lt.Macrolanguage
 tmi:
   type: lt.LanguageSubtag
@@ -35874,7 +35874,7 @@ tpi:
   label: Tok Pisin
   cl.code: tpi
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 tpj:
   type: lt.LanguageSubtag
   label: Tapieté
@@ -36562,7 +36562,7 @@ tvl:
   label: Tuvalu
   cl.code: tvl
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 tvm:
   type: lt.LanguageSubtag
   label: Tela-Masbuar
@@ -42416,7 +42416,7 @@ zbl:
     - Blissymbolics
   cl.code: zbl
   lt.added: '2007-08-21'
-  lt.suppressScript: script-Blis
+  lt.suppressScript: script-blis
 zbt:
   type: lt.LanguageSubtag
   label: Batui
@@ -45243,237 +45243,237 @@ extlang-zsm:
   prov.supersededBy: zsm
   lt.prefix: ms
   lt.macrolanguage: ms
-script-Adlm:
+script-adlm:
   type: lt.ScriptSubtag
   label: Adlam
   cl.code: Adlm
   lt.added: '2014-12-11'
-script-Afak:
+script-afak:
   type: lt.ScriptSubtag
   label: Afaka
   cl.code: Afak
   lt.added: '2011-01-07'
-script-Aghb:
+script-aghb:
   type: lt.ScriptSubtag
   label: Caucasian Albanian
   cl.code: Aghb
   lt.added: '2012-11-01'
-script-Ahom:
+script-ahom:
   type: lt.ScriptSubtag
   label: Ahom
   cl.altLabel: Tai Ahom
   cl.code: Ahom
   lt.added: '2013-12-02'
-script-Arab:
+script-arab:
   type: lt.ScriptSubtag
   label: Arabic
   cl.code: Arab
   lt.added: '2005-10-16'
-script-Aran:
+script-aran:
   type: lt.ScriptSubtag
   label: Arabic (Nastaliq variant)
   cl.code: Aran
   lt.added: '2014-12-11'
-script-Armi:
+script-armi:
   type: lt.ScriptSubtag
   label: Imperial Aramaic
   cl.code: Armi
   lt.added: '2007-12-05'
-script-Armn:
+script-armn:
   type: lt.ScriptSubtag
   label: Armenian
   cl.code: Armn
   lt.added: '2005-10-16'
-script-Avst:
+script-avst:
   type: lt.ScriptSubtag
   label: Avestan
   cl.code: Avst
   lt.added: '2007-07-28'
-script-Bali:
+script-bali:
   type: lt.ScriptSubtag
   label: Balinese
   cl.code: Bali
   lt.added: '2005-10-16'
-script-Bamu:
+script-bamu:
   type: lt.ScriptSubtag
   label: Bamum
   cl.code: Bamu
   lt.added: '2009-07-30'
-script-Bass:
+script-bass:
   type: lt.ScriptSubtag
   label: Bassa Vah
   cl.code: Bass
   lt.added: '2010-04-10'
-script-Batk:
+script-batk:
   type: lt.ScriptSubtag
   label: Batak
   cl.code: Batk
   lt.added: '2005-10-16'
-script-Beng:
+script-beng:
   type: lt.ScriptSubtag
   label: Bengali
   cl.altLabel: Bangla
   cl.code: Beng
   lt.added: '2005-10-16'
-script-Berf:
+script-berf:
   type: lt.ScriptSubtag
   label: Beria Erfe
   cl.code: Berf
   lt.added: '2025-02-06'
-script-Bhks:
+script-bhks:
   type: lt.ScriptSubtag
   label: Bhaiksuki
   cl.code: Bhks
   lt.added: '2015-07-24'
-script-Blis:
+script-blis:
   type: lt.ScriptSubtag
   label: Blissymbols
   cl.code: Blis
   lt.added: '2005-10-16'
-script-Bopo:
+script-bopo:
   type: lt.ScriptSubtag
   label: Bopomofo
   cl.code: Bopo
   lt.added: '2005-10-16'
-script-Brah:
+script-brah:
   type: lt.ScriptSubtag
   label: Brahmi
   cl.code: Brah
   lt.added: '2005-10-16'
-script-Brai:
+script-brai:
   type: lt.ScriptSubtag
   label: Braille
   cl.code: Brai
   lt.added: '2005-10-16'
-script-Bugi:
+script-bugi:
   type: lt.ScriptSubtag
   label: Buginese
   cl.code: Bugi
   lt.added: '2005-10-16'
-script-Buhd:
+script-buhd:
   type: lt.ScriptSubtag
   label: Buhid
   cl.code: Buhd
   lt.added: '2005-10-16'
-script-Cakm:
+script-cakm:
   type: lt.ScriptSubtag
   label: Chakma
   cl.code: Cakm
   lt.added: '2007-12-05'
-script-Cans:
+script-cans:
   type: lt.ScriptSubtag
   label: Unified Canadian Aboriginal Syllabics
   cl.code: Cans
   lt.added: '2005-10-16'
-script-Cari:
+script-cari:
   type: lt.ScriptSubtag
   label: Carian
   cl.code: Cari
   lt.added: '2006-07-21'
-script-Cham:
+script-cham:
   type: lt.ScriptSubtag
   label: Cham
   cl.code: Cham
   lt.added: '2005-10-16'
-script-Cher:
+script-cher:
   type: lt.ScriptSubtag
   label: Cherokee
   cl.code: Cher
   lt.added: '2005-10-16'
-script-Chis:
+script-chis:
   type: lt.ScriptSubtag
   label: Chisoi
   cl.code: Chis
   lt.added: '2023-10-16'
-script-Chrs:
+script-chrs:
   type: lt.ScriptSubtag
   label: Chorasmian
   cl.code: Chrs
   lt.added: '2019-09-11'
-script-Cirt:
+script-cirt:
   type: lt.ScriptSubtag
   label: Cirth
   cl.code: Cirt
   lt.added: '2005-10-16'
-script-Copt:
+script-copt:
   type: lt.ScriptSubtag
   label: Coptic
   cl.code: Copt
   lt.added: '2005-10-16'
-script-Cpmn:
+script-cpmn:
   type: lt.ScriptSubtag
   label: Cypro-Minoan
   cl.code: Cpmn
   lt.added: '2017-08-13'
-script-Cprt:
+script-cprt:
   type: lt.ScriptSubtag
   label: Cypriot syllabary
   cl.code: Cprt
   lt.added: '2005-10-16'
-script-Cyrl:
+script-cyrl:
   type: lt.ScriptSubtag
   label: Cyrillic
   cl.code: Cyrl
   lt.added: '2005-10-16'
-script-Cyrs:
+script-cyrs:
   type: lt.ScriptSubtag
   label: Cyrillic (Old Church Slavonic variant)
   cl.code: Cyrs
   lt.added: '2005-10-16'
-script-Deva:
+script-deva:
   type: lt.ScriptSubtag
   label: Devanagari
   cl.altLabel: Nagari
   cl.code: Deva
   lt.added: '2005-10-16'
-script-Diak:
+script-diak:
   type: lt.ScriptSubtag
   label: Dives Akuru
   cl.code: Diak
   lt.added: '2019-09-11'
-script-Dogr:
+script-dogr:
   type: lt.ScriptSubtag
   label: Dogra
   cl.code: Dogr
   lt.added: '2017-01-13'
-script-Dsrt:
+script-dsrt:
   type: lt.ScriptSubtag
   label: Deseret
   cl.altLabel: Mormon
   cl.code: Dsrt
   lt.added: '2005-10-16'
-script-Dupl:
+script-dupl:
   type: lt.ScriptSubtag
   label: Duployan shorthand
   cl.altLabel: Duployan stenography
   cl.code: Dupl
   lt.added: '2010-08-16'
-script-Egyd:
+script-egyd:
   type: lt.ScriptSubtag
   label: Egyptian demotic
   cl.code: Egyd
   lt.added: '2005-10-16'
-script-Egyh:
+script-egyh:
   type: lt.ScriptSubtag
   label: Egyptian hieratic
   cl.code: Egyh
   lt.added: '2005-10-16'
-script-Egyp:
+script-egyp:
   type: lt.ScriptSubtag
   label: Egyptian hieroglyphs
   cl.code: Egyp
   lt.added: '2005-10-16'
-script-Elba:
+script-elba:
   type: lt.ScriptSubtag
   label: Elbasan
   cl.code: Elba
   lt.added: '2010-08-16'
-script-Elym:
+script-elym:
   type: lt.ScriptSubtag
   label: Elymaic
   cl.code: Elym
   lt.added: '2018-10-28'
-script-Ethi:
+script-ethi:
   type: lt.ScriptSubtag
   label: Ethiopic
   cl.altLabel:
@@ -45481,72 +45481,72 @@ script-Ethi:
     - Ge'ez
   cl.code: Ethi
   lt.added: '2005-10-16'
-script-Gara:
+script-gara:
   type: lt.ScriptSubtag
   label: Garay
   cl.code: Gara
   lt.added: '2023-10-16'
-script-Geok:
+script-geok:
   type: lt.ScriptSubtag
   label: Khutsuri (Asomtavruli and Nuskhuri)
   cl.code: Geok
   lt.added: '2005-10-16'
-script-Geor:
+script-geor:
   type: lt.ScriptSubtag
   label: Georgian (Mkhedruli and Mtavruli)
   cl.code: Geor
   lt.added: '2005-10-16'
-script-Glag:
+script-glag:
   type: lt.ScriptSubtag
   label: Glagolitic
   cl.code: Glag
   lt.added: '2005-10-16'
-script-Gong:
+script-gong:
   type: lt.ScriptSubtag
   label: Gunjala Gondi
   cl.code: Gong
   lt.added: '2017-01-13'
-script-Gonm:
+script-gonm:
   type: lt.ScriptSubtag
   label: Masaram Gondi
   cl.code: Gonm
   lt.added: '2017-01-13'
-script-Goth:
+script-goth:
   type: lt.ScriptSubtag
   label: Gothic
   cl.code: Goth
   lt.added: '2005-10-16'
-script-Gran:
+script-gran:
   type: lt.ScriptSubtag
   label: Grantha
   cl.code: Gran
   lt.added: '2009-12-09'
-script-Grek:
+script-grek:
   type: lt.ScriptSubtag
   label: Greek
   cl.code: Grek
   lt.added: '2005-10-16'
-script-Gujr:
+script-gujr:
   type: lt.ScriptSubtag
   label: Gujarati
   cl.code: Gujr
   lt.added: '2005-10-16'
-script-Gukh:
+script-gukh:
   type: lt.ScriptSubtag
   label: Gurung Khema
   cl.code: Gukh
   lt.added: '2023-10-16'
-script-Guru:
+script-guru:
   type: lt.ScriptSubtag
   label: Gurmukhi
   cl.code: Guru
   lt.added: '2005-10-16'
-script-Hanb:
+script-hanb:
   type: lt.ScriptSubtag
   label: Han with Bopomofo (alias for Han + Bopomofo)
   cl.code: Hanb
   lt.added: '2016-02-08'
-script-Hang:
+script-hang:
   type: lt.ScriptSubtag
   label: Hangul
   cl.altLabel:
@@ -45554,7 +45554,7 @@ script-Hang:
     - Hangeul
   cl.code: Hang
   lt.added: '2005-10-16'
-script-Hani:
+script-hani:
   type: lt.ScriptSubtag
   label: Han
   cl.altLabel:
@@ -45563,38 +45563,38 @@ script-Hani:
     - Hanja
   cl.code: Hani
   lt.added: '2005-10-16'
-script-Hano:
+script-hano:
   type: lt.ScriptSubtag
   label: Hanunoo
   cl.altLabel: Hanunóo
   cl.code: Hano
   lt.added: '2005-10-16'
-script-Hans:
+script-hans:
   type: lt.ScriptSubtag
   label: Han (Simplified variant)
   cl.code: Hans
   lt.added: '2005-10-16'
-script-Hant:
+script-hant:
   type: lt.ScriptSubtag
   label: Han (Traditional variant)
   cl.code: Hant
   lt.added: '2005-10-16'
-script-Hatr:
+script-hatr:
   type: lt.ScriptSubtag
   label: Hatran
   cl.code: Hatr
   lt.added: '2013-12-02'
-script-Hebr:
+script-hebr:
   type: lt.ScriptSubtag
   label: Hebrew
   cl.code: Hebr
   lt.added: '2005-10-16'
-script-Hira:
+script-hira:
   type: lt.ScriptSubtag
   label: Hiragana
   cl.code: Hira
   lt.added: '2005-10-16'
-script-Hluw:
+script-hluw:
   type: lt.ScriptSubtag
   label: Anatolian Hieroglyphs
   cl.altLabel:
@@ -45602,233 +45602,233 @@ script-Hluw:
     - Hittite Hieroglyphs
   cl.code: Hluw
   lt.added: '2011-12-28'
-script-Hmng:
+script-hmng:
   type: lt.ScriptSubtag
   label: Pahawh Hmong
   cl.code: Hmng
   lt.added: '2005-10-16'
-script-Hmnp:
+script-hmnp:
   type: lt.ScriptSubtag
   label: Nyiakeng Puachue Hmong
   cl.code: Hmnp
   lt.added: '2017-08-13'
-script-Hntl:
+script-hntl:
   type: lt.ScriptSubtag
   label: Han (Traditional variant) with Latin (alias for Hant + Latn)
   cl.code: Hntl
   lt.added: '2025-05-14'
-script-Hrkt:
+script-hrkt:
   type: lt.ScriptSubtag
   label: Japanese syllabaries (alias for Hiragana + Katakana)
   cl.code: Hrkt
   lt.added: '2005-10-16'
-script-Hung:
+script-hung:
   type: lt.ScriptSubtag
   label: Old Hungarian
   cl.altLabel: Hungarian Runic
   cl.code: Hung
   lt.added: '2005-10-16'
-script-Inds:
+script-inds:
   type: lt.ScriptSubtag
   label: Indus
   cl.altLabel: Harappan
   cl.code: Inds
   lt.added: '2005-10-16'
-script-Ital:
+script-ital:
   type: lt.ScriptSubtag
   label: Old Italic (Etruscan, Oscan, etc.)
   cl.code: Ital
   lt.added: '2005-10-16'
-script-Jamo:
+script-jamo:
   type: lt.ScriptSubtag
   label: Jamo (alias for Jamo subset of Hangul)
   cl.code: Jamo
   lt.added: '2016-02-08'
-script-Java:
+script-java:
   type: lt.ScriptSubtag
   label: Javanese
   cl.code: Java
   lt.added: '2005-10-16'
-script-Jpan:
+script-jpan:
   type: lt.ScriptSubtag
   label: Japanese (alias for Han + Hiragana + Katakana)
   cl.code: Jpan
   lt.added: '2006-07-21'
-script-Jurc:
+script-jurc:
   type: lt.ScriptSubtag
   label: Jurchen
   cl.code: Jurc
   lt.added: '2011-01-07'
-script-Kali:
+script-kali:
   type: lt.ScriptSubtag
   label: Kayah Li
   cl.code: Kali
   lt.added: '2005-10-16'
-script-Kana:
+script-kana:
   type: lt.ScriptSubtag
   label: Katakana
   cl.code: Kana
   lt.added: '2005-10-16'
-script-Kawi:
+script-kawi:
   type: lt.ScriptSubtag
   label: Kawi
   cl.code: Kawi
   lt.added: '2021-12-24'
-script-Khar:
+script-khar:
   type: lt.ScriptSubtag
   label: Kharoshthi
   cl.code: Khar
   lt.added: '2005-10-16'
-script-Khmr:
+script-khmr:
   type: lt.ScriptSubtag
   label: Khmer
   cl.code: Khmr
   lt.added: '2005-10-16'
-script-Khoj:
+script-khoj:
   type: lt.ScriptSubtag
   label: Khojki
   cl.code: Khoj
   lt.added: '2011-08-16'
-script-Kitl:
+script-kitl:
   type: lt.ScriptSubtag
   label: Khitan large script
   cl.code: Kitl
   lt.added: '2014-12-11'
-script-Kits:
+script-kits:
   type: lt.ScriptSubtag
   label: Khitan small script
   cl.code: Kits
   lt.added: '2014-12-11'
-script-Knda:
+script-knda:
   type: lt.ScriptSubtag
   label: Kannada
   cl.code: Knda
   lt.added: '2005-10-16'
-script-Kore:
+script-kore:
   type: lt.ScriptSubtag
   label: Korean (alias for Hangul + Han)
   cl.code: Kore
   lt.added: '2007-07-05'
-script-Kpel:
+script-kpel:
   type: lt.ScriptSubtag
   label: Kpelle
   cl.code: Kpel
   lt.added: '2010-04-10'
-script-Krai:
+script-krai:
   type: lt.ScriptSubtag
   label: Kirat Rai
   cl.code: Krai
   lt.added: '2023-10-16'
-script-Kthi:
+script-kthi:
   type: lt.ScriptSubtag
   label: Kaithi
   cl.code: Kthi
   lt.added: '2007-12-05'
-script-Lana:
+script-lana:
   type: lt.ScriptSubtag
   label: Tai Tham
   cl.altLabel: Lanna
   cl.code: Lana
   lt.added: '2006-07-21'
-script-Laoo:
+script-laoo:
   type: lt.ScriptSubtag
   label: Lao
   cl.code: Laoo
   lt.added: '2005-10-16'
-script-Latf:
+script-latf:
   type: lt.ScriptSubtag
   label: Latin (Fraktur variant)
   cl.code: Latf
   lt.added: '2005-10-16'
-script-Latg:
+script-latg:
   type: lt.ScriptSubtag
   label: Latin (Gaelic variant)
   cl.code: Latg
   lt.added: '2005-10-16'
-script-Latn:
+script-latn:
   type: lt.ScriptSubtag
   label: Latin
   cl.code: Latn
   lt.added: '2005-10-16'
-script-Leke:
+script-leke:
   type: lt.ScriptSubtag
   label: Leke
   cl.code: Leke
   lt.added: '2015-07-24'
-script-Lepc:
+script-lepc:
   type: lt.ScriptSubtag
   label: Lepcha
   cl.altLabel: Róng
   cl.code: Lepc
   lt.added: '2005-10-16'
-script-Limb:
+script-limb:
   type: lt.ScriptSubtag
   label: Limbu
   cl.code: Limb
   lt.added: '2005-10-16'
-script-Lina:
+script-lina:
   type: lt.ScriptSubtag
   label: Linear A
   cl.code: Lina
   lt.added: '2005-10-16'
-script-Linb:
+script-linb:
   type: lt.ScriptSubtag
   label: Linear B
   cl.code: Linb
   lt.added: '2005-10-16'
-script-Lisu:
+script-lisu:
   type: lt.ScriptSubtag
   label: Lisu
   cl.altLabel: Fraser
   cl.code: Lisu
   lt.added: '2009-03-13'
-script-Loma:
+script-loma:
   type: lt.ScriptSubtag
   label: Loma
   cl.code: Loma
   lt.added: '2010-04-10'
-script-Lyci:
+script-lyci:
   type: lt.ScriptSubtag
   label: Lycian
   cl.code: Lyci
   lt.added: '2006-07-21'
-script-Lydi:
+script-lydi:
   type: lt.ScriptSubtag
   label: Lydian
   cl.code: Lydi
   lt.added: '2006-07-21'
-script-Mahj:
+script-mahj:
   type: lt.ScriptSubtag
   label: Mahajani
   cl.code: Mahj
   lt.added: '2012-11-01'
-script-Maka:
+script-maka:
   type: lt.ScriptSubtag
   label: Makasar
   cl.code: Maka
   lt.added: '2017-01-13'
-script-Mand:
+script-mand:
   type: lt.ScriptSubtag
   label: Mandaic
   cl.altLabel: Mandaean
   cl.code: Mand
   lt.added: '2005-10-16'
-script-Mani:
+script-mani:
   type: lt.ScriptSubtag
   label: Manichaean
   cl.code: Mani
   lt.added: '2007-07-28'
-script-Marc:
+script-marc:
   type: lt.ScriptSubtag
   label: Marchen
   cl.code: Marc
   lt.added: '2014-12-11'
-script-Maya:
+script-maya:
   type: lt.ScriptSubtag
   label: Mayan hieroglyphs
   cl.code: Maya
   lt.added: '2005-10-16'
-script-Medf:
+script-medf:
   type: lt.ScriptSubtag
   label: Medefaidrin
   cl.altLabel:
@@ -45836,38 +45836,38 @@ script-Medf:
     - Oberi Ɔkaimɛ
   cl.code: Medf
   lt.added: '2017-01-13'
-script-Mend:
+script-mend:
   type: lt.ScriptSubtag
   label: Mende Kikakui
   cl.code: Mend
   lt.added: '2010-04-10'
-script-Merc:
+script-merc:
   type: lt.ScriptSubtag
   label: Meroitic Cursive
   cl.code: Merc
   lt.added: '2009-12-09'
-script-Mero:
+script-mero:
   type: lt.ScriptSubtag
   label: Meroitic Hieroglyphs
   cl.code: Mero
   lt.added: '2005-10-16'
-script-Mlym:
+script-mlym:
   type: lt.ScriptSubtag
   label: Malayalam
   cl.code: Mlym
   lt.added: '2005-10-16'
-script-Modi:
+script-modi:
   type: lt.ScriptSubtag
   label: Modi
   cl.altLabel: Moḍī
   cl.code: Modi
   lt.added: '2013-12-02'
-script-Mong:
+script-mong:
   type: lt.ScriptSubtag
   label: Mongolian
   cl.code: Mong
   lt.added: '2005-10-16'
-script-Moon:
+script-moon:
   type: lt.ScriptSubtag
   label: Moon
   cl.altLabel:
@@ -45876,13 +45876,13 @@ script-Moon:
     - Moon type
   cl.code: Moon
   lt.added: '2007-01-26'
-script-Mroo:
+script-mroo:
   type: lt.ScriptSubtag
   label: Mro
   cl.altLabel: Mru
   cl.code: Mroo
   lt.added: '2011-01-07'
-script-Mtei:
+script-mtei:
   type: lt.ScriptSubtag
   label: Meitei Mayek
   cl.altLabel:
@@ -45890,39 +45890,39 @@ script-Mtei:
     - Meetei
   cl.code: Mtei
   lt.added: '2007-01-26'
-script-Mult:
+script-mult:
   type: lt.ScriptSubtag
   label: Multani
   cl.code: Mult
   lt.added: '2013-12-02'
-script-Mymr:
+script-mymr:
   type: lt.ScriptSubtag
   label: Myanmar
   cl.altLabel: Burmese
   cl.code: Mymr
   lt.added: '2005-10-16'
-script-Nagm:
+script-nagm:
   type: lt.ScriptSubtag
   label: Nag Mundari
   cl.code: Nagm
   lt.added: '2021-12-24'
-script-Nand:
+script-nand:
   type: lt.ScriptSubtag
   label: Nandinagari
   cl.code: Nand
   lt.added: '2018-10-28'
-script-Narb:
+script-narb:
   type: lt.ScriptSubtag
   label: Old North Arabian
   cl.altLabel: Ancient North Arabian
   cl.code: Narb
   lt.added: '2010-04-10'
-script-Nbat:
+script-nbat:
   type: lt.ScriptSubtag
   label: Nabataean
   cl.code: Nbat
   lt.added: '2010-04-10'
-script-Newa:
+script-newa:
   type: lt.ScriptSubtag
   label: Newa
   cl.altLabel:
@@ -45931,7 +45931,7 @@ script-Newa:
     - Nepāla lipi
   cl.code: Newa
   lt.added: '2016-01-04'
-script-Nkdb:
+script-nkdb:
   type: lt.ScriptSubtag
   label: Naxi Dongba
   cl.altLabel:
@@ -45939,7 +45939,7 @@ script-Nkdb:
     - Nakhi Tomba
   cl.code: Nkdb
   lt.added: '2017-08-13'
-script-Nkgb:
+script-nkgb:
   type: lt.ScriptSubtag
   label: Naxi Geba
   cl.altLabel:
@@ -45948,23 +45948,23 @@ script-Nkgb:
     - Nakhi Geba
   cl.code: Nkgb
   lt.added: '2009-03-13'
-script-Nkoo:
+script-nkoo:
   type: lt.ScriptSubtag
   label: N’Ko
   cl.altLabel: N'Ko
   cl.code: Nkoo
   lt.added: '2005-10-16'
-script-Nshu:
+script-nshu:
   type: lt.ScriptSubtag
   label: Nüshu
   cl.code: Nshu
   lt.added: '2011-01-07'
-script-Ogam:
+script-ogam:
   type: lt.ScriptSubtag
   label: Ogham
   cl.code: Ogam
   lt.added: '2005-10-16'
-script-Olck:
+script-olck:
   type: lt.ScriptSubtag
   label: Ol Chiki
   cl.altLabel:
@@ -45973,115 +45973,115 @@ script-Olck:
     - Santali
   cl.code: Olck
   lt.added: '2006-07-21'
-script-Onao:
+script-onao:
   type: lt.ScriptSubtag
   label: Ol Onal
   cl.code: Onao
   lt.added: '2023-10-16'
-script-Orkh:
+script-orkh:
   type: lt.ScriptSubtag
   label: Old Turkic
   cl.altLabel: Orkhon Runic
   cl.code: Orkh
   lt.added: '2009-07-30'
-script-Orya:
+script-orya:
   type: lt.ScriptSubtag
   label: Oriya
   cl.altLabel: Odia
   cl.code: Orya
   lt.added: '2005-10-16'
-script-Osge:
+script-osge:
   type: lt.ScriptSubtag
   label: Osage
   cl.code: Osge
   lt.added: '2014-12-11'
-script-Osma:
+script-osma:
   type: lt.ScriptSubtag
   label: Osmanya
   cl.code: Osma
   lt.added: '2005-10-16'
-script-Ougr:
+script-ougr:
   type: lt.ScriptSubtag
   label: Old Uyghur
   cl.code: Ougr
   lt.added: '2021-02-12'
-script-Palm:
+script-palm:
   type: lt.ScriptSubtag
   label: Palmyrene
   cl.code: Palm
   lt.added: '2010-04-10'
-script-Pauc:
+script-pauc:
   type: lt.ScriptSubtag
   label: Pau Cin Hau
   cl.code: Pauc
   lt.added: '2013-12-02'
-script-Pcun:
+script-pcun:
   type: lt.ScriptSubtag
   label: Proto-Cuneiform
   cl.code: Pcun
   lt.added: '2021-02-12'
-script-Pelm:
+script-pelm:
   type: lt.ScriptSubtag
   label: Proto-Elamite
   cl.code: Pelm
   lt.added: '2021-02-12'
-script-Perm:
+script-perm:
   type: lt.ScriptSubtag
   label: Old Permic
   cl.code: Perm
   lt.added: '2005-10-16'
-script-Phag:
+script-phag:
   type: lt.ScriptSubtag
   label: Phags-pa
   cl.code: Phag
   lt.added: '2005-10-16'
-script-Phli:
+script-phli:
   type: lt.ScriptSubtag
   label: Inscriptional Pahlavi
   cl.code: Phli
   lt.added: '2007-12-05'
-script-Phlp:
+script-phlp:
   type: lt.ScriptSubtag
   label: Psalter Pahlavi
   cl.code: Phlp
   lt.added: '2007-12-05'
-script-Phlv:
+script-phlv:
   type: lt.ScriptSubtag
   label: Book Pahlavi
   cl.code: Phlv
   lt.added: '2007-07-28'
-script-Phnx:
+script-phnx:
   type: lt.ScriptSubtag
   label: Phoenician
   cl.code: Phnx
   lt.added: '2005-10-16'
-script-Piqd:
+script-piqd:
   type: lt.ScriptSubtag
   label: Klingon (KLI pIqaD)
   cl.code: Piqd
   lt.added: '2016-01-04'
-script-Plrd:
+script-plrd:
   type: lt.ScriptSubtag
   label: Miao
   cl.altLabel: Pollard
   cl.code: Plrd
   lt.added: '2005-10-16'
-script-Prti:
+script-prti:
   type: lt.ScriptSubtag
   label: Inscriptional Parthian
   cl.code: Prti
   lt.added: '2007-12-05'
-script-Psin:
+script-psin:
   type: lt.ScriptSubtag
   label: Proto-Sinaitic
   cl.code: Psin
   lt.added: '2021-02-12'
-script-Ranj:
+script-ranj:
   type: lt.ScriptSubtag
   label: Ranjana
   cl.code: Ranj
   lt.added: '2021-02-12'
-script-Rjng:
+script-rjng:
   type: lt.ScriptSubtag
   label: Rejang
   cl.altLabel:
@@ -46089,70 +46089,70 @@ script-Rjng:
     - Kaganga
   cl.code: Rjng
   lt.added: '2006-10-17'
-script-Rohg:
+script-rohg:
   type: lt.ScriptSubtag
   label: Hanifi Rohingya
   cl.code: Rohg
   lt.added: '2017-12-13'
-script-Roro:
+script-roro:
   type: lt.ScriptSubtag
   label: Rongorongo
   cl.code: Roro
   lt.added: '2005-10-16'
-script-Runr:
+script-runr:
   type: lt.ScriptSubtag
   label: Runic
   cl.code: Runr
   lt.added: '2005-10-16'
-script-Samr:
+script-samr:
   type: lt.ScriptSubtag
   label: Samaritan
   cl.code: Samr
   lt.added: '2007-07-28'
-script-Sara:
+script-sara:
   type: lt.ScriptSubtag
   label: Sarati
   cl.code: Sara
   lt.added: '2005-10-16'
-script-Sarb:
+script-sarb:
   type: lt.ScriptSubtag
   label: Old South Arabian
   cl.code: Sarb
   lt.added: '2009-07-30'
-script-Saur:
+script-saur:
   type: lt.ScriptSubtag
   label: Saurashtra
   cl.code: Saur
   lt.added: '2006-07-21'
-script-Seal:
+script-seal:
   type: lt.ScriptSubtag
   label: Seal
   cl.altLabel: Small Seal
   cl.code: Seal
   lt.added: '2025-05-14'
-script-Sgnw:
+script-sgnw:
   type: lt.ScriptSubtag
   label: SignWriting
   cl.code: Sgnw
   lt.added: '2006-10-17'
-script-Shaw:
+script-shaw:
   type: lt.ScriptSubtag
   label: Shavian
   cl.altLabel: Shaw
   cl.code: Shaw
   lt.added: '2005-10-16'
-script-Shrd:
+script-shrd:
   type: lt.ScriptSubtag
   label: Sharada
   cl.altLabel: Śāradā
   cl.code: Shrd
   lt.added: '2011-01-07'
-script-Shui:
+script-shui:
   type: lt.ScriptSubtag
   label: Shuishu
   cl.code: Shui
   lt.added: '2017-08-13'
-script-Sidd:
+script-sidd:
   type: lt.ScriptSubtag
   label: Siddham
   cl.altLabel:
@@ -46160,83 +46160,83 @@ script-Sidd:
     - Siddhamātṛkā
   cl.code: Sidd
   lt.added: '2013-12-02'
-script-Sidt:
+script-sidt:
   type: lt.ScriptSubtag
   label: Sidetic
   cl.code: Sidt
   lt.added: '2023-10-16'
-script-Sind:
+script-sind:
   type: lt.ScriptSubtag
   label: Khudawadi
   cl.altLabel: Sindhi
   cl.code: Sind
   lt.added: '2010-08-16'
-script-Sinh:
+script-sinh:
   type: lt.ScriptSubtag
   label: Sinhala
   cl.code: Sinh
   lt.added: '2005-10-16'
-script-Sogd:
+script-sogd:
   type: lt.ScriptSubtag
   label: Sogdian
   cl.code: Sogd
   lt.added: '2017-12-13'
-script-Sogo:
+script-sogo:
   type: lt.ScriptSubtag
   label: Old Sogdian
   cl.code: Sogo
   lt.added: '2017-12-13'
-script-Sora:
+script-sora:
   type: lt.ScriptSubtag
   label: Sora Sompeng
   cl.code: Sora
   lt.added: '2011-01-07'
-script-Soyo:
+script-soyo:
   type: lt.ScriptSubtag
   label: Soyombo
   cl.code: Soyo
   lt.added: '2017-01-13'
-script-Sund:
+script-sund:
   type: lt.ScriptSubtag
   label: Sundanese
   cl.code: Sund
   lt.added: '2006-07-21'
-script-Sunu:
+script-sunu:
   type: lt.ScriptSubtag
   label: Sunuwar
   cl.code: Sunu
   lt.added: '2021-12-24'
-script-Sylo:
+script-sylo:
   type: lt.ScriptSubtag
   label: Syloti Nagri
   cl.code: Sylo
   lt.added: '2005-10-16'
-script-Syrc:
+script-syrc:
   type: lt.ScriptSubtag
   label: Syriac
   cl.code: Syrc
   lt.added: '2005-10-16'
-script-Syre:
+script-syre:
   type: lt.ScriptSubtag
   label: Syriac (Estrangelo variant)
   cl.code: Syre
   lt.added: '2005-10-16'
-script-Syrj:
+script-syrj:
   type: lt.ScriptSubtag
   label: Syriac (Western variant)
   cl.code: Syrj
   lt.added: '2005-10-16'
-script-Syrn:
+script-syrn:
   type: lt.ScriptSubtag
   label: Syriac (Eastern variant)
   cl.code: Syrn
   lt.added: '2005-10-16'
-script-Tagb:
+script-tagb:
   type: lt.ScriptSubtag
   label: Tagbanwa
   cl.code: Tagb
   lt.added: '2005-10-16'
-script-Takr:
+script-takr:
   type: lt.ScriptSubtag
   label: Takri
   cl.altLabel:
@@ -46244,53 +46244,53 @@ script-Takr:
     - Ṭāṅkrī
   cl.code: Takr
   lt.added: '2011-01-07'
-script-Tale:
+script-tale:
   type: lt.ScriptSubtag
   label: Tai Le
   cl.code: Tale
   lt.added: '2005-10-16'
-script-Talu:
+script-talu:
   type: lt.ScriptSubtag
   label: New Tai Lue
   cl.code: Talu
   lt.added: '2005-10-16'
-script-Taml:
+script-taml:
   type: lt.ScriptSubtag
   label: Tamil
   cl.code: Taml
   lt.added: '2005-10-16'
-script-Tang:
+script-tang:
   type: lt.ScriptSubtag
   label: Tangut
   cl.code: Tang
   lt.added: '2011-01-07'
-script-Tavt:
+script-tavt:
   type: lt.ScriptSubtag
   label: Tai Viet
   cl.code: Tavt
   lt.added: '2007-12-05'
-script-Tayo:
+script-tayo:
   type: lt.ScriptSubtag
   label: Tai Yo
   cl.code: Tayo
   lt.added: '2023-10-16'
-script-Telu:
+script-telu:
   type: lt.ScriptSubtag
   label: Telugu
   cl.code: Telu
   lt.added: '2005-10-16'
-script-Teng:
+script-teng:
   type: lt.ScriptSubtag
   label: Tengwar
   cl.code: Teng
   lt.added: '2005-10-16'
-script-Tfng:
+script-tfng:
   type: lt.ScriptSubtag
   label: Tifinagh
   cl.altLabel: Berber
   cl.code: Tfng
   lt.added: '2005-10-16'
-script-Tglg:
+script-tglg:
   type: lt.ScriptSubtag
   label: Tagalog
   cl.altLabel:
@@ -46298,108 +46298,108 @@ script-Tglg:
     - Alibata
   cl.code: Tglg
   lt.added: '2005-10-16'
-script-Thaa:
+script-thaa:
   type: lt.ScriptSubtag
   label: Thaana
   cl.code: Thaa
   lt.added: '2005-10-16'
-script-Thai:
+script-thai:
   type: lt.ScriptSubtag
   label: Thai
   cl.code: Thai
   lt.added: '2005-10-16'
-script-Tibt:
+script-tibt:
   type: lt.ScriptSubtag
   label: Tibetan
   cl.code: Tibt
   lt.added: '2005-10-16'
-script-Tirh:
+script-tirh:
   type: lt.ScriptSubtag
   label: Tirhuta
   cl.code: Tirh
   lt.added: '2011-08-16'
-script-Tnsa:
+script-tnsa:
   type: lt.ScriptSubtag
   label: Tangsa
   cl.code: Tnsa
   lt.added: '2021-03-05'
-script-Todr:
+script-todr:
   type: lt.ScriptSubtag
   label: Todhri
   cl.code: Todr
   lt.added: '2023-10-16'
-script-Tols:
+script-tols:
   type: lt.ScriptSubtag
   label: Tolong Siki
   cl.code: Tols
   lt.added: '2023-10-16'
-script-Toto:
+script-toto:
   type: lt.ScriptSubtag
   label: Toto
   cl.code: Toto
   lt.added: '2020-05-12'
-script-Tutg:
+script-tutg:
   type: lt.ScriptSubtag
   label: Tulu-Tigalari
   cl.code: Tutg
   lt.added: '2023-10-16'
-script-Ugar:
+script-ugar:
   type: lt.ScriptSubtag
   label: Ugaritic
   cl.code: Ugar
   lt.added: '2005-10-16'
-script-Vaii:
+script-vaii:
   type: lt.ScriptSubtag
   label: Vai
   cl.code: Vaii
   lt.added: '2005-10-16'
-script-Visp:
+script-visp:
   type: lt.ScriptSubtag
   label: Visible Speech
   cl.code: Visp
   lt.added: '2005-10-16'
-script-Vith:
+script-vith:
   type: lt.ScriptSubtag
   label: Vithkuqi
   cl.code: Vith
   lt.added: '2021-03-05'
-script-Wara:
+script-wara:
   type: lt.ScriptSubtag
   label: Warang Citi
   cl.altLabel: Varang Kshiti
   cl.code: Wara
   lt.added: '2009-12-09'
-script-Wcho:
+script-wcho:
   type: lt.ScriptSubtag
   label: Wancho
   cl.code: Wcho
   lt.added: '2017-08-13'
-script-Wole:
+script-wole:
   type: lt.ScriptSubtag
   label: Woleai
   cl.code: Wole
   lt.added: '2011-01-07'
-script-Xpeo:
+script-xpeo:
   type: lt.ScriptSubtag
   label: Old Persian
   cl.code: Xpeo
   lt.added: '2005-10-16'
-script-Xsux:
+script-xsux:
   type: lt.ScriptSubtag
   label: Sumero-Akkadian cuneiform
   cl.code: Xsux
   lt.added: '2005-10-16'
-script-Yezi:
+script-yezi:
   type: lt.ScriptSubtag
   label: Yezidi
   cl.code: Yezi
   lt.added: '2019-09-11'
-script-Yiii:
+script-yiii:
   type: lt.ScriptSubtag
   label: Yi
   cl.code: Yiii
   lt.added: '2005-10-16'
-script-Zanb:
+script-zanb:
   type: lt.ScriptSubtag
   label: Zanabazar Square
   cl.altLabel:
@@ -46408,88 +46408,88 @@ script-Zanb:
     - Horizontal Square Script
   cl.code: Zanb
   lt.added: '2017-01-13'
-script-Zinh:
+script-zinh:
   type: lt.ScriptSubtag
   label: Code for inherited script
   comment: Not intended for use as a language subtag
   cl.code: Zinh
   lt.added: '2009-04-03'
-script-Zmth:
+script-zmth:
   type: lt.ScriptSubtag
   label: Mathematical notation
   cl.code: Zmth
   lt.added: '2007-12-05'
-script-Zsye:
+script-zsye:
   type: lt.ScriptSubtag
   label: Symbols (Emoji variant)
   cl.code: Zsye
   lt.added: '2016-01-04'
-script-Zsym:
+script-zsym:
   type: lt.ScriptSubtag
   label: Symbols
   cl.code: Zsym
   lt.added: '2007-12-05'
-script-Zxxx:
+script-zxxx:
   type: lt.ScriptSubtag
   label: Code for unwritten documents
   cl.code: Zxxx
   lt.added: '2005-10-16'
-script-Zyyy:
+script-zyyy:
   type: lt.ScriptSubtag
   label: Code for undetermined script
   cl.code: Zyyy
   lt.added: '2005-10-16'
-script-Zzzz:
+script-zzzz:
   type: lt.ScriptSubtag
   label: Code for uncoded script
   cl.code: Zzzz
   lt.added: '2005-10-16'
-region-AA:
+region-aa:
   type: lt.RegionSubtag
   label: Private use
   cl.code: AA
   lt.added: '2005-10-16'
-region-AC:
+region-ac:
   type: lt.RegionSubtag
   label: Ascension Island
   cl.code: AC
   lt.added: '2009-07-29'
-region-AD:
+region-ad:
   type: lt.RegionSubtag
   label: Andorra
   cl.code: AD
   lt.added: '2005-10-16'
-region-AE:
+region-ae:
   type: lt.RegionSubtag
   label: United Arab Emirates
   cl.code: AE
   lt.added: '2005-10-16'
-region-AF:
+region-af:
   type: lt.RegionSubtag
   label: Afghanistan
   cl.code: AF
   lt.added: '2005-10-16'
-region-AG:
+region-ag:
   type: lt.RegionSubtag
   label: Antigua and Barbuda
   cl.code: AG
   lt.added: '2005-10-16'
-region-AI:
+region-ai:
   type: lt.RegionSubtag
   label: Anguilla
   cl.code: AI
   lt.added: '2005-10-16'
-region-AL:
+region-al:
   type: lt.RegionSubtag
   label: Albania
   cl.code: AL
   lt.added: '2005-10-16'
-region-AM:
+region-am:
   type: lt.RegionSubtag
   label: Armenia
   cl.code: AM
   lt.added: '2005-10-16'
-region-AN:
+region-an:
   type: lt.RegionSubtag
   label: Netherlands Antilles
   comment: see BQ, CW, and SX
@@ -46497,240 +46497,240 @@ region-AN:
   lt.added: '2005-10-16'
   owl.deprecated: true
   lt.deprecatedOn: '2011-01-07'
-region-AO:
+region-ao:
   type: lt.RegionSubtag
   label: Angola
   cl.code: AO
   lt.added: '2005-10-16'
-region-AQ:
+region-aq:
   type: lt.RegionSubtag
   label: Antarctica
   cl.code: AQ
   lt.added: '2005-10-16'
-region-AR:
+region-ar:
   type: lt.RegionSubtag
   label: Argentina
   cl.code: AR
   lt.added: '2005-10-16'
-region-AS:
+region-as:
   type: lt.RegionSubtag
   label: American Samoa
   cl.code: AS
   lt.added: '2005-10-16'
-region-AT:
+region-at:
   type: lt.RegionSubtag
   label: Austria
   cl.code: AT
   lt.added: '2005-10-16'
-region-AU:
+region-au:
   type: lt.RegionSubtag
   label: Australia
   cl.code: AU
   lt.added: '2005-10-16'
-region-AW:
+region-aw:
   type: lt.RegionSubtag
   label: Aruba
   cl.code: AW
   lt.added: '2005-10-16'
-region-AX:
+region-ax:
   type: lt.RegionSubtag
   label: Åland Islands
   cl.code: AX
   lt.added: '2005-10-16'
-region-AZ:
+region-az:
   type: lt.RegionSubtag
   label: Azerbaijan
   cl.code: AZ
   lt.added: '2005-10-16'
-region-BA:
+region-ba:
   type: lt.RegionSubtag
   label: Bosnia and Herzegovina
   cl.code: BA
   lt.added: '2005-10-16'
-region-BB:
+region-bb:
   type: lt.RegionSubtag
   label: Barbados
   cl.code: BB
   lt.added: '2005-10-16'
-region-BD:
+region-bd:
   type: lt.RegionSubtag
   label: Bangladesh
   cl.code: BD
   lt.added: '2005-10-16'
-region-BE:
+region-be:
   type: lt.RegionSubtag
   label: Belgium
   cl.code: BE
   lt.added: '2005-10-16'
-region-BF:
+region-bf:
   type: lt.RegionSubtag
   label: Burkina Faso
   cl.code: BF
   lt.added: '2005-10-16'
-region-BG:
+region-bg:
   type: lt.RegionSubtag
   label: Bulgaria
   cl.code: BG
   lt.added: '2005-10-16'
-region-BH:
+region-bh:
   type: lt.RegionSubtag
   label: Bahrain
   cl.code: BH
   lt.added: '2005-10-16'
-region-BI:
+region-bi:
   type: lt.RegionSubtag
   label: Burundi
   cl.code: BI
   lt.added: '2005-10-16'
-region-BJ:
+region-bj:
   type: lt.RegionSubtag
   label: Benin
   cl.code: BJ
   lt.added: '2005-10-16'
-region-BL:
+region-bl:
   type: lt.RegionSubtag
   label: Saint Barthélemy
   cl.code: BL
   lt.added: '2007-11-02'
-region-BM:
+region-bm:
   type: lt.RegionSubtag
   label: Bermuda
   cl.code: BM
   lt.added: '2005-10-16'
-region-BN:
+region-bn:
   type: lt.RegionSubtag
   label: Brunei Darussalam
   cl.code: BN
   lt.added: '2005-10-16'
-region-BO:
+region-bo:
   type: lt.RegionSubtag
   label: Bolivia
   cl.code: BO
   lt.added: '2005-10-16'
-region-BQ:
+region-bq:
   type: lt.RegionSubtag
   label: Bonaire, Sint Eustatius and Saba
   cl.code: BQ
   lt.added: '2011-01-07'
-region-BR:
+region-br:
   type: lt.RegionSubtag
   label: Brazil
   cl.code: BR
   lt.added: '2005-10-16'
-region-BS:
+region-bs:
   type: lt.RegionSubtag
   label: Bahamas
   cl.code: BS
   lt.added: '2005-10-16'
-region-BT:
+region-bt:
   type: lt.RegionSubtag
   label: Bhutan
   cl.code: BT
   lt.added: '2005-10-16'
-region-BU:
+region-bu:
   type: lt.RegionSubtag
   label: Burma
   cl.code: BU
   lt.added: '2005-10-16'
   owl.deprecated: true
   lt.deprecatedOn: '1989-12-05'
-  prov.supersededBy: region-MM
-region-BV:
+  prov.supersededBy: region-mm
+region-bv:
   type: lt.RegionSubtag
   label: Bouvet Island
   cl.code: BV
   lt.added: '2005-10-16'
-region-BW:
+region-bw:
   type: lt.RegionSubtag
   label: Botswana
   cl.code: BW
   lt.added: '2005-10-16'
-region-BY:
+region-by:
   type: lt.RegionSubtag
   label: Belarus
   cl.code: BY
   lt.added: '2005-10-16'
-region-BZ:
+region-bz:
   type: lt.RegionSubtag
   label: Belize
   cl.code: BZ
   lt.added: '2005-10-16'
-region-CA:
+region-ca:
   type: lt.RegionSubtag
   label: Canada
   cl.code: CA
   lt.added: '2005-10-16'
-region-CC:
+region-cc:
   type: lt.RegionSubtag
   label: Cocos (Keeling) Islands
   cl.code: CC
   lt.added: '2005-10-16'
-region-CD:
+region-cd:
   type: lt.RegionSubtag
   label: The Democratic Republic of the Congo
   cl.code: CD
   lt.added: '2005-10-16'
-region-CF:
+region-cf:
   type: lt.RegionSubtag
   label: Central African Republic
   cl.code: CF
   lt.added: '2005-10-16'
-region-CG:
+region-cg:
   type: lt.RegionSubtag
   label: Congo
   cl.code: CG
   lt.added: '2005-10-16'
-region-CH:
+region-ch:
   type: lt.RegionSubtag
   label: Switzerland
   cl.code: CH
   lt.added: '2005-10-16'
-region-CI:
+region-ci:
   type: lt.RegionSubtag
   label: Côte d'Ivoire
   cl.code: CI
   lt.added: '2005-10-16'
-region-CK:
+region-ck:
   type: lt.RegionSubtag
   label: Cook Islands
   cl.code: CK
   lt.added: '2005-10-16'
-region-CL:
+region-cl:
   type: lt.RegionSubtag
   label: Chile
   cl.code: CL
   lt.added: '2005-10-16'
-region-CM:
+region-cm:
   type: lt.RegionSubtag
   label: Cameroon
   cl.code: CM
   lt.added: '2005-10-16'
-region-CN:
+region-cn:
   type: lt.RegionSubtag
   label: China
   cl.code: CN
   lt.added: '2005-10-16'
-region-CO:
+region-co:
   type: lt.RegionSubtag
   label: Colombia
   cl.code: CO
   lt.added: '2005-10-16'
-region-CP:
+region-cp:
   type: lt.RegionSubtag
   label: Clipperton Island
   cl.code: CP
   lt.added: '2009-07-29'
-region-CQ:
+region-cq:
   type: lt.RegionSubtag
   label: Sark
   cl.code: CQ
   lt.added: '2023-02-07'
-region-CR:
+region-cr:
   type: lt.RegionSubtag
   label: Costa Rica
   cl.code: CR
   lt.added: '2005-10-16'
-region-CS:
+region-cs:
   type: lt.RegionSubtag
   label: Serbia and Montenegro
   comment: see RS for Serbia or ME for Montenegro
@@ -46738,876 +46738,876 @@ region-CS:
   lt.added: '2005-10-16'
   owl.deprecated: true
   lt.deprecatedOn: '2006-10-05'
-region-CU:
+region-cu:
   type: lt.RegionSubtag
   label: Cuba
   cl.code: CU
   lt.added: '2005-10-16'
-region-CV:
+region-cv:
   type: lt.RegionSubtag
   label: Cabo Verde
   cl.altLabel: Cape Verde
   cl.code: CV
   lt.added: '2005-10-16'
-region-CW:
+region-cw:
   type: lt.RegionSubtag
   label: Curaçao
   cl.code: CW
   lt.added: '2011-01-07'
-region-CX:
+region-cx:
   type: lt.RegionSubtag
   label: Christmas Island
   cl.code: CX
   lt.added: '2005-10-16'
-region-CY:
+region-cy:
   type: lt.RegionSubtag
   label: Cyprus
   cl.code: CY
   lt.added: '2005-10-16'
-region-CZ:
+region-cz:
   type: lt.RegionSubtag
   label: Czechia
   cl.altLabel: Czech Republic
   cl.code: CZ
   lt.added: '2005-10-16'
-region-DD:
+region-dd:
   type: lt.RegionSubtag
   label: German Democratic Republic
   cl.code: DD
   lt.added: '2005-10-16'
   owl.deprecated: true
   lt.deprecatedOn: '1990-10-30'
-  prov.supersededBy: region-DE
-region-DE:
+  prov.supersededBy: region-de
+region-de:
   type: lt.RegionSubtag
   label: Germany
   cl.code: DE
   lt.added: '2005-10-16'
-region-DG:
+region-dg:
   type: lt.RegionSubtag
   label: Diego Garcia
   cl.code: DG
   lt.added: '2009-07-29'
-region-DJ:
+region-dj:
   type: lt.RegionSubtag
   label: Djibouti
   cl.code: DJ
   lt.added: '2005-10-16'
-region-DK:
+region-dk:
   type: lt.RegionSubtag
   label: Denmark
   cl.code: DK
   lt.added: '2005-10-16'
-region-DM:
+region-dm:
   type: lt.RegionSubtag
   label: Dominica
   cl.code: DM
   lt.added: '2005-10-16'
-region-DO:
+region-do:
   type: lt.RegionSubtag
   label: Dominican Republic
   cl.code: DO
   lt.added: '2005-10-16'
-region-DZ:
+region-dz:
   type: lt.RegionSubtag
   label: Algeria
   cl.code: DZ
   lt.added: '2005-10-16'
-region-EA:
+region-ea:
   type: lt.RegionSubtag
   label: Ceuta, Melilla
   cl.code: EA
   lt.added: '2009-07-29'
-region-EC:
+region-ec:
   type: lt.RegionSubtag
   label: Ecuador
   cl.code: EC
   lt.added: '2005-10-16'
-region-EE:
+region-ee:
   type: lt.RegionSubtag
   label: Estonia
   cl.code: EE
   lt.added: '2005-10-16'
-region-EG:
+region-eg:
   type: lt.RegionSubtag
   label: Egypt
   cl.code: EG
   lt.added: '2005-10-16'
-region-EH:
+region-eh:
   type: lt.RegionSubtag
   label: Western Sahara
   cl.code: EH
   lt.added: '2005-10-16'
-region-ER:
+region-er:
   type: lt.RegionSubtag
   label: Eritrea
   cl.code: ER
   lt.added: '2005-10-16'
-region-ES:
+region-es:
   type: lt.RegionSubtag
   label: Spain
   cl.code: ES
   lt.added: '2005-10-16'
-region-ET:
+region-et:
   type: lt.RegionSubtag
   label: Ethiopia
   cl.code: ET
   lt.added: '2005-10-16'
-region-EU:
+region-eu:
   type: lt.RegionSubtag
   label: European Union
   cl.code: EU
   lt.added: '2009-07-29'
-region-EZ:
+region-ez:
   type: lt.RegionSubtag
   label: Eurozone
   cl.code: EZ
   lt.added: '2016-07-14'
-region-FI:
+region-fi:
   type: lt.RegionSubtag
   label: Finland
   cl.code: FI
   lt.added: '2005-10-16'
-region-FJ:
+region-fj:
   type: lt.RegionSubtag
   label: Fiji
   cl.code: FJ
   lt.added: '2005-10-16'
-region-FK:
+region-fk:
   type: lt.RegionSubtag
   label: Falkland Islands (Malvinas)
   cl.code: FK
   lt.added: '2005-10-16'
-region-FM:
+region-fm:
   type: lt.RegionSubtag
   label: Federated States of Micronesia
   cl.code: FM
   lt.added: '2005-10-16'
-region-FO:
+region-fo:
   type: lt.RegionSubtag
   label: Faroe Islands
   cl.code: FO
   lt.added: '2005-10-16'
-region-FR:
+region-fr:
   type: lt.RegionSubtag
   label: France
   cl.code: FR
   lt.added: '2005-10-16'
-region-FX:
+region-fx:
   type: lt.RegionSubtag
   label: Metropolitan France
   cl.code: FX
   lt.added: '2005-10-16'
   owl.deprecated: true
   lt.deprecatedOn: '1997-07-14'
-  prov.supersededBy: region-FR
-region-GA:
+  prov.supersededBy: region-fr
+region-ga:
   type: lt.RegionSubtag
   label: Gabon
   cl.code: GA
   lt.added: '2005-10-16'
-region-GB:
+region-gb:
   type: lt.RegionSubtag
   label: United Kingdom
   comment: as of 2006-03-29 GB no longer includes the Channel Islands and Isle of Man; see GG, JE, IM
   cl.code: GB
   lt.added: '2005-10-16'
-region-GD:
+region-gd:
   type: lt.RegionSubtag
   label: Grenada
   cl.code: GD
   lt.added: '2005-10-16'
-region-GE:
+region-ge:
   type: lt.RegionSubtag
   label: Georgia
   cl.code: GE
   lt.added: '2005-10-16'
-region-GF:
+region-gf:
   type: lt.RegionSubtag
   label: French Guiana
   cl.code: GF
   lt.added: '2005-10-16'
-region-GG:
+region-gg:
   type: lt.RegionSubtag
   label: Guernsey
   cl.code: GG
   lt.added: '2006-03-29'
-region-GH:
+region-gh:
   type: lt.RegionSubtag
   label: Ghana
   cl.code: GH
   lt.added: '2005-10-16'
-region-GI:
+region-gi:
   type: lt.RegionSubtag
   label: Gibraltar
   cl.code: GI
   lt.added: '2005-10-16'
-region-GL:
+region-gl:
   type: lt.RegionSubtag
   label: Greenland
   cl.code: GL
   lt.added: '2005-10-16'
-region-GM:
+region-gm:
   type: lt.RegionSubtag
   label: Gambia
   cl.code: GM
   lt.added: '2005-10-16'
-region-GN:
+region-gn:
   type: lt.RegionSubtag
   label: Guinea
   cl.code: GN
   lt.added: '2005-10-16'
-region-GP:
+region-gp:
   type: lt.RegionSubtag
   label: Guadeloupe
   cl.code: GP
   lt.added: '2005-10-16'
-region-GQ:
+region-gq:
   type: lt.RegionSubtag
   label: Equatorial Guinea
   cl.code: GQ
   lt.added: '2005-10-16'
-region-GR:
+region-gr:
   type: lt.RegionSubtag
   label: Greece
   cl.code: GR
   lt.added: '2005-10-16'
-region-GS:
+region-gs:
   type: lt.RegionSubtag
   label: South Georgia and the South Sandwich Islands
   cl.code: GS
   lt.added: '2005-10-16'
-region-GT:
+region-gt:
   type: lt.RegionSubtag
   label: Guatemala
   cl.code: GT
   lt.added: '2005-10-16'
-region-GU:
+region-gu:
   type: lt.RegionSubtag
   label: Guam
   cl.code: GU
   lt.added: '2005-10-16'
-region-GW:
+region-gw:
   type: lt.RegionSubtag
   label: Guinea-Bissau
   cl.code: GW
   lt.added: '2005-10-16'
-region-GY:
+region-gy:
   type: lt.RegionSubtag
   label: Guyana
   cl.code: GY
   lt.added: '2005-10-16'
-region-HK:
+region-hk:
   type: lt.RegionSubtag
   label: Hong Kong
   cl.code: HK
   lt.added: '2005-10-16'
-region-HM:
+region-hm:
   type: lt.RegionSubtag
   label: Heard Island and McDonald Islands
   cl.code: HM
   lt.added: '2005-10-16'
-region-HN:
+region-hn:
   type: lt.RegionSubtag
   label: Honduras
   cl.code: HN
   lt.added: '2005-10-16'
-region-HR:
+region-hr:
   type: lt.RegionSubtag
   label: Croatia
   cl.code: HR
   lt.added: '2005-10-16'
-region-HT:
+region-ht:
   type: lt.RegionSubtag
   label: Haiti
   cl.code: HT
   lt.added: '2005-10-16'
-region-HU:
+region-hu:
   type: lt.RegionSubtag
   label: Hungary
   cl.code: HU
   lt.added: '2005-10-16'
-region-IC:
+region-ic:
   type: lt.RegionSubtag
   label: Canary Islands
   cl.code: IC
   lt.added: '2009-07-29'
-region-ID:
+region-id:
   type: lt.RegionSubtag
   label: Indonesia
   cl.code: ID
   lt.added: '2005-10-16'
-region-IE:
+region-ie:
   type: lt.RegionSubtag
   label: Ireland
   cl.code: IE
   lt.added: '2005-10-16'
-region-IL:
+region-il:
   type: lt.RegionSubtag
   label: Israel
   cl.code: IL
   lt.added: '2005-10-16'
-region-IM:
+region-im:
   type: lt.RegionSubtag
   label: Isle of Man
   cl.code: IM
   lt.added: '2006-03-29'
-region-IN:
+region-in:
   type: lt.RegionSubtag
   label: India
   cl.code: IN
   lt.added: '2005-10-16'
-region-IO:
+region-io:
   type: lt.RegionSubtag
   label: British Indian Ocean Territory
   cl.code: IO
   lt.added: '2005-10-16'
-region-IQ:
+region-iq:
   type: lt.RegionSubtag
   label: Iraq
   cl.code: IQ
   lt.added: '2005-10-16'
-region-IR:
+region-ir:
   type: lt.RegionSubtag
   label: Islamic Republic of Iran
   cl.code: IR
   lt.added: '2005-10-16'
-region-IS:
+region-is:
   type: lt.RegionSubtag
   label: Iceland
   cl.code: IS
   lt.added: '2005-10-16'
-region-IT:
+region-it:
   type: lt.RegionSubtag
   label: Italy
   cl.code: IT
   lt.added: '2005-10-16'
-region-JE:
+region-je:
   type: lt.RegionSubtag
   label: Jersey
   cl.code: JE
   lt.added: '2006-03-29'
-region-JM:
+region-jm:
   type: lt.RegionSubtag
   label: Jamaica
   cl.code: JM
   lt.added: '2005-10-16'
-region-JO:
+region-jo:
   type: lt.RegionSubtag
   label: Jordan
   cl.code: JO
   lt.added: '2005-10-16'
-region-JP:
+region-jp:
   type: lt.RegionSubtag
   label: Japan
   cl.code: JP
   lt.added: '2005-10-16'
-region-KE:
+region-ke:
   type: lt.RegionSubtag
   label: Kenya
   cl.code: KE
   lt.added: '2005-10-16'
-region-KG:
+region-kg:
   type: lt.RegionSubtag
   label: Kyrgyzstan
   cl.code: KG
   lt.added: '2005-10-16'
-region-KH:
+region-kh:
   type: lt.RegionSubtag
   label: Cambodia
   cl.code: KH
   lt.added: '2005-10-16'
-region-KI:
+region-ki:
   type: lt.RegionSubtag
   label: Kiribati
   cl.code: KI
   lt.added: '2005-10-16'
-region-KM:
+region-km:
   type: lt.RegionSubtag
   label: Comoros
   cl.code: KM
   lt.added: '2005-10-16'
-region-KN:
+region-kn:
   type: lt.RegionSubtag
   label: Saint Kitts and Nevis
   cl.code: KN
   lt.added: '2005-10-16'
-region-KP:
+region-kp:
   type: lt.RegionSubtag
   label: Democratic People's Republic of Korea
   cl.code: KP
   lt.added: '2005-10-16'
-region-KR:
+region-kr:
   type: lt.RegionSubtag
   label: Republic of Korea
   cl.code: KR
   lt.added: '2005-10-16'
-region-KW:
+region-kw:
   type: lt.RegionSubtag
   label: Kuwait
   cl.code: KW
   lt.added: '2005-10-16'
-region-KY:
+region-ky:
   type: lt.RegionSubtag
   label: Cayman Islands
   cl.code: KY
   lt.added: '2005-10-16'
-region-KZ:
+region-kz:
   type: lt.RegionSubtag
   label: Kazakhstan
   cl.code: KZ
   lt.added: '2005-10-16'
-region-LA:
+region-la:
   type: lt.RegionSubtag
   label: Lao People's Democratic Republic
   cl.code: LA
   lt.added: '2005-10-16'
-region-LB:
+region-lb:
   type: lt.RegionSubtag
   label: Lebanon
   cl.code: LB
   lt.added: '2005-10-16'
-region-LC:
+region-lc:
   type: lt.RegionSubtag
   label: Saint Lucia
   cl.code: LC
   lt.added: '2005-10-16'
-region-LI:
+region-li:
   type: lt.RegionSubtag
   label: Liechtenstein
   cl.code: LI
   lt.added: '2005-10-16'
-region-LK:
+region-lk:
   type: lt.RegionSubtag
   label: Sri Lanka
   cl.code: LK
   lt.added: '2005-10-16'
-region-LR:
+region-lr:
   type: lt.RegionSubtag
   label: Liberia
   cl.code: LR
   lt.added: '2005-10-16'
-region-LS:
+region-ls:
   type: lt.RegionSubtag
   label: Lesotho
   cl.code: LS
   lt.added: '2005-10-16'
-region-LT:
+region-lt:
   type: lt.RegionSubtag
   label: Lithuania
   cl.code: LT
   lt.added: '2005-10-16'
-region-LU:
+region-lu:
   type: lt.RegionSubtag
   label: Luxembourg
   cl.code: LU
   lt.added: '2005-10-16'
-region-LV:
+region-lv:
   type: lt.RegionSubtag
   label: Latvia
   cl.code: LV
   lt.added: '2005-10-16'
-region-LY:
+region-ly:
   type: lt.RegionSubtag
   label: Libya
   cl.code: LY
   lt.added: '2005-10-16'
-region-MA:
+region-ma:
   type: lt.RegionSubtag
   label: Morocco
   cl.code: MA
   lt.added: '2005-10-16'
-region-MC:
+region-mc:
   type: lt.RegionSubtag
   label: Monaco
   cl.code: MC
   lt.added: '2005-10-16'
-region-MD:
+region-md:
   type: lt.RegionSubtag
   label: Moldova
   cl.code: MD
   lt.added: '2005-10-16'
-region-ME:
+region-me:
   type: lt.RegionSubtag
   label: Montenegro
   cl.code: ME
   lt.added: '2006-10-05'
-region-MF:
+region-mf:
   type: lt.RegionSubtag
   label: Saint Martin (French part)
   cl.code: MF
   lt.added: '2007-11-02'
-region-MG:
+region-mg:
   type: lt.RegionSubtag
   label: Madagascar
   cl.code: MG
   lt.added: '2005-10-16'
-region-MH:
+region-mh:
   type: lt.RegionSubtag
   label: Marshall Islands
   cl.code: MH
   lt.added: '2005-10-16'
-region-MK:
+region-mk:
   type: lt.RegionSubtag
   label: North Macedonia
   cl.code: MK
   lt.added: '2005-10-16'
-region-ML:
+region-ml:
   type: lt.RegionSubtag
   label: Mali
   cl.code: ML
   lt.added: '2005-10-16'
-region-MM:
+region-mm:
   type: lt.RegionSubtag
   label: Myanmar
   cl.code: MM
   lt.added: '2005-10-16'
-region-MN:
+region-mn:
   type: lt.RegionSubtag
   label: Mongolia
   cl.code: MN
   lt.added: '2005-10-16'
-region-MO:
+region-mo:
   type: lt.RegionSubtag
   label: Macao
   cl.code: MO
   lt.added: '2005-10-16'
-region-MP:
+region-mp:
   type: lt.RegionSubtag
   label: Northern Mariana Islands
   cl.code: MP
   lt.added: '2005-10-16'
-region-MQ:
+region-mq:
   type: lt.RegionSubtag
   label: Martinique
   cl.code: MQ
   lt.added: '2005-10-16'
-region-MR:
+region-mr:
   type: lt.RegionSubtag
   label: Mauritania
   cl.code: MR
   lt.added: '2005-10-16'
-region-MS:
+region-ms:
   type: lt.RegionSubtag
   label: Montserrat
   cl.code: MS
   lt.added: '2005-10-16'
-region-MT:
+region-mt:
   type: lt.RegionSubtag
   label: Malta
   cl.code: MT
   lt.added: '2005-10-16'
-region-MU:
+region-mu:
   type: lt.RegionSubtag
   label: Mauritius
   cl.code: MU
   lt.added: '2005-10-16'
-region-MV:
+region-mv:
   type: lt.RegionSubtag
   label: Maldives
   cl.code: MV
   lt.added: '2005-10-16'
-region-MW:
+region-mw:
   type: lt.RegionSubtag
   label: Malawi
   cl.code: MW
   lt.added: '2005-10-16'
-region-MX:
+region-mx:
   type: lt.RegionSubtag
   label: Mexico
   cl.code: MX
   lt.added: '2005-10-16'
-region-MY:
+region-my:
   type: lt.RegionSubtag
   label: Malaysia
   cl.code: MY
   lt.added: '2005-10-16'
-region-MZ:
+region-mz:
   type: lt.RegionSubtag
   label: Mozambique
   cl.code: MZ
   lt.added: '2005-10-16'
-region-NA:
+region-na:
   type: lt.RegionSubtag
   label: Namibia
   cl.code: NA
   lt.added: '2005-10-16'
-region-NC:
+region-nc:
   type: lt.RegionSubtag
   label: New Caledonia
   cl.code: NC
   lt.added: '2005-10-16'
-region-NE:
+region-ne:
   type: lt.RegionSubtag
   label: Niger
   cl.code: NE
   lt.added: '2005-10-16'
-region-NF:
+region-nf:
   type: lt.RegionSubtag
   label: Norfolk Island
   cl.code: NF
   lt.added: '2005-10-16'
-region-NG:
+region-ng:
   type: lt.RegionSubtag
   label: Nigeria
   cl.code: NG
   lt.added: '2005-10-16'
-region-NI:
+region-ni:
   type: lt.RegionSubtag
   label: Nicaragua
   cl.code: NI
   lt.added: '2005-10-16'
-region-NL:
+region-nl:
   type: lt.RegionSubtag
   label: Netherlands
   cl.code: NL
   lt.added: '2005-10-16'
-region-NO:
+region-no:
   type: lt.RegionSubtag
   label: Norway
   cl.code: 'NO'
   lt.added: '2005-10-16'
-region-NP:
+region-np:
   type: lt.RegionSubtag
   label: Nepal
   cl.code: NP
   lt.added: '2005-10-16'
-region-NR:
+region-nr:
   type: lt.RegionSubtag
   label: Naoero
   cl.altLabel: Nauru
   cl.code: NR
   lt.added: '2005-10-16'
-region-NT:
+region-nt:
   type: lt.RegionSubtag
   label: Neutral Zone
   cl.code: NT
   lt.added: '2005-10-16'
   owl.deprecated: true
   lt.deprecatedOn: '1993-07-12'
-region-NU:
+region-nu:
   type: lt.RegionSubtag
   label: Niue
   cl.code: NU
   lt.added: '2005-10-16'
-region-NZ:
+region-nz:
   type: lt.RegionSubtag
   label: New Zealand
   cl.code: NZ
   lt.added: '2005-10-16'
-region-OM:
+region-om:
   type: lt.RegionSubtag
   label: Oman
   cl.code: OM
   lt.added: '2005-10-16'
-region-PA:
+region-pa:
   type: lt.RegionSubtag
   label: Panama
   cl.code: PA
   lt.added: '2005-10-16'
-region-PE:
+region-pe:
   type: lt.RegionSubtag
   label: Peru
   cl.code: PE
   lt.added: '2005-10-16'
-region-PF:
+region-pf:
   type: lt.RegionSubtag
   label: French Polynesia
   cl.code: PF
   lt.added: '2005-10-16'
-region-PG:
+region-pg:
   type: lt.RegionSubtag
   label: Papua New Guinea
   cl.code: PG
   lt.added: '2005-10-16'
-region-PH:
+region-ph:
   type: lt.RegionSubtag
   label: Philippines
   cl.code: PH
   lt.added: '2005-10-16'
-region-PK:
+region-pk:
   type: lt.RegionSubtag
   label: Pakistan
   cl.code: PK
   lt.added: '2005-10-16'
-region-PL:
+region-pl:
   type: lt.RegionSubtag
   label: Poland
   cl.code: PL
   lt.added: '2005-10-16'
-region-PM:
+region-pm:
   type: lt.RegionSubtag
   label: Saint Pierre and Miquelon
   cl.code: PM
   lt.added: '2005-10-16'
-region-PN:
+region-pn:
   type: lt.RegionSubtag
   label: Pitcairn
   cl.code: PN
   lt.added: '2005-10-16'
-region-PR:
+region-pr:
   type: lt.RegionSubtag
   label: Puerto Rico
   cl.code: PR
   lt.added: '2005-10-16'
-region-PS:
+region-ps:
   type: lt.RegionSubtag
   label: State of Palestine
   cl.code: PS
   lt.added: '2005-10-16'
-region-PT:
+region-pt:
   type: lt.RegionSubtag
   label: Portugal
   cl.code: PT
   lt.added: '2005-10-16'
-region-PW:
+region-pw:
   type: lt.RegionSubtag
   label: Palau
   cl.code: PW
   lt.added: '2005-10-16'
-region-PY:
+region-py:
   type: lt.RegionSubtag
   label: Paraguay
   cl.code: PY
   lt.added: '2005-10-16'
-region-QA:
+region-qa:
   type: lt.RegionSubtag
   label: Qatar
   cl.code: QA
   lt.added: '2005-10-16'
-region-RE:
+region-re:
   type: lt.RegionSubtag
   label: Réunion
   cl.code: RE
   lt.added: '2005-10-16'
-region-RO:
+region-ro:
   type: lt.RegionSubtag
   label: Romania
   cl.code: RO
   lt.added: '2005-10-16'
-region-RS:
+region-rs:
   type: lt.RegionSubtag
   label: Serbia
   cl.code: RS
   lt.added: '2006-10-05'
-region-RU:
+region-ru:
   type: lt.RegionSubtag
   label: Russian Federation
   cl.code: RU
   lt.added: '2005-10-16'
-region-RW:
+region-rw:
   type: lt.RegionSubtag
   label: Rwanda
   cl.code: RW
   lt.added: '2005-10-16'
-region-SA:
+region-sa:
   type: lt.RegionSubtag
   label: Saudi Arabia
   cl.code: SA
   lt.added: '2005-10-16'
-region-SB:
+region-sb:
   type: lt.RegionSubtag
   label: Solomon Islands
   cl.code: SB
   lt.added: '2005-10-16'
-region-SC:
+region-sc:
   type: lt.RegionSubtag
   label: Seychelles
   cl.code: SC
   lt.added: '2005-10-16'
-region-SD:
+region-sd:
   type: lt.RegionSubtag
   label: Sudan
   cl.code: SD
   lt.added: '2005-10-16'
-region-SE:
+region-se:
   type: lt.RegionSubtag
   label: Sweden
   cl.code: SE
   lt.added: '2005-10-16'
-region-SG:
+region-sg:
   type: lt.RegionSubtag
   label: Singapore
   cl.code: SG
   lt.added: '2005-10-16'
-region-SH:
+region-sh:
   type: lt.RegionSubtag
   label: Saint Helena, Ascension and Tristan da Cunha
   cl.code: SH
   lt.added: '2005-10-16'
-region-SI:
+region-si:
   type: lt.RegionSubtag
   label: Slovenia
   cl.code: SI
   lt.added: '2005-10-16'
-region-SJ:
+region-sj:
   type: lt.RegionSubtag
   label: Svalbard and Jan Mayen
   cl.code: SJ
   lt.added: '2005-10-16'
-region-SK:
+region-sk:
   type: lt.RegionSubtag
   label: Slovakia
   cl.code: SK
   lt.added: '2005-10-16'
-region-SL:
+region-sl:
   type: lt.RegionSubtag
   label: Sierra Leone
   cl.code: SL
   lt.added: '2005-10-16'
-region-SM:
+region-sm:
   type: lt.RegionSubtag
   label: San Marino
   cl.code: SM
   lt.added: '2005-10-16'
-region-SN:
+region-sn:
   type: lt.RegionSubtag
   label: Senegal
   cl.code: SN
   lt.added: '2005-10-16'
-region-SO:
+region-so:
   type: lt.RegionSubtag
   label: Somalia
   cl.code: SO
   lt.added: '2005-10-16'
-region-SR:
+region-sr:
   type: lt.RegionSubtag
   label: Suriname
   cl.code: SR
   lt.added: '2005-10-16'
-region-SS:
+region-ss:
   type: lt.RegionSubtag
   label: South Sudan
   cl.code: SS
   lt.added: '2011-08-25'
-region-ST:
+region-st:
   type: lt.RegionSubtag
   label: Sao Tome and Principe
   cl.code: ST
   lt.added: '2005-10-16'
-region-SU:
+region-su:
   type: lt.RegionSubtag
   label: Union of Soviet Socialist Republics
   cl.code: SU
   lt.added: '2005-10-16'
   owl.deprecated: true
   lt.deprecatedOn: '1992-08-30'
-region-SV:
+region-sv:
   type: lt.RegionSubtag
   label: El Salvador
   cl.code: SV
   lt.added: '2005-10-16'
-region-SX:
+region-sx:
   type: lt.RegionSubtag
   label: Sint Maarten (Dutch part)
   cl.code: SX
   lt.added: '2011-01-07'
-region-SY:
+region-sy:
   type: lt.RegionSubtag
   label: Syrian Arab Republic
   cl.code: SY
   lt.added: '2005-10-16'
-region-SZ:
+region-sz:
   type: lt.RegionSubtag
   label: Eswatini
   cl.altLabel:
@@ -47615,199 +47615,199 @@ region-SZ:
     - Swaziland
   cl.code: SZ
   lt.added: '2005-10-16'
-region-TA:
+region-ta:
   type: lt.RegionSubtag
   label: Tristan da Cunha
   cl.code: TA
   lt.added: '2009-07-29'
-region-TC:
+region-tc:
   type: lt.RegionSubtag
   label: Turks and Caicos Islands
   cl.code: TC
   lt.added: '2005-10-16'
-region-TD:
+region-td:
   type: lt.RegionSubtag
   label: Chad
   cl.code: TD
   lt.added: '2005-10-16'
-region-TF:
+region-tf:
   type: lt.RegionSubtag
   label: French Southern Territories
   cl.code: TF
   lt.added: '2005-10-16'
-region-TG:
+region-tg:
   type: lt.RegionSubtag
   label: Togo
   cl.code: TG
   lt.added: '2005-10-16'
-region-TH:
+region-th:
   type: lt.RegionSubtag
   label: Thailand
   cl.code: TH
   lt.added: '2005-10-16'
-region-TJ:
+region-tj:
   type: lt.RegionSubtag
   label: Tajikistan
   cl.code: TJ
   lt.added: '2005-10-16'
-region-TK:
+region-tk:
   type: lt.RegionSubtag
   label: Tokelau
   cl.code: TK
   lt.added: '2005-10-16'
-region-TL:
+region-tl:
   type: lt.RegionSubtag
   label: Timor-Leste
   cl.code: TL
   lt.added: '2005-10-16'
-region-TM:
+region-tm:
   type: lt.RegionSubtag
   label: Turkmenistan
   cl.code: TM
   lt.added: '2005-10-16'
-region-TN:
+region-tn:
   type: lt.RegionSubtag
   label: Tunisia
   cl.code: TN
   lt.added: '2005-10-16'
-region-TO:
+region-to:
   type: lt.RegionSubtag
   label: Tonga
   cl.code: TO
   lt.added: '2005-10-16'
-region-TP:
+region-tp:
   type: lt.RegionSubtag
   label: East Timor
   cl.code: TP
   lt.added: '2005-10-16'
   owl.deprecated: true
   lt.deprecatedOn: '2002-05-20'
-  prov.supersededBy: region-TL
-region-TR:
+  prov.supersededBy: region-tl
+region-tr:
   type: lt.RegionSubtag
   label: Türkiye
   cl.altLabel: Turkey
   cl.code: TR
   lt.added: '2005-10-16'
-region-TT:
+region-tt:
   type: lt.RegionSubtag
   label: Trinidad and Tobago
   cl.code: TT
   lt.added: '2005-10-16'
-region-TV:
+region-tv:
   type: lt.RegionSubtag
   label: Tuvalu
   cl.code: TV
   lt.added: '2005-10-16'
-region-TW:
+region-tw:
   type: lt.RegionSubtag
   label: Taiwan, Province of China
   cl.code: TW
   lt.added: '2005-10-16'
-region-TZ:
+region-tz:
   type: lt.RegionSubtag
   label: United Republic of Tanzania
   cl.code: TZ
   lt.added: '2005-10-16'
-region-UA:
+region-ua:
   type: lt.RegionSubtag
   label: Ukraine
   cl.code: UA
   lt.added: '2005-10-16'
-region-UG:
+region-ug:
   type: lt.RegionSubtag
   label: Uganda
   cl.code: UG
   lt.added: '2005-10-16'
-region-UM:
+region-um:
   type: lt.RegionSubtag
   label: United States Minor Outlying Islands
   cl.code: UM
   lt.added: '2005-10-16'
-region-UN:
+region-un:
   type: lt.RegionSubtag
   label: United Nations
   cl.code: UN
   lt.added: '2016-07-14'
-region-US:
+region-us:
   type: lt.RegionSubtag
   label: United States
   cl.code: US
   lt.added: '2005-10-16'
-region-UY:
+region-uy:
   type: lt.RegionSubtag
   label: Uruguay
   cl.code: UY
   lt.added: '2005-10-16'
-region-UZ:
+region-uz:
   type: lt.RegionSubtag
   label: Uzbekistan
   cl.code: UZ
   lt.added: '2005-10-16'
-region-VA:
+region-va:
   type: lt.RegionSubtag
   label: Holy See (Vatican City State)
   cl.code: VA
   lt.added: '2005-10-16'
-region-VC:
+region-vc:
   type: lt.RegionSubtag
   label: Saint Vincent and the Grenadines
   cl.code: VC
   lt.added: '2005-10-16'
-region-VE:
+region-ve:
   type: lt.RegionSubtag
   label: Venezuela
   cl.code: VE
   lt.added: '2005-10-16'
-region-VG:
+region-vg:
   type: lt.RegionSubtag
   label: British Virgin Islands
   cl.code: VG
   lt.added: '2005-10-16'
-region-VI:
+region-vi:
   type: lt.RegionSubtag
   label: U.S. Virgin Islands
   cl.code: VI
   lt.added: '2005-10-16'
-region-VN:
+region-vn:
   type: lt.RegionSubtag
   label: Viet Nam
   cl.code: VN
   lt.added: '2005-10-16'
-region-VU:
+region-vu:
   type: lt.RegionSubtag
   label: Vanuatu
   cl.code: VU
   lt.added: '2005-10-16'
-region-WF:
+region-wf:
   type: lt.RegionSubtag
   label: Wallis and Futuna
   cl.code: WF
   lt.added: '2005-10-16'
-region-WS:
+region-ws:
   type: lt.RegionSubtag
   label: Samoa
   cl.code: WS
   lt.added: '2005-10-16'
-region-YD:
+region-yd:
   type: lt.RegionSubtag
   label: Democratic Yemen
   cl.code: YD
   lt.added: '2005-10-16'
   owl.deprecated: true
   lt.deprecatedOn: '1990-08-14'
-  prov.supersededBy: region-YE
-region-YE:
+  prov.supersededBy: region-ye
+region-ye:
   type: lt.RegionSubtag
   label: Yemen
   cl.code: YE
   lt.added: '2005-10-16'
-region-YT:
+region-yt:
   type: lt.RegionSubtag
   label: Mayotte
   cl.code: YT
   lt.added: '2005-10-16'
-region-YU:
+region-yu:
   type: lt.RegionSubtag
   label: Yugoslavia
   comment: see BA, HR, ME, MK, RS, or SI
@@ -47815,30 +47815,30 @@ region-YU:
   lt.added: '2005-10-16'
   owl.deprecated: true
   lt.deprecatedOn: '2003-07-23'
-region-ZA:
+region-za:
   type: lt.RegionSubtag
   label: South Africa
   cl.code: ZA
   lt.added: '2005-10-16'
-region-ZM:
+region-zm:
   type: lt.RegionSubtag
   label: Zambia
   cl.code: ZM
   lt.added: '2005-10-16'
-region-ZR:
+region-zr:
   type: lt.RegionSubtag
   label: Zaire
   cl.code: ZR
   lt.added: '2005-10-16'
   owl.deprecated: true
   lt.deprecatedOn: '1997-07-14'
-  prov.supersededBy: region-CD
-region-ZW:
+  prov.supersededBy: region-cd
+region-zw:
   type: lt.RegionSubtag
   label: Zimbabwe
   cl.code: ZW
   lt.added: '2005-10-16'
-region-ZZ:
+region-zz:
   type: lt.RegionSubtag
   label: Private use
   cl.code: ZZ
@@ -49041,14 +49041,14 @@ cel-gaulish:
   lt.added: '2001-05-25'
   owl.deprecated: true
   lt.deprecatedOn: '2015-03-29'
-en-GB-oed:
+en-gb-oed:
   type: lt.GrandfatheredTag
   label: English, Oxford English Dictionary spelling
   cl.code: en-GB-oed
   lt.added: '2003-07-09'
   owl.deprecated: true
   lt.deprecatedOn: '2015-04-17'
-  prov.supersededBy: en-GB-oxendict
+  prov.supersededBy: en-gb-oxendict
 i-ami:
   type: lt.GrandfatheredTag
   label: Amis
@@ -49162,7 +49162,7 @@ no-nyn:
   owl.deprecated: true
   lt.deprecatedOn: '2000-02-18'
   prov.supersededBy: nn
-sgn-BE-FR:
+sgn-be-fr:
   type: lt.GrandfatheredTag
   label: Belgian-French Sign Language
   cl.code: sgn-BE-FR
@@ -49170,7 +49170,7 @@ sgn-BE-FR:
   owl.deprecated: true
   lt.deprecatedOn: '2009-07-29'
   prov.supersededBy: sfb
-sgn-BE-NL:
+sgn-be-nl:
   type: lt.GrandfatheredTag
   label: Belgian-Flemish Sign Language
   cl.code: sgn-BE-NL
@@ -49178,7 +49178,7 @@ sgn-BE-NL:
   owl.deprecated: true
   lt.deprecatedOn: '2009-07-29'
   prov.supersededBy: vgt
-sgn-CH-DE:
+sgn-ch-de:
   type: lt.GrandfatheredTag
   label: Swiss German Sign Language
   cl.code: sgn-CH-DE
@@ -49226,32 +49226,32 @@ zh-xiang:
   owl.deprecated: true
   lt.deprecatedOn: '2009-07-29'
   prov.supersededBy: hsn
-az-Arab:
+az-arab:
   type: lt.RedundantTag
   label: Azerbaijani in Arabic script
   cl.code: az-Arab
   lt.added: '2003-05-30'
-az-Cyrl:
+az-cyrl:
   type: lt.RedundantTag
   label: Azerbaijani in Cyrillic script
   cl.code: az-Cyrl
   lt.added: '2003-05-30'
-az-Latn:
+az-latn:
   type: lt.RedundantTag
   label: Azerbaijani in Latin script
   cl.code: az-Latn
   lt.added: '2003-05-30'
-be-Latn:
+be-latn:
   type: lt.RedundantTag
   label: Belarusian in Latin script
   cl.code: be-Latn
   lt.added: '2005-01-06'
-bs-Cyrl:
+bs-cyrl:
   type: lt.RedundantTag
   label: Bosnian in Cyrillic script
   cl.code: bs-Cyrl
   lt.added: '2005-02-17'
-bs-Latn:
+bs-latn:
   type: lt.RedundantTag
   label: Bosnian in Latin script
   cl.code: bs-Latn
@@ -49266,32 +49266,32 @@ de-1996:
   label: German, orthography of 1996
   cl.code: de-1996
   lt.added: '2001-07-17'
-de-AT-1901:
+de-at-1901:
   type: lt.RedundantTag
   label: German, Austrian variant, traditional orthography
   cl.code: de-AT-1901
   lt.added: '2001-07-17'
-de-AT-1996:
+de-at-1996:
   type: lt.RedundantTag
   label: German, Austrian variant, orthography of 1996
   cl.code: de-AT-1996
   lt.added: '2001-07-17'
-de-CH-1901:
+de-ch-1901:
   type: lt.RedundantTag
   label: German, Swiss variant, traditional orthography
   cl.code: de-CH-1901
   lt.added: '2001-07-17'
-de-CH-1996:
+de-ch-1996:
   type: lt.RedundantTag
   label: German, Swiss variant, orthography of 1996
   cl.code: de-CH-1996
   lt.added: '2001-07-17'
-de-DE-1901:
+de-de-1901:
   type: lt.RedundantTag
   label: German, German variant, traditional orthography
   cl.code: de-DE-1901
   lt.added: '2001-07-17'
-de-DE-1996:
+de-de-1996:
   type: lt.RedundantTag
   label: German, German variant, orthography of 1996
   cl.code: de-DE-1996
@@ -49311,27 +49311,27 @@ es-419:
   label: Latin American Spanish
   cl.code: es-419
   lt.added: '2005-07-15'
-iu-Cans:
+iu-cans:
   type: lt.RedundantTag
   label: Inuktitut in Canadian Aboriginal Syllabic script
   cl.code: iu-Cans
   lt.added: '2005-02-17'
-iu-Latn:
+iu-latn:
   type: lt.RedundantTag
   label: Inuktitut in Latin script
   cl.code: iu-Latn
   lt.added: '2005-02-17'
-mn-Cyrl:
+mn-cyrl:
   type: lt.RedundantTag
   label: Mongolian in Cyrillic script
   cl.code: mn-Cyrl
   lt.added: '2005-02-17'
-mn-Mong:
+mn-mong:
   type: lt.RedundantTag
   label: Mongolian in Mongolian script
   cl.code: mn-Mong
   lt.added: '2005-02-17'
-sgn-BR:
+sgn-br:
   type: lt.RedundantTag
   label: Brazilian Sign Language
   cl.code: sgn-BR
@@ -49339,7 +49339,7 @@ sgn-BR:
   owl.deprecated: true
   lt.deprecatedOn: '2009-07-29'
   prov.supersededBy: bzs
-sgn-CO:
+sgn-co:
   type: lt.RedundantTag
   label: Colombian Sign Language
   cl.code: sgn-CO
@@ -49347,7 +49347,7 @@ sgn-CO:
   owl.deprecated: true
   lt.deprecatedOn: '2009-07-29'
   prov.supersededBy: csn
-sgn-DE:
+sgn-de:
   type: lt.RedundantTag
   label: German Sign Language
   cl.code: sgn-DE
@@ -49355,7 +49355,7 @@ sgn-DE:
   owl.deprecated: true
   lt.deprecatedOn: '2009-07-29'
   prov.supersededBy: gsg
-sgn-DK:
+sgn-dk:
   type: lt.RedundantTag
   label: Danish Sign Language
   cl.code: sgn-DK
@@ -49363,7 +49363,7 @@ sgn-DK:
   owl.deprecated: true
   lt.deprecatedOn: '2009-07-29'
   prov.supersededBy: dsl
-sgn-ES:
+sgn-es:
   type: lt.RedundantTag
   label: Spanish Sign Language
   cl.code: sgn-ES
@@ -49371,7 +49371,7 @@ sgn-ES:
   owl.deprecated: true
   lt.deprecatedOn: '2009-07-29'
   prov.supersededBy: ssp
-sgn-FR:
+sgn-fr:
   type: lt.RedundantTag
   label: French Sign Language
   cl.code: sgn-FR
@@ -49379,7 +49379,7 @@ sgn-FR:
   owl.deprecated: true
   lt.deprecatedOn: '2009-07-29'
   prov.supersededBy: fsl
-sgn-GB:
+sgn-gb:
   type: lt.RedundantTag
   label: British Sign Language
   cl.code: sgn-GB
@@ -49387,7 +49387,7 @@ sgn-GB:
   owl.deprecated: true
   lt.deprecatedOn: '2009-07-29'
   prov.supersededBy: bfi
-sgn-GR:
+sgn-gr:
   type: lt.RedundantTag
   label: Greek Sign Language
   cl.code: sgn-GR
@@ -49395,7 +49395,7 @@ sgn-GR:
   owl.deprecated: true
   lt.deprecatedOn: '2009-07-29'
   prov.supersededBy: gss
-sgn-IE:
+sgn-ie:
   type: lt.RedundantTag
   label: Irish Sign Language
   cl.code: sgn-IE
@@ -49403,7 +49403,7 @@ sgn-IE:
   owl.deprecated: true
   lt.deprecatedOn: '2009-07-29'
   prov.supersededBy: isg
-sgn-IT:
+sgn-it:
   type: lt.RedundantTag
   label: Italian Sign Language
   cl.code: sgn-IT
@@ -49411,7 +49411,7 @@ sgn-IT:
   owl.deprecated: true
   lt.deprecatedOn: '2009-07-29'
   prov.supersededBy: ise
-sgn-JP:
+sgn-jp:
   type: lt.RedundantTag
   label: Japanese Sign Language
   cl.code: sgn-JP
@@ -49419,7 +49419,7 @@ sgn-JP:
   owl.deprecated: true
   lt.deprecatedOn: '2009-07-29'
   prov.supersededBy: jsl
-sgn-MX:
+sgn-mx:
   type: lt.RedundantTag
   label: Mexican Sign Language
   cl.code: sgn-MX
@@ -49427,7 +49427,7 @@ sgn-MX:
   owl.deprecated: true
   lt.deprecatedOn: '2009-07-29'
   prov.supersededBy: mfs
-sgn-NI:
+sgn-ni:
   type: lt.RedundantTag
   label: Nicaraguan Sign Language
   cl.code: sgn-NI
@@ -49435,7 +49435,7 @@ sgn-NI:
   owl.deprecated: true
   lt.deprecatedOn: '2009-07-29'
   prov.supersededBy: ncs
-sgn-NL:
+sgn-nl:
   type: lt.RedundantTag
   label: Dutch Sign Language
   cl.code: sgn-NL
@@ -49443,7 +49443,7 @@ sgn-NL:
   owl.deprecated: true
   lt.deprecatedOn: '2009-07-29'
   prov.supersededBy: dse
-sgn-NO:
+sgn-no:
   type: lt.RedundantTag
   label: Norwegian Sign Language
   cl.code: sgn-NO
@@ -49451,7 +49451,7 @@ sgn-NO:
   owl.deprecated: true
   lt.deprecatedOn: '2009-07-29'
   prov.supersededBy: nsl
-sgn-PT:
+sgn-pt:
   type: lt.RedundantTag
   label: Portuguese Sign Language
   cl.code: sgn-PT
@@ -49459,7 +49459,7 @@ sgn-PT:
   owl.deprecated: true
   lt.deprecatedOn: '2009-07-29'
   prov.supersededBy: psr
-sgn-SE:
+sgn-se:
   type: lt.RedundantTag
   label: Swedish Sign Language
   cl.code: sgn-SE
@@ -49467,7 +49467,7 @@ sgn-SE:
   owl.deprecated: true
   lt.deprecatedOn: '2009-07-29'
   prov.supersededBy: swl
-sgn-US:
+sgn-us:
   type: lt.RedundantTag
   label: American Sign Language
   cl.code: sgn-US
@@ -49475,7 +49475,7 @@ sgn-US:
   owl.deprecated: true
   lt.deprecatedOn: '2009-07-29'
   prov.supersededBy: ase
-sgn-ZA:
+sgn-za:
   type: lt.RedundantTag
   label: South African Sign Language
   cl.code: sgn-ZA
@@ -49493,37 +49493,37 @@ sl-rozaj:
   label: Resian, Resianic, Rezijan
   cl.code: sl-rozaj
   lt.added: '2003-10-09'
-sr-Cyrl:
+sr-cyrl:
   type: lt.RedundantTag
   label: Serbian in Cyrillic script
   cl.code: sr-Cyrl
   lt.added: '2003-05-30'
-sr-Latn:
+sr-latn:
   type: lt.RedundantTag
   label: Serbian in Latin script
   cl.code: sr-Latn
   lt.added: '2003-05-30'
-tg-Arab:
+tg-arab:
   type: lt.RedundantTag
   label: Tajik in Arabic script
   cl.code: tg-Arab
   lt.added: '2005-02-17'
-tg-Cyrl:
+tg-cyrl:
   type: lt.RedundantTag
   label: Tajik in Cyrillic script
   cl.code: tg-Cyrl
   lt.added: '2005-02-17'
-uz-Cyrl:
+uz-cyrl:
   type: lt.RedundantTag
   label: Uzbek in Cyrillic script
   cl.code: uz-Cyrl
   lt.added: '2003-05-30'
-uz-Latn:
+uz-latn:
   type: lt.RedundantTag
   label: Uzbek in Latin script
   cl.code: uz-Latn
   lt.added: '2003-05-30'
-yi-Latn:
+yi-latn:
   type: lt.RedundantTag
   label: Yiddish, in Latin script
   cl.code: yi-Latn
@@ -49536,22 +49536,22 @@ zh-cmn:
   owl.deprecated: true
   lt.deprecatedOn: '2009-07-29'
   prov.supersededBy: cmn
-zh-cmn-Hans:
+zh-cmn-hans:
   type: lt.RedundantTag
   label: Mandarin Chinese (Simplified)
   cl.code: zh-cmn-Hans
   lt.added: '2005-07-15'
   owl.deprecated: true
   lt.deprecatedOn: '2009-07-29'
-  prov.supersededBy: cmn-Hans
-zh-cmn-Hant:
+  prov.supersededBy: cmn-hans
+zh-cmn-hant:
   type: lt.RedundantTag
   label: Mandarin Chinese (Traditional)
   cl.code: zh-cmn-Hant
   lt.added: '2005-07-15'
   owl.deprecated: true
   lt.deprecatedOn: '2009-07-29'
-  prov.supersededBy: cmn-Hant
+  prov.supersededBy: cmn-hant
 zh-gan:
   type: lt.RedundantTag
   label: Kan or Gan
@@ -49560,62 +49560,62 @@ zh-gan:
   owl.deprecated: true
   lt.deprecatedOn: '2009-07-29'
   prov.supersededBy: gan
-zh-Hans:
+zh-hans:
   type: lt.RedundantTag
   label: simplified Chinese
   cl.code: zh-Hans
   lt.added: '2003-05-30'
-zh-Hans-CN:
+zh-hans-cn:
   type: lt.RedundantTag
   label: PRC Mainland Chinese in simplified script
   cl.code: zh-Hans-CN
   lt.added: '2005-04-13'
-zh-Hans-HK:
+zh-hans-hk:
   type: lt.RedundantTag
   label: Hong Kong Chinese in simplified script
   cl.code: zh-Hans-HK
   lt.added: '2005-04-11'
-zh-Hans-MO:
+zh-hans-mo:
   type: lt.RedundantTag
   label: Macao Chinese in simplified script
   cl.code: zh-Hans-MO
   lt.added: '2005-04-11'
-zh-Hans-SG:
+zh-hans-sg:
   type: lt.RedundantTag
   label: Singapore Chinese in simplified script
   cl.code: zh-Hans-SG
   lt.added: '2005-04-11'
-zh-Hans-TW:
+zh-hans-tw:
   type: lt.RedundantTag
   label: Taiwan Chinese in simplified script
   cl.code: zh-Hans-TW
   lt.added: '2005-04-11'
-zh-Hant:
+zh-hant:
   type: lt.RedundantTag
   label: traditional Chinese
   cl.code: zh-Hant
   lt.added: '2003-05-30'
-zh-Hant-CN:
+zh-hant-cn:
   type: lt.RedundantTag
   label: PRC Mainland Chinese in traditional script
   cl.code: zh-Hant-CN
   lt.added: '2005-04-13'
-zh-Hant-HK:
+zh-hant-hk:
   type: lt.RedundantTag
   label: Hong Kong Chinese in traditional script
   cl.code: zh-Hant-HK
   lt.added: '2005-04-11'
-zh-Hant-MO:
+zh-hant-mo:
   type: lt.RedundantTag
   label: Macao Chinese in traditional script
   cl.code: zh-Hant-MO
   lt.added: '2005-04-11'
-zh-Hant-SG:
+zh-hant-sg:
   type: lt.RedundantTag
   label: Singapore Chinese in traditional script
   cl.code: zh-Hant-SG
   lt.added: '2005-04-11'
-zh-Hant-TW:
+zh-hant-tw:
   type: lt.RedundantTag
   label: Taiwan Chinese in traditional script
   cl.code: zh-Hant-TW
@@ -49636,26 +49636,26 @@ zh-yue:
   owl.deprecated: true
   lt.deprecatedOn: '2009-07-29'
   prov.supersededBy: yue
-en-GB-oxendict:
+en-gb-oxendict:
   type: lt.LanguageTag
   label: en-GB-oxendict
   comment: A composed tag the registry names as a preferred value; composed here from its registered subtags because it is not itself a registered entry.
   cl.code: en-GB-oxendict
   lt.primaryLanguage: en
-  lt.region: region-GB
+  lt.region: region-gb
   lt.variants:
     - variant-oxendict
-cmn-Hans:
+cmn-hans:
   type: lt.LanguageTag
   label: cmn-Hans
   comment: A composed tag the registry names as a preferred value; composed here from its registered subtags because it is not itself a registered entry.
   cl.code: cmn-Hans
   lt.primaryLanguage: cmn
-  lt.script: script-Hans
-cmn-Hant:
+  lt.script: script-hans
+cmn-hant:
   type: lt.LanguageTag
   label: cmn-Hant
   comment: A composed tag the registry names as a preferred value; composed here from its registered subtags because it is not itself a registered entry.
   cl.code: cmn-Hant
   lt.primaryLanguage: cmn
-  lt.script: script-Hant
+  lt.script: script-hant

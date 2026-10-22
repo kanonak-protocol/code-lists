@@ -3,13 +3,15 @@
  * projected into a package typed by the `language-tag` vocabulary.
  *
  * Naming. Entries that are complete tags — language subtags, grandfathered
- * and redundant tags — are keyed by the tag verbatim (`en`, `zh-Hant`,
- * `i-klingon`), so a language-tagged string references `lang.en`. Component
- * subtags, which never stand alone, are keyed by type: `extlang-yue`,
- * `script-Hant`, `region-US`, `region-001`, `variant-1901`. The prefix is
+ * and redundant tags — are named by the tag in lowercase (`en`, `zh-hant`,
+ * `i-klingon`), so a language string references `lang.en`. Component
+ * subtags, which never stand alone, are named by type: `extlang-yue`,
+ * `script-hant`, `region-us`, `region-001`, `variant-1901`. The prefix is
  * what keeps the 258 extlangs from colliding with the languages of the same
  * code, keeps `ar` (Arabic) apart from `AR` (Argentina), and keeps numeric
- * regions and variants valid resource names.
+ * regions and variants valid resource names. BCP 47 tags are
+ * case-insensitive, so lowercase loses nothing; `cl.code` keeps the case the
+ * registry writes.
  *
  * Lifecycle. `Deprecated` becomes `owl.deprecated: true` plus
  * `lt.deprecatedOn`; `Preferred-Value` becomes `prov.supersededBy` pointing
@@ -27,16 +29,18 @@
 import { parseRecordJar, one, required, type Record_ } from '../readers/recordJar.js';
 import { VOCABULARY_PUBLISHER, type CodeListDefinition, type Projection, type Snapshots, type SourceSpec } from '../contract.js';
 
+function fileDate(text: string): string {
+  const date = required(parseRecordJar(text).header, 'File-Date');
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) throw new Error(`language-tags: File-Date ${date} is not a date`);
+  return date;
+}
+
 const registrySource: SourceSpec = {
   key: 'registry',
   label: 'IANA Language Subtag Registry',
   url: 'https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry',
-  version(text) {
-    const jar = parseRecordJar(text);
-    const date = required(jar.header, 'File-Date');
-    if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) throw new Error(`language-tags: File-Date ${date} is not a date`);
-    return date;
-  },
+  version: fileDate,
+  publishedOn: fileDate,
 };
 
 const KNOWN_FIELDS = new Set([
@@ -78,10 +82,7 @@ export const languageTags: CodeListDefinition = {
   sourceLabel: 'IANA Language Subtag Registry',
   sources: [registrySource],
 
-  packageVersion(sourceVersion) {
-    const [y, m, d] = sourceVersion.split('-').map(Number);
-    return `${y}.${m}.${d}`;
-  },
+  revision: 0,
 
   project(snapshots: Snapshots, ctx): Projection {
     const jar = parseRecordJar(snapshots.registry!.text);
@@ -104,7 +105,7 @@ export const languageTags: CodeListDefinition = {
       if (!(type in TYPES)) throw new Error(`language-tags: unknown registry type ${type}`);
       const code = type === 'grandfathered' || type === 'redundant' ? required(record, 'Tag') : required(record, 'Subtag');
       if (code.includes('..')) { excludedRanges++; continue; }
-      const entry: Entry = { type, code, key: `${TYPES[type].prefix}${code}`, record };
+      const entry: Entry = { type, code, key: `${TYPES[type].prefix}${code}`.toLowerCase(), record };
       entries.push(entry);
       byTypeAndCode.set(`${type}:${code}`, entry);
     }
@@ -121,7 +122,8 @@ export const languageTags: CodeListDefinition = {
     // Composed tags the registry names as preferred values without registering them.
     const composed = new Map<string, Record<string, unknown>>();
     const composedKey = (tag: string): string => {
-      if (composed.has(tag)) return tag;
+      const key = tag.toLowerCase();
+      if (composed.has(key)) return key;
       const [primary, ...rest] = tag.split('-');
       if (!primary || !languageKey(primary)) throw new Error(`language-tags: cannot compose ${tag}: ${primary} is not a language subtag`);
       const resource: Record<string, unknown> = {
@@ -139,8 +141,8 @@ export const languageTags: CodeListDefinition = {
         else variants.push(componentKey('variant', part));
       }
       if (variants.length) resource[`${lt}.variants`] = variants;
-      composed.set(tag, resource);
-      return tag;
+      composed.set(key, resource);
+      return key;
     };
 
     const supersededBy = (entry: Entry, preferred: string): string => {
@@ -198,9 +200,9 @@ export const languageTags: CodeListDefinition = {
       if (body[entry.key]) throw new Error(`language-tags: duplicate resource name ${entry.key}`);
       body[entry.key] = resource;
     }
-    for (const [tag, resource] of composed) {
-      if (body[tag]) throw new Error(`language-tags: composed tag ${tag} collides with a registered entry`);
-      body[tag] = resource;
+    for (const [key, resource] of composed) {
+      if (body[key]) throw new Error(`language-tags: composed tag ${key} collides with a registered entry`);
+      body[key] = resource;
     }
 
     const entryClasses = [...new Set(entries.map((e) => `${lt}.${TYPES[e.type].class_}`))];

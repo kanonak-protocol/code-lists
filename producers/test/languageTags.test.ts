@@ -16,7 +16,7 @@ import { fixture, standardTests } from './harness.js';
 
 const producer = standardTests(languageTags, { registry: 'language-subtag-registry.sample.txt' }, 'language-tags.sample.golden.yml', {
   sourceVersion: '2026-09-17',
-  version: '2026.9.17',
+  version: '1.20260917.0',
 });
 
 test('language-tags: an unknown registry field fails the projection instead of being dropped', async () => {

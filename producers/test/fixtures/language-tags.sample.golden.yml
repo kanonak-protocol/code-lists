@@ -1,7 +1,7 @@
 language-tags:
   type: Package
   publisher: codes.kanonak.org
-  version: 2026.9.17
+  version: 1.20260917.0
   imports:
     - publisher: kanonak.org
       packages:
@@ -59,26 +59,26 @@ de:
   label: German
   cl.code: de
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 en:
   type: lt.LanguageSubtag
   label: English
   cl.code: en
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 es:
   type: lt.LanguageSubtag
   label: Spanish
   cl.altLabel: Castilian
   cl.code: es
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 he:
   type: lt.LanguageSubtag
   label: Hebrew
   cl.code: he
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Hebr
+  lt.suppressScript: script-hebr
 iw:
   type: lt.LanguageSubtag
   label: Hebrew
@@ -87,7 +87,7 @@ iw:
   owl.deprecated: true
   lt.deprecatedOn: '1989-01-01'
   prov.supersededBy: he
-  lt.suppressScript: script-Hebr
+  lt.suppressScript: script-hebr
 mul:
   type: lt.LanguageSubtag
   label: Multiple languages
@@ -99,14 +99,14 @@ mul:
   label: Norwegian
   cl.code: 'no'
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
   lt.scope: lt.Macrolanguage
 sl:
   type: lt.LanguageSubtag
   label: Slovenian
   cl.code: sl
   lt.added: '2005-10-16'
-  lt.suppressScript: script-Latn
+  lt.suppressScript: script-latn
 tlh:
   type: lt.LanguageSubtag
   label: Klingon
@@ -135,22 +135,22 @@ extlang-yue:
   prov.supersededBy: yue
   lt.prefix: zh
   lt.macrolanguage: zh
-script-Hans:
+script-hans:
   type: lt.ScriptSubtag
   label: Han (Simplified variant)
   cl.code: Hans
   lt.added: '2005-10-16'
-script-Hant:
+script-hant:
   type: lt.ScriptSubtag
   label: Han (Traditional variant)
   cl.code: Hant
   lt.added: '2005-10-16'
-script-Hebr:
+script-hebr:
   type: lt.ScriptSubtag
   label: Hebrew
   cl.code: Hebr
   lt.added: '2005-10-16'
-script-Latn:
+script-latn:
   type: lt.ScriptSubtag
   label: Latin
   cl.code: Latn
@@ -160,21 +160,21 @@ region-001:
   label: World
   cl.code: '001'
   lt.added: '2005-10-16'
-region-BU:
+region-bu:
   type: lt.RegionSubtag
   label: Burma
   cl.code: BU
   lt.added: '2005-10-16'
   owl.deprecated: true
   lt.deprecatedOn: '1989-12-05'
-  prov.supersededBy: region-MM
-region-GB:
+  prov.supersededBy: region-mm
+region-gb:
   type: lt.RegionSubtag
   label: United Kingdom
   comment: as of 2006-03-29 GB no longer includes the Channel Islands and Isle of Man; see GG, JE, IM
   cl.code: GB
   lt.added: '2005-10-16'
-region-MM:
+region-mm:
   type: lt.RegionSubtag
   label: Myanmar
   cl.code: MM
@@ -206,14 +206,14 @@ variant-rozaj:
   cl.code: rozaj
   lt.added: '2005-10-16'
   lt.prefix: sl
-en-GB-oed:
+en-gb-oed:
   type: lt.GrandfatheredTag
   label: English, Oxford English Dictionary spelling
   cl.code: en-GB-oed
   lt.added: '2003-07-09'
   owl.deprecated: true
   lt.deprecatedOn: '2015-04-17'
-  prov.supersededBy: en-GB-oxendict
+  prov.supersededBy: en-gb-oxendict
 i-klingon:
   type: lt.GrandfatheredTag
   label: Klingon
@@ -222,32 +222,32 @@ i-klingon:
   owl.deprecated: true
   lt.deprecatedOn: '2004-02-24'
   prov.supersededBy: tlh
-zh-Hant:
+zh-hant:
   type: lt.RedundantTag
   label: Traditional Chinese
   cl.code: zh-Hant
   lt.added: '1999-12-14'
-zh-cmn-Hans:
+zh-cmn-hans:
   type: lt.RedundantTag
   label: Mandarin Chinese (Simplified)
   cl.code: zh-cmn-Hans
   lt.added: '2005-07-15'
   owl.deprecated: true
   lt.deprecatedOn: '2009-07-29'
-  prov.supersededBy: cmn-Hans
-en-GB-oxendict:
+  prov.supersededBy: cmn-hans
+en-gb-oxendict:
   type: lt.LanguageTag
   label: en-GB-oxendict
   comment: A composed tag the registry names as a preferred value; composed here from its registered subtags because it is not itself a registered entry.
   cl.code: en-GB-oxendict
   lt.primaryLanguage: en
-  lt.region: region-GB
+  lt.region: region-gb
   lt.variants:
     - variant-oxendict
-cmn-Hans:
+cmn-hans:
   type: lt.LanguageTag
   label: cmn-Hans
   comment: A composed tag the registry names as a preferred value; composed here from its registered subtags because it is not itself a registered entry.
   cl.code: cmn-Hans
   lt.primaryLanguage: cmn
-  lt.script: script-Hans
+  lt.script: script-hans

@@ -71,6 +71,11 @@ export function standardTests(def: CodeListDefinition, files: Record<string, str
     assert.deepEqual(errors.map((e) => e.message), []);
   });
 
+  test(`${def.name}: every resource name is lowercase, as the protocol names an instance`, async () => {
+    const built = await producer.build();
+    assert.deepEqual([...built.names].filter((name) => name !== name.toLowerCase()), []);
+  });
+
   test(`${def.name}: honours the package-producer contract`, async () => {
     const v = parseVersionString(expected.version)!;
     const fmt = (x: Awaited<ReturnType<typeof producer.resolveVersion>>) => (x ? formatVersion(x) : null);

@@ -6,8 +6,8 @@
  * workflow and, if ever wanted, an on-demand origin behind `kanonak serve`.
  *
  * What the wrapper owns, so no plugin re-does it: fetching and digesting
- * every source, deriving the package version from the primary source's own
- * marker, the `CodeList` provenance record, resource naming, import
+ * every source, the package version, the `CodeList` provenance record,
+ * resource naming, import
  * bookkeeping and the deterministic YAML dump (both via the SDK's
  * `PackageBuilder`), and parsing the result. The produced bytes are a pure
  * function of the source bytes.
@@ -16,6 +16,7 @@ import { createHash } from 'node:crypto';
 import {
   PackageBuilder,
   KanonakParser,
+  compareVersions,
   formatVersion,
   parseVersionString,
   satisfiesVersionOperator,
@@ -39,6 +40,8 @@ export interface SourceSpec {
   url: string;
   /** The source's own version marker, verbatim (`2026-09-17`, `3.29.0`). Throws if absent. */
   version(text: string): string;
+  /** The day the source was published, `YYYY-MM-DD`. Throws if absent. */
+  publishedOn(text: string): string;
 }
 
 /** The exact bytes read from a source, and where they came from. */
@@ -80,10 +83,60 @@ export interface CodeListDefinition {
   sourceLabel: string;
   /** The sources, primary first: the package version derives from `sources[0]`. */
   sources: SourceSpec[];
-  /** The package version derived from the primary source's marker (`2026.9.17`, `3.29.0`). */
-  packageVersion(sourceVersion: string): string;
+  /**
+   * The producer's revision, the patch of every version it makes. Raise it when
+   * a change to the producer changes what it makes from a source revision
+   * already published, so the correction is a new version beside the old.
+   */
+  revision: number;
   /** Project the sources into body resources. Throws on anything unexpected. */
   project(snapshots: Snapshots, ctx: ProjectContext): Projection;
+}
+
+/**
+ * A list's version: `1.{the primary source's publication day}.{the producer's
+ * revision}`, `1.20260917.0`. A list only ever adds entries (`assertExtends`),
+ * so it never breaks a link and its major stays 1; the day orders its
+ * versions, and the revision makes room for a corrected projection.
+ */
+export function packageVersionOf(publishedOn: string, revision: number): string {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(publishedOn)) throw new Error(`a source's publication day must be YYYY-MM-DD, not ${JSON.stringify(publishedOn)}`);
+  if (!Number.isInteger(revision) || revision < 0) throw new Error(`a producer's revision must be a whole number, not ${revision}`);
+  return `1.${publishedOn.replaceAll('-', '')}.${revision}`;
+}
+
+/** The resource names a list's package defines, its own package resource aside. */
+export function resourceNamesOf(document: KanonakDocument): Set<string> {
+  const own = document.metadata.namespace_?.package_;
+  return new Set(Object.keys(document.body).filter((name) => name !== own));
+}
+
+/** The newest version of a list already published, and its resource names. */
+export interface PublishedVersion {
+  version: string;
+  names: ReadonlySet<string>;
+}
+
+/**
+ * Refuse a projection that does not extend the list's newest published
+ * version: its version must be later, and it must keep every resource name.
+ * A retired code stays in the list, deprecated, so a link to it never stops
+ * resolving.
+ */
+export function assertExtends(previous: PublishedVersion, version: string, names: ReadonlySet<string>): void {
+  const next = parseVersionString(version);
+  const prior = parseVersionString(previous.version);
+  if (!next || !prior) throw new Error(`cannot compare versions ${version} and ${previous.version}`);
+  if (compareVersions(next, prior) <= 0) {
+    throw new Error(`version ${version} is not later than ${previous.version}, the newest published; a source's publication day only moves forward`);
+  }
+  const dropped = [...previous.names].filter((name) => !names.has(name));
+  if (dropped.length > 0) {
+    throw new Error(
+      `${version} drops ${dropped.length} resource name(s) ${previous.version} has: ${dropped.slice(0, 10).join(', ')}` +
+        `${dropped.length > 10 ? ', …' : ''}. A code list only adds entries: a retired code stays, deprecated, so every link to it keeps resolving`,
+    );
+  }
 }
 
 export function digestOf(text: string): string {
@@ -103,17 +156,19 @@ export async function fetchSource(spec: SourceSpec): Promise<SourceSnapshot> {
 export type SourceFetcher = (spec: SourceSpec) => Promise<SourceSnapshot>;
 
 /**
- * The resource name for a code: the code with anything a name cannot carry
- * folded to `-` (after the plugin's own replacements, e.g. `+` → `-plus`),
- * and prefixed with the entry's kind when the code cannot start a name
- * (`0BSD` → `license-0BSD`). The entry's `cl.code` always holds the true code.
+ * The resource name for a code: the code in lowercase, as the protocol names
+ * an instance, with anything a name cannot carry folded to `-` (after the
+ * plugin's own replacements, e.g. `+` → `-plus`), and prefixed with the
+ * entry's kind when the code cannot start a name (`0BSD` → `license-0bsd`).
+ * Every code these lists hold is case-insensitive by its own standard, so
+ * lowercasing loses nothing, and the entry's `cl.code` holds the true code.
  */
 export function resourceName(code: string, kind: string, replace: readonly [RegExp, string][] = []): string {
   let name = code;
   for (const [pattern, replacement] of replace) name = name.replace(pattern, replacement);
-  name = name.replace(/[^A-Za-z0-9_-]/g, '-');
-  if (!/^[A-Za-z]/.test(name)) name = `${kind}-${name}`;
-  if (!/^[A-Za-z][A-Za-z0-9_-]*$/.test(name)) throw new Error(`cannot derive a resource name from code ${JSON.stringify(code)}`);
+  name = name.toLowerCase().replace(/[^a-z0-9_-]/g, '-');
+  if (!/^[a-z]/.test(name)) name = `${kind}-${name}`;
+  if (!/^[a-z][a-z0-9_-]*$/.test(name)) throw new Error(`cannot derive a resource name from code ${JSON.stringify(code)}`);
   return name;
 }
 
@@ -125,6 +180,8 @@ export interface BuiltCodeList {
   version: string;
   snapshots: Snapshots;
   entryCount: number;
+  /** Every resource name the package defines. */
+  names: ReadonlySet<string>;
 }
 
 export class CodeListProducer implements IPackageProducer {
@@ -185,8 +242,7 @@ export class CodeListProducer implements IPackageProducer {
       if (!snapshots[spec.key]) throw new Error(`${def.name}: no snapshot for source ${spec.key}`);
     }
     const sourceVersion = primary.version(snapshots[primary.key]!.text);
-    const version = def.packageVersion(sourceVersion);
-    if (!parseVersionString(version)) throw new Error(`${def.name}: ${version} (from ${sourceVersion}) is not a version`);
+    const version = packageVersionOf(primary.publishedOn(snapshots[primary.key]!.text), def.revision);
 
     const book = this.builder.imports();
     book.ensure(VOCABULARY_PUBLISHER, 'core-rdf', '1.1.0', 'rdfs'); // so `label`/`comment` resolve identically everywhere
@@ -242,6 +298,7 @@ export class CodeListProducer implements IPackageProducer {
       version,
       snapshots,
       entryCount: projection.entryCount,
+      names: resourceNamesOf(parsed.document),
     };
   }
 }

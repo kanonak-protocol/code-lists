@@ -14,7 +14,7 @@ import { fixture, standardTests } from './harness.js';
 const files = { licenses: 'spdx-licenses.sample.json', exceptions: 'spdx-exceptions.sample.json' };
 const producer = standardTests(spdxLicenses, files, 'spdx-licenses.sample.golden.yml', {
   sourceVersion: '3.29.0',
-  version: '3.29.0',
+  version: '1.20260916.0',
 });
 
 test('spdx-licenses: two different list versions refuse to combine', async () => {

@@ -4,9 +4,13 @@ Copyright 2026 Genval LLC
 Author: Paul Fryer (https://github.com/paulfryer)
 
 The producers in producers/ are licensed under the Apache License, Version 2.0
-(LICENSE). Each generated package projects data from its source of truth,
-which the package's CodeList record names by URL and digest; that data keeps
-its source's terms:
+(LICENSE).
+
+The generated packages, each list's {version}.kan.yml, are dedicated to the
+public domain under CC0 1.0 Universal (LICENSE-DATA), to the extent Genval LLC
+holds any rights in them. Each projects data from its source of truth, which
+the package's CodeList record names by URL and digest; that data keeps its
+source's terms:
 
 - language-tags: the IANA Language Subtag Registry, and media-types: the IANA
   Media Types registry. IANA and the IETF dedicate the protocol registries to

@@ -47,4 +47,4 @@ Each new file is projected twice to prove it is deterministic, and validated bef
 
 ## Licence
 
-The producers are licensed under the Apache License 2.0 ([LICENSE](LICENSE)). The data in each list keeps its source's terms, set out in [NOTICE](NOTICE).
+The producers are licensed under the Apache License 2.0 ([LICENSE](LICENSE)). The lists are dedicated to the public domain under CC0 1.0 ([LICENSE-DATA](LICENSE-DATA)), so anyone may copy, mirror or cache them without conditions. CC0 waives only what Genval holds: the data each list projects keeps its source's terms, set out in [NOTICE](NOTICE).

@@ -36,12 +36,14 @@ const listOne: SourceSpec = {
   label: 'ISO 4217 — current currencies and funds (list one)',
   url: 'https://www.six-group.com/dam/download/financial-information/data-center/iso-currrency/lists/list-one.xml',
   version: published,
+  publishedOn: published,
 };
 const listThree: SourceSpec = {
   key: 'historic',
   label: 'ISO 4217 — withdrawn currencies and funds (list three)',
   url: 'https://www.six-group.com/dam/download/financial-information/data-center/iso-currrency/lists/list-three.xml',
   version: published,
+  publishedOn: published,
 };
 
 interface Row { code: string; name: string; isFund: boolean; numeric?: string; minorUnits?: string; withdrawn?: string }
@@ -76,10 +78,7 @@ export const currencies: CodeListDefinition = {
   sourceLabel: 'ISO 4217 currency code lists',
   sources: [listOne, listThree],
 
-  packageVersion(sourceVersion) {
-    const [y, m, d] = sourceVersion.split('-').map(Number);
-    return `${y}.${m}.${d}`;
-  },
+  revision: 0,
 
   project(snapshots: Snapshots, ctx): Projection {
     const current = rows(snapshots.current!.text, 'CcyTbl', 'CcyNtry', KNOWN_CURRENT);

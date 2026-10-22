@@ -1,0 +1,20 @@
+Kanonak Protocol — Code Lists
+Copyright 2026 Genval LLC
+
+Author: Paul Fryer (https://github.com/paulfryer)
+
+The producers in producers/ are licensed under the Apache License, Version 2.0
+(LICENSE). Each generated package projects data from its source of truth,
+which the package's CodeList record names by URL and digest; that data keeps
+its source's terms:
+
+- language-tags: the IANA Language Subtag Registry, and media-types: the IANA
+  Media Types registry. IANA and the IETF dedicate the protocol registries to
+  the public domain under CC0 1.0
+  (https://www.iana.org/help/licensing-terms).
+- spdx-licenses: the SPDX License List data, released under CC0 1.0 by the
+  SPDX project (https://spdx.org/licenses/).
+- currencies: the ISO 4217 code lists, which SIX, the secretariat of the
+  ISO 4217 maintenance agency, publishes online free of charge
+  (https://www.six-group.com/en/products-services/financial-information/market-reference-data/data-standards.html).
+  The lists state no licence.

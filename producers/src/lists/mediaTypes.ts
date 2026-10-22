@@ -36,15 +36,18 @@ function root(textContent: string): XmlNode {
   return registry;
 }
 
+function updated(t: string): string {
+  const day = text(root(t), 'updated');
+  if (!day || !/^\d{4}-\d{2}-\d{2}$/.test(day)) throw new Error(`media-types: registry <updated> ${day} is not a date`);
+  return day;
+}
+
 const registrySource: SourceSpec = {
   key: 'registry',
   label: 'IANA Media Types registry',
   url: 'https://www.iana.org/assignments/media-types/media-types.xml',
-  version: (t) => {
-    const updated = text(root(t), 'updated');
-    if (!updated || !/^\d{4}-\d{2}-\d{2}$/.test(updated)) throw new Error(`media-types: registry <updated> ${updated} is not a date`);
-    return updated;
-  },
+  version: updated,
+  publishedOn: updated,
 };
 
 function specificationUrl(xref: XmlNode): string | undefined {
@@ -65,10 +68,7 @@ export const mediaTypes: CodeListDefinition = {
   sourceLabel: 'IANA Media Types registry',
   sources: [registrySource],
 
-  packageVersion(sourceVersion) {
-    const [y, m, d] = sourceVersion.split('-').map(Number);
-    return `${y}.${m}.${d}`;
-  },
+  revision: 0,
 
   project(snapshots: Snapshots, ctx): Projection {
     const registry = root(snapshots.registry!.text);

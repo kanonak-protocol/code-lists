@@ -1,7 +1,7 @@
 spdx-licenses:
   type: Package
   publisher: codes.kanonak.org
-  version: 3.29.0
+  version: 1.20260916.0
   imports:
     - publisher: kanonak.org
       packages:
@@ -36,18 +36,18 @@ spdx-license-list:
       label: SPDX License List — licenses
       prov.sourceUrl: https://spdx.org/licenses/licenses.json
       cl.sourceVersion: 3.29.0
-      cl.sourceDigest: sha256:8236b2e0a7a05b2aa9560736d87195a0a6dcafb8ffa2ac8c73cc07a60186892c
+      cl.sourceDigest: sha256:3de365d8491d4373de2ec2859af8900a19872d20a6e7475f160d80d7d5287810
     - type: prov.Standard
       label: SPDX License List — exceptions
       prov.sourceUrl: https://spdx.org/licenses/exceptions.json
       cl.sourceVersion: 3.29.0
-      cl.sourceDigest: sha256:24219c280255624cfd1e16a3368b43d790685ea539ae9b88b0bbe5439e15bf16
+      cl.sourceDigest: sha256:805a289070a224629e9cbc6e0df2eac766cbb931f5975c87a51ce9ec3277c317
   cl.producer: spdx-licenses
   cl.entryClass:
     - spdx.License
     - spdx.Exception
   cl.entryCount: 13
-CC0-1-0:
+cc0-1-0:
   type: spdx.License
   label: Creative Commons Zero v1.0 Universal
   cl.code: CC0-1.0
@@ -55,7 +55,7 @@ CC0-1-0:
   spdx.isFsfLibre: true
   spdx.textUrl: https://creativecommons.org/publicdomain/zero/1.0/legalcode
   spdx.detailsUrl: https://spdx.org/licenses/CC0-1.0.json
-GPL-2-0-or-later:
+gpl-2-0-or-later:
   type: spdx.License
   label: GNU General Public License v2.0 or later
   cl.code: GPL-2.0-or-later
@@ -66,7 +66,7 @@ GPL-2-0-or-later:
     - https://opensource.org/license/GPL-2.0
     - https://github.com/openjdk/jdk/blob/6162e2c5213c5dd7c1127fd9616b543efa898962/LICENSE
   spdx.detailsUrl: https://spdx.org/licenses/GPL-2.0-or-later.json
-MIT:
+mit:
   type: spdx.License
   label: MIT License
   cl.code: MIT
@@ -76,7 +76,7 @@ MIT:
     - https://opensource.org/license/MIT
     - https://gitlab.freedesktop.org/xorg/xserver/-/blob/dd5c2595a42d3ff0c4f18d9b53d1f6c3fd934fd4/COPYING#L365-389
   spdx.detailsUrl: https://spdx.org/licenses/MIT.json
-BSD-3-Clause:
+bsd-3-clause:
   type: spdx.License
   label: BSD 3-Clause "New" or "Revised" License
   cl.code: BSD-3-Clause
@@ -86,7 +86,7 @@ BSD-3-Clause:
     - https://opensource.org/license/BSD-3-Clause
     - https://www.eclipse.org/org/documents/edl-v10.php
   spdx.detailsUrl: https://spdx.org/licenses/BSD-3-Clause.json
-GPL-2-0-plus:
+gpl-2-0-plus:
   type: spdx.License
   label: GNU General Public License v2.0 or later
   cl.code: GPL-2.0+
@@ -97,7 +97,7 @@ GPL-2-0-plus:
     - https://www.gnu.org/licenses/old-licenses/gpl-2.0-standalone.html
     - https://opensource.org/license/GPL-2.0
   spdx.detailsUrl: https://spdx.org/licenses/GPL-2.0+.json
-Apache-2-0:
+apache-2-0:
   type: spdx.License
   label: Apache License 2.0
   cl.code: Apache-2.0
@@ -107,7 +107,7 @@ Apache-2-0:
     - https://www.apache.org/licenses/LICENSE-2.0
     - https://opensource.org/license/apache-2.0
   spdx.detailsUrl: https://spdx.org/licenses/Apache-2.0.json
-license-0BSD:
+license-0bsd:
   type: spdx.License
   label: BSD Zero Clause License
   cl.code: 0BSD
@@ -116,7 +116,7 @@ license-0BSD:
     - http://landley.net/toybox/license.html
     - https://opensource.org/license/0BSD
   spdx.detailsUrl: https://spdx.org/licenses/0BSD.json
-GPL-2-0:
+gpl-2-0:
   type: spdx.License
   label: GNU General Public License v2.0 only
   cl.code: GPL-2.0
@@ -127,7 +127,7 @@ GPL-2-0:
     - https://www.gnu.org/licenses/old-licenses/gpl-2.0-standalone.html
     - https://opensource.org/license/GPL-2.0
   spdx.detailsUrl: https://spdx.org/licenses/GPL-2.0.json
-license-3D-Slicer-1-0:
+license-3d-slicer-1-0:
   type: spdx.License
   label: 3D Slicer License v1.0
   cl.code: 3D-Slicer-1.0
@@ -136,7 +136,7 @@ license-3D-Slicer-1-0:
     - https://slicer.org/LICENSE
     - https://github.com/Slicer/Slicer/blob/main/License.txt
   spdx.detailsUrl: https://spdx.org/licenses/3D-Slicer-1.0.json
-Classpath-exception-2-0:
+classpath-exception-2-0:
   type: spdx.Exception
   label: Classpath exception 2.0
   cl.code: Classpath-exception-2.0
@@ -144,14 +144,14 @@ Classpath-exception-2-0:
     - http://www.gnu.org/software/classpath/license.html
     - https://fedoraproject.org/wiki/Licensing/GPL_Classpath_Exception
   spdx.detailsUrl: https://spdx.org/licenses/Classpath-exception-2.0.json
-Nokia-Qt-exception-1-1:
+nokia-qt-exception-1-1:
   type: spdx.Exception
   label: Nokia Qt LGPL exception 1.1
   cl.code: Nokia-Qt-exception-1.1
   owl.deprecated: true
   spdx.textUrl: https://www.keepassx.org/dev/projects/keepassx/repository/revisions/b8dfb9cc4d5133e0f09cd7533d15a4f1c19a40f2/entry/LICENSE.NOKIA-LGPL-EXCEPTION
   spdx.detailsUrl: https://spdx.org/licenses/Nokia-Qt-exception-1.1.json
-LLVM-exception:
+llvm-exception:
   type: spdx.Exception
   label: LLVM Exception
   cl.code: LLVM-exception

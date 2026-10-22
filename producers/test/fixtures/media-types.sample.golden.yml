@@ -1,7 +1,7 @@
 media-types:
   type: Package
   publisher: codes.kanonak.org
-  version: 2026.9.22
+  version: 1.20260922.0
   imports:
     - publisher: kanonak.org
       packages:
@@ -36,7 +36,7 @@ iana-media-types-registry:
     label: IANA Media Types registry
     prov.sourceUrl: https://www.iana.org/assignments/media-types/media-types.xml
     cl.sourceVersion: '2026-09-22'
-    cl.sourceDigest: sha256:10563b02a9a7e26804e596bc44e76b72d1b8bc12744222b2177f0cc9b536f314
+    cl.sourceDigest: sha256:430cb6d9c0d868f9f4eaba94003438bea84af557f32e3093c76abe1b97521261
   cl.producer: media-types
   cl.entryClass:
     - mt.MediaType

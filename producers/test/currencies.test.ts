@@ -12,5 +12,5 @@ import { currencies } from '../src/lists/currencies.js';
 
 standardTests(currencies, { current: 'iso4217-list-one.sample.xml', historic: 'iso4217-list-three.sample.xml' }, 'currencies.sample.golden.yml', {
   sourceVersion: '2026-09-17',
-  version: '2026.9.17',
+  version: '1.20260917.0',
 });

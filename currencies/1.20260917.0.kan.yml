@@ -1,7 +1,7 @@
 currencies:
   type: Package
   publisher: codes.kanonak.org
-  version: 2026.9.17
+  version: 1.20260917.0
   imports:
     - publisher: kanonak.org
       packages:
@@ -46,1310 +46,1310 @@ iso-4217:
   cl.entryClass:
     - cur.Currency
   cl.entryCount: 307
-AFN:
+afn:
   type: cur.Currency
   label: Afghani
   cl.code: AFN
   cur.numericCode: '971'
   cur.minorUnits: 2
-EUR:
+eur:
   type: cur.Currency
   label: Euro
   cl.code: EUR
   cur.numericCode: '978'
   cur.minorUnits: 2
-ALL:
+all:
   type: cur.Currency
   label: Lek
   cl.code: ALL
   cur.numericCode: '008'
   cur.minorUnits: 2
-DZD:
+dzd:
   type: cur.Currency
   label: Algerian Dinar
   cl.code: DZD
   cur.numericCode: '012'
   cur.minorUnits: 2
-USD:
+usd:
   type: cur.Currency
   label: US Dollar
   cl.code: USD
   cur.numericCode: '840'
   cur.minorUnits: 2
-AOA:
+aoa:
   type: cur.Currency
   label: Kwanza
   cl.code: AOA
   cur.numericCode: '973'
   cur.minorUnits: 2
-XCD:
+xcd:
   type: cur.Currency
   label: East Caribbean Dollar
   cl.code: XCD
   cur.numericCode: '951'
   cur.minorUnits: 2
-XAD:
+xad:
   type: cur.Currency
   label: Arab Accounting Dinar
   cl.code: XAD
   cur.numericCode: '396'
   cur.minorUnits: 2
   cur.isFund: true
-ARS:
+ars:
   type: cur.Currency
   label: Argentine Peso
   cl.code: ARS
   cur.numericCode: '032'
   cur.minorUnits: 2
-AMD:
+amd:
   type: cur.Currency
   label: Armenian Dram
   cl.code: AMD
   cur.numericCode: '051'
   cur.minorUnits: 2
-AWG:
+awg:
   type: cur.Currency
   label: Aruban Florin
   cl.code: AWG
   cur.numericCode: '533'
   cur.minorUnits: 2
-AUD:
+aud:
   type: cur.Currency
   label: Australian Dollar
   cl.code: AUD
   cur.numericCode: '036'
   cur.minorUnits: 2
-AZN:
+azn:
   type: cur.Currency
   label: Azerbaijan Manat
   cl.code: AZN
   cur.numericCode: '944'
   cur.minorUnits: 2
-BSD:
+bsd:
   type: cur.Currency
   label: Bahamian Dollar
   cl.code: BSD
   cur.numericCode: '044'
   cur.minorUnits: 2
-BHD:
+bhd:
   type: cur.Currency
   label: Bahraini Dinar
   cl.code: BHD
   cur.numericCode: '048'
   cur.minorUnits: 3
-BDT:
+bdt:
   type: cur.Currency
   label: Taka
   cl.code: BDT
   cur.numericCode: '050'
   cur.minorUnits: 2
-BBD:
+bbd:
   type: cur.Currency
   label: Barbados Dollar
   cl.code: BBD
   cur.numericCode: '052'
   cur.minorUnits: 2
-BYN:
+byn:
   type: cur.Currency
   label: Belarusian Ruble
   cl.code: BYN
   cur.numericCode: '933'
   cur.minorUnits: 2
-BZD:
+bzd:
   type: cur.Currency
   label: Belize Dollar
   cl.code: BZD
   cur.numericCode: '084'
   cur.minorUnits: 2
-XOF:
+xof:
   type: cur.Currency
   label: CFA Franc BCEAO
   cl.code: XOF
   cur.numericCode: '952'
   cur.minorUnits: 0
-BMD:
+bmd:
   type: cur.Currency
   label: Bermudian Dollar
   cl.code: BMD
   cur.numericCode: '060'
   cur.minorUnits: 2
-INR:
+inr:
   type: cur.Currency
   label: Indian Rupee
   cl.code: INR
   cur.numericCode: '356'
   cur.minorUnits: 2
-BTN:
+btn:
   type: cur.Currency
   label: Ngultrum
   cl.code: BTN
   cur.numericCode: '064'
   cur.minorUnits: 2
-BOB:
+bob:
   type: cur.Currency
   label: Boliviano
   cl.code: BOB
   cur.numericCode: '068'
   cur.minorUnits: 2
-BOV:
+bov:
   type: cur.Currency
   label: Mvdol
   cl.code: BOV
   cur.numericCode: '984'
   cur.minorUnits: 2
   cur.isFund: true
-BAM:
+bam:
   type: cur.Currency
   label: Convertible Mark
   cl.code: BAM
   cur.numericCode: '977'
   cur.minorUnits: 2
-BWP:
+bwp:
   type: cur.Currency
   label: Pula
   cl.code: BWP
   cur.numericCode: '072'
   cur.minorUnits: 2
-NOK:
+nok:
   type: cur.Currency
   label: Norwegian Krone
   cl.code: NOK
   cur.numericCode: '578'
   cur.minorUnits: 2
-BRL:
+brl:
   type: cur.Currency
   label: Brazilian Real
   cl.code: BRL
   cur.numericCode: '986'
   cur.minorUnits: 2
-BND:
+bnd:
   type: cur.Currency
   label: Brunei Dollar
   cl.code: BND
   cur.numericCode: '096'
   cur.minorUnits: 2
-BIF:
+bif:
   type: cur.Currency
   label: Burundi Franc
   cl.code: BIF
   cur.numericCode: '108'
   cur.minorUnits: 0
-CVE:
+cve:
   type: cur.Currency
   label: Cabo Verde Escudo
   cl.code: CVE
   cur.numericCode: '132'
   cur.minorUnits: 2
-KHR:
+khr:
   type: cur.Currency
   label: Riel
   cl.code: KHR
   cur.numericCode: '116'
   cur.minorUnits: 2
-XAF:
+xaf:
   type: cur.Currency
   label: CFA Franc BEAC
   cl.code: XAF
   cur.numericCode: '950'
   cur.minorUnits: 0
-CAD:
+cad:
   type: cur.Currency
   label: Canadian Dollar
   cl.code: CAD
   cur.numericCode: '124'
   cur.minorUnits: 2
-KYD:
+kyd:
   type: cur.Currency
   label: Cayman Islands Dollar
   cl.code: KYD
   cur.numericCode: '136'
   cur.minorUnits: 2
-CLP:
+clp:
   type: cur.Currency
   label: Chilean Peso
   cl.code: CLP
   cur.numericCode: '152'
   cur.minorUnits: 0
-CLF:
+clf:
   type: cur.Currency
   label: Unidad de Fomento
   cl.code: CLF
   cur.numericCode: '990'
   cur.minorUnits: 4
   cur.isFund: true
-CNY:
+cny:
   type: cur.Currency
   label: Yuan Renminbi
   cl.code: CNY
   cur.numericCode: '156'
   cur.minorUnits: 2
-COP:
+cop:
   type: cur.Currency
   label: Colombian Peso
   cl.code: COP
   cur.numericCode: '170'
   cur.minorUnits: 2
-COU:
+cou:
   type: cur.Currency
   label: Unidad de Valor Real
   cl.code: COU
   cur.numericCode: '970'
   cur.minorUnits: 2
   cur.isFund: true
-KMF:
+kmf:
   type: cur.Currency
   label: Comorian Franc
   cl.code: KMF
   cur.numericCode: '174'
   cur.minorUnits: 0
-CDF:
+cdf:
   type: cur.Currency
   label: Congolese Franc
   cl.code: CDF
   cur.numericCode: '976'
   cur.minorUnits: 2
-NZD:
+nzd:
   type: cur.Currency
   label: New Zealand Dollar
   cl.code: NZD
   cur.numericCode: '554'
   cur.minorUnits: 2
-CRC:
+crc:
   type: cur.Currency
   label: Costa Rican Colon
   cl.code: CRC
   cur.numericCode: '188'
   cur.minorUnits: 2
-CUP:
+cup:
   type: cur.Currency
   label: Cuban Peso
   cl.code: CUP
   cur.numericCode: '192'
   cur.minorUnits: 2
-XCG:
+xcg:
   type: cur.Currency
   label: Caribbean Guilder
   cl.code: XCG
   cur.numericCode: '532'
   cur.minorUnits: 2
-CZK:
+czk:
   type: cur.Currency
   label: Czech Koruna
   cl.code: CZK
   cur.numericCode: '203'
   cur.minorUnits: 2
-DKK:
+dkk:
   type: cur.Currency
   label: Danish Krone
   cl.code: DKK
   cur.numericCode: '208'
   cur.minorUnits: 2
-DJF:
+djf:
   type: cur.Currency
   label: Djibouti Franc
   cl.code: DJF
   cur.numericCode: '262'
   cur.minorUnits: 0
-DOP:
+dop:
   type: cur.Currency
   label: Dominican Peso
   cl.code: DOP
   cur.numericCode: '214'
   cur.minorUnits: 2
-EGP:
+egp:
   type: cur.Currency
   label: Egyptian Pound
   cl.code: EGP
   cur.numericCode: '818'
   cur.minorUnits: 2
-SVC:
+svc:
   type: cur.Currency
   label: El Salvador Colon
   cl.code: SVC
   cur.numericCode: '222'
   cur.minorUnits: 2
-ERN:
+ern:
   type: cur.Currency
   label: Nakfa
   cl.code: ERN
   cur.numericCode: '232'
   cur.minorUnits: 2
-SZL:
+szl:
   type: cur.Currency
   label: Lilangeni
   cl.code: SZL
   cur.numericCode: '748'
   cur.minorUnits: 2
-ETB:
+etb:
   type: cur.Currency
   label: Ethiopian Birr
   cl.code: ETB
   cur.numericCode: '230'
   cur.minorUnits: 2
-FKP:
+fkp:
   type: cur.Currency
   label: Falkland Islands Pound
   cl.code: FKP
   cur.numericCode: '238'
   cur.minorUnits: 2
-FJD:
+fjd:
   type: cur.Currency
   label: Fiji Dollar
   cl.code: FJD
   cur.numericCode: '242'
   cur.minorUnits: 2
-XPF:
+xpf:
   type: cur.Currency
   label: CFP Franc
   cl.code: XPF
   cur.numericCode: '953'
   cur.minorUnits: 0
-GMD:
+gmd:
   type: cur.Currency
   label: Dalasi
   cl.code: GMD
   cur.numericCode: '270'
   cur.minorUnits: 2
-GEL:
+gel:
   type: cur.Currency
   label: Lari
   cl.code: GEL
   cur.numericCode: '981'
   cur.minorUnits: 2
-GHS:
+ghs:
   type: cur.Currency
   label: Ghana Cedi
   cl.code: GHS
   cur.numericCode: '936'
   cur.minorUnits: 2
-GIP:
+gip:
   type: cur.Currency
   label: Gibraltar Pound
   cl.code: GIP
   cur.numericCode: '292'
   cur.minorUnits: 2
-GTQ:
+gtq:
   type: cur.Currency
   label: Quetzal
   cl.code: GTQ
   cur.numericCode: '320'
   cur.minorUnits: 2
-GBP:
+gbp:
   type: cur.Currency
   label: Pound Sterling
   cl.code: GBP
   cur.numericCode: '826'
   cur.minorUnits: 2
-GNF:
+gnf:
   type: cur.Currency
   label: Guinean Franc
   cl.code: GNF
   cur.numericCode: '324'
   cur.minorUnits: 0
-GYD:
+gyd:
   type: cur.Currency
   label: Guyana Dollar
   cl.code: GYD
   cur.numericCode: '328'
   cur.minorUnits: 2
-HTG:
+htg:
   type: cur.Currency
   label: Gourde
   cl.code: HTG
   cur.numericCode: '332'
   cur.minorUnits: 2
-HNL:
+hnl:
   type: cur.Currency
   label: Lempira
   cl.code: HNL
   cur.numericCode: '340'
   cur.minorUnits: 2
-HKD:
+hkd:
   type: cur.Currency
   label: Hong Kong Dollar
   cl.code: HKD
   cur.numericCode: '344'
   cur.minorUnits: 2
-HUF:
+huf:
   type: cur.Currency
   label: Forint
   cl.code: HUF
   cur.numericCode: '348'
   cur.minorUnits: 2
-ISK:
+isk:
   type: cur.Currency
   label: Iceland Krona
   cl.code: ISK
   cur.numericCode: '352'
   cur.minorUnits: 0
-IDR:
+idr:
   type: cur.Currency
   label: Rupiah
   cl.code: IDR
   cur.numericCode: '360'
   cur.minorUnits: 2
-XDR:
+xdr:
   type: cur.Currency
   label: SDR (Special Drawing Right)
   cl.code: XDR
   cur.numericCode: '960'
-IRR:
+irr:
   type: cur.Currency
   label: Iranian Rial
   cl.code: IRR
   cur.numericCode: '364'
   cur.minorUnits: 2
-IQD:
+iqd:
   type: cur.Currency
   label: Iraqi Dinar
   cl.code: IQD
   cur.numericCode: '368'
   cur.minorUnits: 3
-ILS:
+ils:
   type: cur.Currency
   label: New Israeli Sheqel
   cl.code: ILS
   cur.numericCode: '376'
   cur.minorUnits: 2
-JMD:
+jmd:
   type: cur.Currency
   label: Jamaican Dollar
   cl.code: JMD
   cur.numericCode: '388'
   cur.minorUnits: 2
-JPY:
+jpy:
   type: cur.Currency
   label: Yen
   cl.code: JPY
   cur.numericCode: '392'
   cur.minorUnits: 0
-JOD:
+jod:
   type: cur.Currency
   label: Jordanian Dinar
   cl.code: JOD
   cur.numericCode: '400'
   cur.minorUnits: 3
-KZT:
+kzt:
   type: cur.Currency
   label: Tenge
   cl.code: KZT
   cur.numericCode: '398'
   cur.minorUnits: 2
-KES:
+kes:
   type: cur.Currency
   label: Kenyan Shilling
   cl.code: KES
   cur.numericCode: '404'
   cur.minorUnits: 2
-KPW:
+kpw:
   type: cur.Currency
   label: North Korean Won
   cl.code: KPW
   cur.numericCode: '408'
   cur.minorUnits: 2
-KRW:
+krw:
   type: cur.Currency
   label: Won
   cl.code: KRW
   cur.numericCode: '410'
   cur.minorUnits: 0
-KWD:
+kwd:
   type: cur.Currency
   label: Kuwaiti Dinar
   cl.code: KWD
   cur.numericCode: '414'
   cur.minorUnits: 3
-KGS:
+kgs:
   type: cur.Currency
   label: Som
   cl.code: KGS
   cur.numericCode: '417'
   cur.minorUnits: 2
-LAK:
+lak:
   type: cur.Currency
   label: Lao Kip
   cl.code: LAK
   cur.numericCode: '418'
   cur.minorUnits: 2
-LBP:
+lbp:
   type: cur.Currency
   label: Lebanese Pound
   cl.code: LBP
   cur.numericCode: '422'
   cur.minorUnits: 2
-LSL:
+lsl:
   type: cur.Currency
   label: Loti
   cl.code: LSL
   cur.numericCode: '426'
   cur.minorUnits: 2
-ZAR:
+zar:
   type: cur.Currency
   label: Rand
   cl.code: ZAR
   cur.numericCode: '710'
   cur.minorUnits: 2
-LRD:
+lrd:
   type: cur.Currency
   label: Liberian Dollar
   cl.code: LRD
   cur.numericCode: '430'
   cur.minorUnits: 2
-LYD:
+lyd:
   type: cur.Currency
   label: Libyan Dinar
   cl.code: LYD
   cur.numericCode: '434'
   cur.minorUnits: 3
-CHF:
+chf:
   type: cur.Currency
   label: Swiss Franc
   cl.code: CHF
   cur.numericCode: '756'
   cur.minorUnits: 2
-MOP:
+mop:
   type: cur.Currency
   label: Pataca
   cl.code: MOP
   cur.numericCode: '446'
   cur.minorUnits: 2
-MKD:
+mkd:
   type: cur.Currency
   label: Denar
   cl.code: MKD
   cur.numericCode: '807'
   cur.minorUnits: 2
-MGA:
+mga:
   type: cur.Currency
   label: Malagasy Ariary
   cl.code: MGA
   cur.numericCode: '969'
   cur.minorUnits: 2
-MWK:
+mwk:
   type: cur.Currency
   label: Malawi Kwacha
   cl.code: MWK
   cur.numericCode: '454'
   cur.minorUnits: 2
-MYR:
+myr:
   type: cur.Currency
   label: Malaysian Ringgit
   cl.code: MYR
   cur.numericCode: '458'
   cur.minorUnits: 2
-MVR:
+mvr:
   type: cur.Currency
   label: Rufiyaa
   cl.code: MVR
   cur.numericCode: '462'
   cur.minorUnits: 2
-MRU:
+mru:
   type: cur.Currency
   label: Ouguiya
   cl.code: MRU
   cur.numericCode: '929'
   cur.minorUnits: 2
-MUR:
+mur:
   type: cur.Currency
   label: Mauritius Rupee
   cl.code: MUR
   cur.numericCode: '480'
   cur.minorUnits: 2
-XUA:
+xua:
   type: cur.Currency
   label: ADB Unit of Account
   cl.code: XUA
   cur.numericCode: '965'
-MXN:
+mxn:
   type: cur.Currency
   label: Mexican Peso
   cl.code: MXN
   cur.numericCode: '484'
   cur.minorUnits: 2
-MXV:
+mxv:
   type: cur.Currency
   label: Mexican Unidad de Inversion (UDI)
   cl.code: MXV
   cur.numericCode: '979'
   cur.minorUnits: 2
   cur.isFund: true
-MDL:
+mdl:
   type: cur.Currency
   label: Moldovan Leu
   cl.code: MDL
   cur.numericCode: '498'
   cur.minorUnits: 2
-MNT:
+mnt:
   type: cur.Currency
   label: Tugrik
   cl.code: MNT
   cur.numericCode: '496'
   cur.minorUnits: 2
-MAD:
+mad:
   type: cur.Currency
   label: Moroccan Dirham
   cl.code: MAD
   cur.numericCode: '504'
   cur.minorUnits: 2
-MZN:
+mzn:
   type: cur.Currency
   label: Mozambique Metical
   cl.code: MZN
   cur.numericCode: '943'
   cur.minorUnits: 2
-MMK:
+mmk:
   type: cur.Currency
   label: Kyat
   cl.code: MMK
   cur.numericCode: '104'
   cur.minorUnits: 2
-NAD:
+nad:
   type: cur.Currency
   label: Namibia Dollar
   cl.code: NAD
   cur.numericCode: '516'
   cur.minorUnits: 2
-NPR:
+npr:
   type: cur.Currency
   label: Nepalese Rupee
   cl.code: NPR
   cur.numericCode: '524'
   cur.minorUnits: 2
-NIO:
+nio:
   type: cur.Currency
   label: Cordoba Oro
   cl.code: NIO
   cur.numericCode: '558'
   cur.minorUnits: 2
-NGN:
+ngn:
   type: cur.Currency
   label: Naira
   cl.code: NGN
   cur.numericCode: '566'
   cur.minorUnits: 2
-OMR:
+omr:
   type: cur.Currency
   label: Rial Omani
   cl.code: OMR
   cur.numericCode: '512'
   cur.minorUnits: 3
-PKR:
+pkr:
   type: cur.Currency
   label: Pakistan Rupee
   cl.code: PKR
   cur.numericCode: '586'
   cur.minorUnits: 2
-PAB:
+pab:
   type: cur.Currency
   label: Balboa
   cl.code: PAB
   cur.numericCode: '590'
   cur.minorUnits: 2
-PGK:
+pgk:
   type: cur.Currency
   label: Kina
   cl.code: PGK
   cur.numericCode: '598'
   cur.minorUnits: 2
-PYG:
+pyg:
   type: cur.Currency
   label: Guarani
   cl.code: PYG
   cur.numericCode: '600'
   cur.minorUnits: 0
-PEN:
+pen:
   type: cur.Currency
   label: Sol
   cl.code: PEN
   cur.numericCode: '604'
   cur.minorUnits: 2
-PHP:
+php:
   type: cur.Currency
   label: Philippine Peso
   cl.code: PHP
   cur.numericCode: '608'
   cur.minorUnits: 2
-PLN:
+pln:
   type: cur.Currency
   label: Zloty
   cl.code: PLN
   cur.numericCode: '985'
   cur.minorUnits: 2
-QAR:
+qar:
   type: cur.Currency
   label: Qatari Rial
   cl.code: QAR
   cur.numericCode: '634'
   cur.minorUnits: 2
-RON:
+ron:
   type: cur.Currency
   label: Romanian Leu
   cl.code: RON
   cur.numericCode: '946'
   cur.minorUnits: 2
-RUB:
+rub:
   type: cur.Currency
   label: Russian Ruble
   cl.code: RUB
   cur.numericCode: '643'
   cur.minorUnits: 2
-RWF:
+rwf:
   type: cur.Currency
   label: Rwanda Franc
   cl.code: RWF
   cur.numericCode: '646'
   cur.minorUnits: 0
-SHP:
+shp:
   type: cur.Currency
   label: Saint Helena Pound
   cl.code: SHP
   cur.numericCode: '654'
   cur.minorUnits: 2
-WST:
+wst:
   type: cur.Currency
   label: Tala
   cl.code: WST
   cur.numericCode: '882'
   cur.minorUnits: 2
-STN:
+stn:
   type: cur.Currency
   label: Dobra
   cl.code: STN
   cur.numericCode: '930'
   cur.minorUnits: 2
-SAR:
+sar:
   type: cur.Currency
   label: Saudi Riyal
   cl.code: SAR
   cur.numericCode: '682'
   cur.minorUnits: 2
-RSD:
+rsd:
   type: cur.Currency
   label: Serbian Dinar
   cl.code: RSD
   cur.numericCode: '941'
   cur.minorUnits: 2
-SCR:
+scr:
   type: cur.Currency
   label: Seychelles Rupee
   cl.code: SCR
   cur.numericCode: '690'
   cur.minorUnits: 2
-SLE:
+sle:
   type: cur.Currency
   label: Leone
   cl.code: SLE
   cur.numericCode: '925'
   cur.minorUnits: 2
-SGD:
+sgd:
   type: cur.Currency
   label: Singapore Dollar
   cl.code: SGD
   cur.numericCode: '702'
   cur.minorUnits: 2
-XSU:
+xsu:
   type: cur.Currency
   label: Sucre
   cl.code: XSU
   cur.numericCode: '994'
-SBD:
+sbd:
   type: cur.Currency
   label: Solomon Islands Dollar
   cl.code: SBD
   cur.numericCode: '090'
   cur.minorUnits: 2
-SOS:
+sos:
   type: cur.Currency
   label: Somali Shilling
   cl.code: SOS
   cur.numericCode: '706'
   cur.minorUnits: 2
-SSP:
+ssp:
   type: cur.Currency
   label: South Sudanese Pound
   cl.code: SSP
   cur.numericCode: '728'
   cur.minorUnits: 2
-LKR:
+lkr:
   type: cur.Currency
   label: Sri Lanka Rupee
   cl.code: LKR
   cur.numericCode: '144'
   cur.minorUnits: 2
-SDG:
+sdg:
   type: cur.Currency
   label: Sudanese Pound
   cl.code: SDG
   cur.numericCode: '938'
   cur.minorUnits: 2
-SRD:
+srd:
   type: cur.Currency
   label: Surinam Dollar
   cl.code: SRD
   cur.numericCode: '968'
   cur.minorUnits: 2
-SEK:
+sek:
   type: cur.Currency
   label: Swedish Krona
   cl.code: SEK
   cur.numericCode: '752'
   cur.minorUnits: 2
-CHE:
+che:
   type: cur.Currency
   label: WIR Euro
   cl.code: CHE
   cur.numericCode: '947'
   cur.minorUnits: 2
   cur.isFund: true
-CHW:
+chw:
   type: cur.Currency
   label: WIR Franc
   cl.code: CHW
   cur.numericCode: '948'
   cur.minorUnits: 2
   cur.isFund: true
-SYP:
+syp:
   type: cur.Currency
   label: Syrian Pound
   cl.code: SYP
   cur.numericCode: '760'
   cur.minorUnits: 2
-TWD:
+twd:
   type: cur.Currency
   label: New Taiwan Dollar
   cl.code: TWD
   cur.numericCode: '901'
   cur.minorUnits: 2
-TJS:
+tjs:
   type: cur.Currency
   label: Somoni
   cl.code: TJS
   cur.numericCode: '972'
   cur.minorUnits: 2
-TZS:
+tzs:
   type: cur.Currency
   label: Tanzanian Shilling
   cl.code: TZS
   cur.numericCode: '834'
   cur.minorUnits: 2
-THB:
+thb:
   type: cur.Currency
   label: Baht
   cl.code: THB
   cur.numericCode: '764'
   cur.minorUnits: 2
-TOP:
+top:
   type: cur.Currency
   label: Pa’anga
   cl.code: TOP
   cur.numericCode: '776'
   cur.minorUnits: 2
-TTD:
+ttd:
   type: cur.Currency
   label: Trinidad and Tobago Dollar
   cl.code: TTD
   cur.numericCode: '780'
   cur.minorUnits: 2
-TND:
+tnd:
   type: cur.Currency
   label: Tunisian Dinar
   cl.code: TND
   cur.numericCode: '788'
   cur.minorUnits: 3
-TRY:
+try:
   type: cur.Currency
   label: Turkish Lira
   cl.code: TRY
   cur.numericCode: '949'
   cur.minorUnits: 2
-TMT:
+tmt:
   type: cur.Currency
   label: Turkmenistan New Manat
   cl.code: TMT
   cur.numericCode: '934'
   cur.minorUnits: 2
-UGX:
+ugx:
   type: cur.Currency
   label: Uganda Shilling
   cl.code: UGX
   cur.numericCode: '800'
   cur.minorUnits: 0
-UAH:
+uah:
   type: cur.Currency
   label: Hryvnia
   cl.code: UAH
   cur.numericCode: '980'
   cur.minorUnits: 2
-AED:
+aed:
   type: cur.Currency
   label: UAE Dirham
   cl.code: AED
   cur.numericCode: '784'
   cur.minorUnits: 2
-USN:
+usn:
   type: cur.Currency
   label: US Dollar (Next day)
   cl.code: USN
   cur.numericCode: '997'
   cur.minorUnits: 2
   cur.isFund: true
-UYU:
+uyu:
   type: cur.Currency
   label: Peso Uruguayo
   cl.code: UYU
   cur.numericCode: '858'
   cur.minorUnits: 2
-UYI:
+uyi:
   type: cur.Currency
   label: Uruguay Peso en Unidades Indexadas (UI)
   cl.code: UYI
   cur.numericCode: '940'
   cur.minorUnits: 0
   cur.isFund: true
-UYW:
+uyw:
   type: cur.Currency
   label: Unidad Previsional
   cl.code: UYW
   cur.numericCode: '927'
   cur.minorUnits: 4
   cur.isFund: true
-UZS:
+uzs:
   type: cur.Currency
   label: Uzbekistan Sum
   cl.code: UZS
   cur.numericCode: '860'
   cur.minorUnits: 2
-VUV:
+vuv:
   type: cur.Currency
   label: Vatu
   cl.code: VUV
   cur.numericCode: '548'
   cur.minorUnits: 0
-VES:
+ves:
   type: cur.Currency
   label: Bolívar Soberano
   cl.code: VES
   cur.numericCode: '928'
   cur.minorUnits: 2
-VED:
+ved:
   type: cur.Currency
   label: Bolívar Soberano
   cl.code: VED
   cur.numericCode: '926'
   cur.minorUnits: 2
-VND:
+vnd:
   type: cur.Currency
   label: Dong
   cl.code: VND
   cur.numericCode: '704'
   cur.minorUnits: 0
-YER:
+yer:
   type: cur.Currency
   label: Yemeni Rial
   cl.code: YER
   cur.numericCode: '886'
   cur.minorUnits: 2
-ZMW:
+zmw:
   type: cur.Currency
   label: Zambian Kwacha
   cl.code: ZMW
   cur.numericCode: '967'
   cur.minorUnits: 2
-ZWG:
+zwg:
   type: cur.Currency
   label: Zimbabwe Gold
   cl.code: ZWG
   cur.numericCode: '924'
   cur.minorUnits: 2
-XBA:
+xba:
   type: cur.Currency
   label: Bond Markets Unit European Composite Unit (EURCO)
   cl.code: XBA
   cur.numericCode: '955'
-XBB:
+xbb:
   type: cur.Currency
   label: Bond Markets Unit European Monetary Unit (E.M.U.-6)
   cl.code: XBB
   cur.numericCode: '956'
-XBC:
+xbc:
   type: cur.Currency
   label: Bond Markets Unit European Unit of Account 9 (E.U.A.-9)
   cl.code: XBC
   cur.numericCode: '957'
-XBD:
+xbd:
   type: cur.Currency
   label: Bond Markets Unit European Unit of Account 17 (E.U.A.-17)
   cl.code: XBD
   cur.numericCode: '958'
-XTS:
+xts:
   type: cur.Currency
   label: Codes specifically reserved for testing purposes
   cl.code: XTS
   cur.numericCode: '963'
-XXX:
+xxx:
   type: cur.Currency
   label: The codes assigned for transactions where no currency is involved
   cl.code: XXX
   cur.numericCode: '999'
-XAU:
+xau:
   type: cur.Currency
   label: Gold
   cl.code: XAU
   cur.numericCode: '959'
-XPD:
+xpd:
   type: cur.Currency
   label: Palladium
   cl.code: XPD
   cur.numericCode: '964'
-XPT:
+xpt:
   type: cur.Currency
   label: Platinum
   cl.code: XPT
   cur.numericCode: '962'
-XAG:
+xag:
   type: cur.Currency
   label: Silver
   cl.code: XAG
   cur.numericCode: '961'
-AFA:
+afa:
   type: cur.Currency
   label: Afghani
   cl.code: AFA
   cur.numericCode: '004'
   owl.deprecated: true
   cur.withdrawnOn: 2003-01
-FIM:
+fim:
   type: cur.Currency
   label: Markka
   cl.code: FIM
   cur.numericCode: '246'
   owl.deprecated: true
   cur.withdrawnOn: 2002-03
-ALK:
+alk:
   type: cur.Currency
   label: Old Lek
   cl.code: ALK
   cur.numericCode: '008'
   owl.deprecated: true
   cur.withdrawnOn: 1989-12
-ADP:
+adp:
   type: cur.Currency
   label: Andorran Peseta
   cl.code: ADP
   cur.numericCode: '020'
   owl.deprecated: true
   cur.withdrawnOn: 2003-07
-ESP:
+esp:
   type: cur.Currency
   label: Spanish Peseta
   cl.code: ESP
   cur.numericCode: '724'
   owl.deprecated: true
   cur.withdrawnOn: 2002-03
-FRF:
+frf:
   type: cur.Currency
   label: French Franc
   cl.code: FRF
   cur.numericCode: '250'
   owl.deprecated: true
   cur.withdrawnOn: 2002-03
-AOK:
+aok:
   type: cur.Currency
   label: Kwanza
   cl.code: AOK
   cur.numericCode: '024'
   owl.deprecated: true
   cur.withdrawnOn: 1991-03
-AON:
+aon:
   type: cur.Currency
   label: New Kwanza
   cl.code: AON
   cur.numericCode: '024'
   owl.deprecated: true
   cur.withdrawnOn: 2000-02
-AOR:
+aor:
   type: cur.Currency
   label: Kwanza Reajustado
   cl.code: AOR
   cur.numericCode: '982'
   owl.deprecated: true
   cur.withdrawnOn: 2000-02
-ARA:
+ara:
   type: cur.Currency
   label: Austral
   cl.code: ARA
   cur.numericCode: '032'
   owl.deprecated: true
   cur.withdrawnOn: 1992-01
-ARP:
+arp:
   type: cur.Currency
   label: Peso Argentino
   cl.code: ARP
   cur.numericCode: '032'
   owl.deprecated: true
   cur.withdrawnOn: 1985-07
-ARY:
+ary:
   type: cur.Currency
   label: Peso
   cl.code: ARY
   cur.numericCode: '032'
   owl.deprecated: true
   cur.withdrawnOn: 1989 to 1990
-RUR:
+rur:
   type: cur.Currency
   label: Russian Ruble
   cl.code: RUR
   cur.numericCode: '810'
   owl.deprecated: true
   cur.withdrawnOn: 2004-01
-ATS:
+ats:
   type: cur.Currency
   label: Schilling
   cl.code: ATS
   cur.numericCode: '040'
   owl.deprecated: true
   cur.withdrawnOn: 2002-03
-AYM:
+aym:
   type: cur.Currency
   label: Azerbaijan Manat
   cl.code: AYM
   cur.numericCode: '945'
   owl.deprecated: true
   cur.withdrawnOn: 2005-10
-AZM:
+azm:
   type: cur.Currency
   label: Azerbaijanian Manat
   cl.code: AZM
   cur.numericCode: '031'
   owl.deprecated: true
   cur.withdrawnOn: 2005-12
-BYB:
+byb:
   type: cur.Currency
   label: Belarusian Ruble
   cl.code: BYB
   cur.numericCode: '112'
   owl.deprecated: true
   cur.withdrawnOn: 2001-01
-BYR:
+byr:
   type: cur.Currency
   label: Belarusian Ruble
   cl.code: BYR
   cur.numericCode: '974'
   owl.deprecated: true
   cur.withdrawnOn: 2017-01
-BEC:
+bec:
   type: cur.Currency
   label: Convertible Franc
   cl.code: BEC
   cur.numericCode: '993'
   owl.deprecated: true
   cur.withdrawnOn: 1990-03
-BEF:
+bef:
   type: cur.Currency
   label: Belgian Franc
   cl.code: BEF
   cur.numericCode: '056'
   owl.deprecated: true
   cur.withdrawnOn: 2002-03
-BEL:
+bel:
   type: cur.Currency
   label: Financial Franc
   cl.code: BEL
   cur.numericCode: '992'
   owl.deprecated: true
   cur.withdrawnOn: 1990-03
-BOP:
+bop:
   type: cur.Currency
   label: Peso boliviano
   cl.code: BOP
   cur.numericCode: '068'
   owl.deprecated: true
   cur.withdrawnOn: 1987-02
-BAD:
+bad:
   type: cur.Currency
   label: Dinar
   cl.code: BAD
   cur.numericCode: '070'
   owl.deprecated: true
   cur.withdrawnOn: 1998-07
-BRB:
+brb:
   type: cur.Currency
   label: Cruzeiro
   cl.code: BRB
   cur.numericCode: '076'
   owl.deprecated: true
   cur.withdrawnOn: 1986-03
-BRC:
+brc:
   type: cur.Currency
   label: Cruzado
   cl.code: BRC
   cur.numericCode: '076'
   owl.deprecated: true
   cur.withdrawnOn: 1989-02
-BRE:
+bre:
   type: cur.Currency
   label: Cruzeiro
   cl.code: BRE
   cur.numericCode: '076'
   owl.deprecated: true
   cur.withdrawnOn: 1993-03
-BRN:
+brn:
   type: cur.Currency
   label: New Cruzado
   cl.code: BRN
   cur.numericCode: '076'
   owl.deprecated: true
   cur.withdrawnOn: 1990-03
-BRR:
+brr:
   type: cur.Currency
   label: Cruzeiro Real
   cl.code: BRR
   cur.numericCode: '987'
   owl.deprecated: true
   cur.withdrawnOn: 1994-07
-BGJ:
+bgj:
   type: cur.Currency
   label: Lev A/52
   cl.code: BGJ
   cur.numericCode: '100'
   owl.deprecated: true
   cur.withdrawnOn: 1989 to 1990
-BGK:
+bgk:
   type: cur.Currency
   label: Lev A/62
   cl.code: BGK
   cur.numericCode: '100'
   owl.deprecated: true
   cur.withdrawnOn: 1989 to 1990
-BGL:
+bgl:
   type: cur.Currency
   label: Lev
   cl.code: BGL
   cur.numericCode: '100'
   owl.deprecated: true
   cur.withdrawnOn: 2003-11
-BGN:
+bgn:
   type: cur.Currency
   label: Bulgarian Lev
   cl.code: BGN
   cur.numericCode: '975'
   owl.deprecated: true
   cur.withdrawnOn: 2026-01
-BUK:
+buk:
   type: cur.Currency
   label: Kyat
   cl.code: BUK
   cur.numericCode: '104'
   owl.deprecated: true
   cur.withdrawnOn: 1990-02
-HRD:
+hrd:
   type: cur.Currency
   label: Croatian Dinar
   cl.code: HRD
   cur.numericCode: '191'
   owl.deprecated: true
   cur.withdrawnOn: 1995-01
-HRK:
+hrk:
   type: cur.Currency
   label: Croatian Kuna
   cl.code: HRK
@@ -1357,546 +1357,546 @@ HRK:
   cur.numericCode: '191'
   owl.deprecated: true
   cur.withdrawnOn: 2023-01
-CUC:
+cuc:
   type: cur.Currency
   label: Peso Convertible
   cl.code: CUC
   cur.numericCode: '931'
   owl.deprecated: true
   cur.withdrawnOn: 2021-06
-ANG:
+ang:
   type: cur.Currency
   label: Netherlands Antillean Guilder
   cl.code: ANG
   cur.numericCode: '532'
   owl.deprecated: true
   cur.withdrawnOn: 2025-03
-CYP:
+cyp:
   type: cur.Currency
   label: Cyprus Pound
   cl.code: CYP
   cur.numericCode: '196'
   owl.deprecated: true
   cur.withdrawnOn: 2008-01
-CSJ:
+csj:
   type: cur.Currency
   label: Krona A/53
   cl.code: CSJ
   cur.numericCode: '203'
   owl.deprecated: true
   cur.withdrawnOn: 1989 to 1990
-CSK:
+csk:
   type: cur.Currency
   label: Koruna
   cl.code: CSK
   cur.numericCode: '200'
   owl.deprecated: true
   cur.withdrawnOn: 1993-03
-ECS:
+ecs:
   type: cur.Currency
   label: Sucre
   cl.code: ECS
   cur.numericCode: '218'
   owl.deprecated: true
   cur.withdrawnOn: 2000-09
-ECV:
+ecv:
   type: cur.Currency
   label: Unidad de Valor Constante (UVC)
   cl.code: ECV
   cur.numericCode: '983'
   owl.deprecated: true
   cur.withdrawnOn: 2000-09
-GQE:
+gqe:
   type: cur.Currency
   label: Ekwele
   cl.code: GQE
   cur.numericCode: '226'
   owl.deprecated: true
   cur.withdrawnOn: 1986-06
-EEK:
+eek:
   type: cur.Currency
   label: Kroon
   cl.code: EEK
   cur.numericCode: '233'
   owl.deprecated: true
   cur.withdrawnOn: 2011-01
-XEU:
+xeu:
   type: cur.Currency
   label: European Currency Unit (E.C.U)
   cl.code: XEU
   cur.numericCode: '954'
   owl.deprecated: true
   cur.withdrawnOn: 1999-01
-GEK:
+gek:
   type: cur.Currency
   label: Georgian Coupon
   cl.code: GEK
   cur.numericCode: '268'
   owl.deprecated: true
   cur.withdrawnOn: 1995-10
-DDM:
+ddm:
   type: cur.Currency
   label: Mark der DDR
   cl.code: DDM
   cur.numericCode: '278'
   owl.deprecated: true
   cur.withdrawnOn: 1990-07 to 1990-09
-DEM:
+dem:
   type: cur.Currency
   label: Deutsche Mark
   cl.code: DEM
   cur.numericCode: '276'
   owl.deprecated: true
   cur.withdrawnOn: 2002-03
-GHC:
+ghc:
   type: cur.Currency
   label: Cedi
   cl.code: GHC
   cur.numericCode: '288'
   owl.deprecated: true
   cur.withdrawnOn: 2008-01
-GHP:
+ghp:
   type: cur.Currency
   label: Ghana Cedi
   cl.code: GHP
   cur.numericCode: '939'
   owl.deprecated: true
   cur.withdrawnOn: 2007-06
-GRD:
+grd:
   type: cur.Currency
   label: Drachma
   cl.code: GRD
   cur.numericCode: '300'
   owl.deprecated: true
   cur.withdrawnOn: 2002-03
-GNE:
+gne:
   type: cur.Currency
   label: Syli
   cl.code: GNE
   cur.numericCode: '324'
   owl.deprecated: true
   cur.withdrawnOn: 1989-12
-GNS:
+gns:
   type: cur.Currency
   label: Syli
   cl.code: GNS
   cur.numericCode: '324'
   owl.deprecated: true
   cur.withdrawnOn: 1986-02
-GWE:
+gwe:
   type: cur.Currency
   label: Guinea Escudo
   cl.code: GWE
   cur.numericCode: '624'
   owl.deprecated: true
   cur.withdrawnOn: 1978 to 1981
-GWP:
+gwp:
   type: cur.Currency
   label: Guinea-Bissau Peso
   cl.code: GWP
   cur.numericCode: '624'
   owl.deprecated: true
   cur.withdrawnOn: 1997-05
-ITL:
+itl:
   type: cur.Currency
   label: Italian Lira
   cl.code: ITL
   cur.numericCode: '380'
   owl.deprecated: true
   cur.withdrawnOn: 2002-03
-ISJ:
+isj:
   type: cur.Currency
   label: Old Krona
   cl.code: ISJ
   cur.numericCode: '352'
   owl.deprecated: true
   cur.withdrawnOn: 1989 to 1990
-IEP:
+iep:
   type: cur.Currency
   label: Irish Pound
   cl.code: IEP
   cur.numericCode: '372'
   owl.deprecated: true
   cur.withdrawnOn: 2002-03
-ILP:
+ilp:
   type: cur.Currency
   label: Pound
   cl.code: ILP
   cur.numericCode: '376'
   owl.deprecated: true
   cur.withdrawnOn: 1978 to 1981
-ILR:
+ilr:
   type: cur.Currency
   label: Old Shekel
   cl.code: ILR
   cur.numericCode: '376'
   owl.deprecated: true
   cur.withdrawnOn: 1989 to 1990
-LAJ:
+laj:
   type: cur.Currency
   label: Pathet Lao Kip
   cl.code: LAJ
   cur.numericCode: '418'
   owl.deprecated: true
   cur.withdrawnOn: 1979-12
-LVL:
+lvl:
   type: cur.Currency
   label: Latvian Lats
   cl.code: LVL
   cur.numericCode: '428'
   owl.deprecated: true
   cur.withdrawnOn: 2014-01
-LVR:
+lvr:
   type: cur.Currency
   label: Latvian Ruble
   cl.code: LVR
   cur.numericCode: '428'
   owl.deprecated: true
   cur.withdrawnOn: 1994-12
-LSM:
+lsm:
   type: cur.Currency
   label: Loti
   cl.code: LSM
   cur.numericCode: '426'
   owl.deprecated: true
   cur.withdrawnOn: 1985-05
-ZAL:
+zal:
   type: cur.Currency
   label: Financial Rand
   cl.code: ZAL
   cur.numericCode: '991'
   owl.deprecated: true
   cur.withdrawnOn: 1995-03
-LTL:
+ltl:
   type: cur.Currency
   label: Lithuanian Litas
   cl.code: LTL
   cur.numericCode: '440'
   owl.deprecated: true
   cur.withdrawnOn: 2014-12
-LTT:
+ltt:
   type: cur.Currency
   label: Talonas
   cl.code: LTT
   cur.numericCode: '440'
   owl.deprecated: true
   cur.withdrawnOn: 1993-07
-LUC:
+luc:
   type: cur.Currency
   label: Luxembourg Convertible Franc
   cl.code: LUC
   cur.numericCode: '989'
   owl.deprecated: true
   cur.withdrawnOn: 1990-03
-LUF:
+luf:
   type: cur.Currency
   label: Luxembourg Franc
   cl.code: LUF
   cur.numericCode: '442'
   owl.deprecated: true
   cur.withdrawnOn: 2002-03
-LUL:
+lul:
   type: cur.Currency
   label: Luxembourg Financial Franc
   cl.code: LUL
   cur.numericCode: '988'
   owl.deprecated: true
   cur.withdrawnOn: 1990-03
-MGF:
+mgf:
   type: cur.Currency
   label: Malagasy Franc
   cl.code: MGF
   cur.numericCode: '450'
   owl.deprecated: true
   cur.withdrawnOn: 2004-12
-MVQ:
+mvq:
   type: cur.Currency
   label: Maldive Rupee
   cl.code: MVQ
   cur.numericCode: '462'
   owl.deprecated: true
   cur.withdrawnOn: 1989-12
-MLF:
+mlf:
   type: cur.Currency
   label: Mali Franc
   cl.code: MLF
   cur.numericCode: '466'
   owl.deprecated: true
   cur.withdrawnOn: 1984-11
-MTL:
+mtl:
   type: cur.Currency
   label: Maltese Lira
   cl.code: MTL
   cur.numericCode: '470'
   owl.deprecated: true
   cur.withdrawnOn: 2008-01
-MTP:
+mtp:
   type: cur.Currency
   label: Maltese Pound
   cl.code: MTP
   cur.numericCode: '470'
   owl.deprecated: true
   cur.withdrawnOn: 1983-06
-MRO:
+mro:
   type: cur.Currency
   label: Ouguiya
   cl.code: MRO
   cur.numericCode: '478'
   owl.deprecated: true
   cur.withdrawnOn: 2017-12
-MXP:
+mxp:
   type: cur.Currency
   label: Mexican Peso
   cl.code: MXP
   cur.numericCode: '484'
   owl.deprecated: true
   cur.withdrawnOn: 1993-01
-MZE:
+mze:
   type: cur.Currency
   label: Mozambique Escudo
   cl.code: MZE
   cur.numericCode: '508'
   owl.deprecated: true
   cur.withdrawnOn: 1978 to 1981
-MZM:
+mzm:
   type: cur.Currency
   label: Mozambique Metical
   cl.code: MZM
   cur.numericCode: '508'
   owl.deprecated: true
   cur.withdrawnOn: 2006-06
-NLG:
+nlg:
   type: cur.Currency
   label: Netherlands Guilder
   cl.code: NLG
   cur.numericCode: '528'
   owl.deprecated: true
   cur.withdrawnOn: 2002-03
-NIC:
+nic:
   type: cur.Currency
   label: Cordoba
   cl.code: NIC
   cur.numericCode: '558'
   owl.deprecated: true
   cur.withdrawnOn: 1990-10
-PEH:
+peh:
   type: cur.Currency
   label: Sol
   cl.code: PEH
   cur.numericCode: '604'
   owl.deprecated: true
   cur.withdrawnOn: 1989 to 1990
-PEI:
+pei:
   type: cur.Currency
   label: Inti
   cl.code: PEI
   cur.numericCode: '604'
   owl.deprecated: true
   cur.withdrawnOn: 1991-07
-PES:
+pes:
   type: cur.Currency
   label: Sol
   cl.code: PES
   cur.numericCode: '604'
   owl.deprecated: true
   cur.withdrawnOn: 1986-02
-PLZ:
+plz:
   type: cur.Currency
   label: Zloty
   cl.code: PLZ
   cur.numericCode: '616'
   owl.deprecated: true
   cur.withdrawnOn: 1997-01
-PTE:
+pte:
   type: cur.Currency
   label: Portuguese Escudo
   cl.code: PTE
   cur.numericCode: '620'
   owl.deprecated: true
   cur.withdrawnOn: 2002-03
-ROK:
+rok:
   type: cur.Currency
   label: Leu A/52
   cl.code: ROK
   cur.numericCode: '642'
   owl.deprecated: true
   cur.withdrawnOn: 1989 to 1990
-ROL:
+rol:
   type: cur.Currency
   label: Old Leu
   cl.code: ROL
   cur.numericCode: '642'
   owl.deprecated: true
   cur.withdrawnOn: 2005-06
-STD:
+std:
   type: cur.Currency
   label: Dobra
   cl.code: STD
   cur.numericCode: '678'
   owl.deprecated: true
   cur.withdrawnOn: 2017-12
-CSD:
+csd:
   type: cur.Currency
   label: Serbian Dinar
   cl.code: CSD
   cur.numericCode: '891'
   owl.deprecated: true
   cur.withdrawnOn: 2006-10
-SLL:
+sll:
   type: cur.Currency
   label: Leone
   cl.code: SLL
   cur.numericCode: '694'
   owl.deprecated: true
   cur.withdrawnOn: 2023-12
-SKK:
+skk:
   type: cur.Currency
   label: Slovak Koruna
   cl.code: SKK
   cur.numericCode: '703'
   owl.deprecated: true
   cur.withdrawnOn: 2009-01
-SIT:
+sit:
   type: cur.Currency
   label: Tolar
   cl.code: SIT
   cur.numericCode: '705'
   owl.deprecated: true
   cur.withdrawnOn: 2007-01
-RHD:
+rhd:
   type: cur.Currency
   label: Rhodesian Dollar
   cl.code: RHD
   cur.numericCode: '716'
   owl.deprecated: true
   cur.withdrawnOn: 1978 to 1981
-ESA:
+esa:
   type: cur.Currency
   label: Spanish Peseta
   cl.code: ESA
   cur.numericCode: '996'
   owl.deprecated: true
   cur.withdrawnOn: 1978 to 1981
-ESB:
+esb:
   type: cur.Currency
   label: '"A" Account (convertible Peseta Account)'
   cl.code: ESB
   cur.numericCode: '995'
   owl.deprecated: true
   cur.withdrawnOn: 1994-12
-SDD:
+sdd:
   type: cur.Currency
   label: Sudanese Dinar
   cl.code: SDD
   cur.numericCode: '736'
   owl.deprecated: true
   cur.withdrawnOn: 2007-07
-SDP:
+sdp:
   type: cur.Currency
   label: Sudanese Pound
   cl.code: SDP
   cur.numericCode: '736'
   owl.deprecated: true
   cur.withdrawnOn: 1998-06
-SRG:
+srg:
   type: cur.Currency
   label: Surinam Guilder
   cl.code: SRG
   cur.numericCode: '740'
   owl.deprecated: true
   cur.withdrawnOn: 2003-12
-CHC:
+chc:
   type: cur.Currency
   label: WIR Franc (for electronic)
   cl.code: CHC
   cur.numericCode: '948'
   owl.deprecated: true
   cur.withdrawnOn: 2004-11
-TJR:
+tjr:
   type: cur.Currency
   label: Tajik Ruble
   cl.code: TJR
   cur.numericCode: '762'
   owl.deprecated: true
   cur.withdrawnOn: 2001-04
-TPE:
+tpe:
   type: cur.Currency
   label: Timor Escudo
   cl.code: TPE
   cur.numericCode: '626'
   owl.deprecated: true
   cur.withdrawnOn: 2002-11
-TRL:
+trl:
   type: cur.Currency
   label: Old Turkish Lira
   cl.code: TRL
   cur.numericCode: '792'
   owl.deprecated: true
   cur.withdrawnOn: 2005-12
-TMM:
+tmm:
   type: cur.Currency
   label: Turkmenistan Manat
   cl.code: TMM
   cur.numericCode: '795'
   owl.deprecated: true
   cur.withdrawnOn: 2009-01
-UGS:
+ugs:
   type: cur.Currency
   label: Uganda Shilling
   cl.code: UGS
   cur.numericCode: '800'
   owl.deprecated: true
   cur.withdrawnOn: 1987-05
-UGW:
+ugw:
   type: cur.Currency
   label: Old Shilling
   cl.code: UGW
   cur.numericCode: '800'
   owl.deprecated: true
   cur.withdrawnOn: 1989 to 1990
-UAK:
+uak:
   type: cur.Currency
   label: Karbovanet
   cl.code: UAK
   cur.numericCode: '804'
   owl.deprecated: true
   cur.withdrawnOn: 1996-09
-SUR:
+sur:
   type: cur.Currency
   label: Rouble
   cl.code: SUR
   cur.numericCode: '810'
   owl.deprecated: true
   cur.withdrawnOn: 1990-12
-USS:
+uss:
   type: cur.Currency
   label: US Dollar (Same day)
   cl.code: USS
   cur.numericCode: '998'
   owl.deprecated: true
   cur.withdrawnOn: 2014-03
-UYN:
+uyn:
   type: cur.Currency
   label: Old Uruguay Peso
   cl.code: UYN
   cur.numericCode: '858'
   owl.deprecated: true
   cur.withdrawnOn: 1989-12
-UYP:
+uyp:
   type: cur.Currency
   label: Uruguayan Peso
   cl.code: UYP
   cur.numericCode: '858'
   owl.deprecated: true
   cur.withdrawnOn: 1993-03
-VEB:
+veb:
   type: cur.Currency
   label: Bolivar
   cl.code: VEB
   cur.numericCode: '862'
   owl.deprecated: true
   cur.withdrawnOn: 2008-01
-VEF:
+vef:
   type: cur.Currency
   label: Bolivar Fuerte
   cl.code: VEF
@@ -1906,70 +1906,70 @@ VEF:
   cur.numericCode: '937'
   owl.deprecated: true
   cur.withdrawnOn: 2018-08
-VNC:
+vnc:
   type: cur.Currency
   label: Old Dong
   cl.code: VNC
   cur.numericCode: '704'
   owl.deprecated: true
   cur.withdrawnOn: 1989-1990
-YDD:
+ydd:
   type: cur.Currency
   label: Yemeni Dinar
   cl.code: YDD
   cur.numericCode: '720'
   owl.deprecated: true
   cur.withdrawnOn: 1991-09
-YUD:
+yud:
   type: cur.Currency
   label: New Yugoslavian Dinar
   cl.code: YUD
   cur.numericCode: '890'
   owl.deprecated: true
   cur.withdrawnOn: 1990-01
-YUM:
+yum:
   type: cur.Currency
   label: New Dinar
   cl.code: YUM
   cur.numericCode: '891'
   owl.deprecated: true
   cur.withdrawnOn: 2003-07
-YUN:
+yun:
   type: cur.Currency
   label: Yugoslavian Dinar
   cl.code: YUN
   cur.numericCode: '890'
   owl.deprecated: true
   cur.withdrawnOn: 1995-11
-ZRN:
+zrn:
   type: cur.Currency
   label: New Zaire
   cl.code: ZRN
   cur.numericCode: '180'
   owl.deprecated: true
   cur.withdrawnOn: 1999-06
-ZRZ:
+zrz:
   type: cur.Currency
   label: Zaire
   cl.code: ZRZ
   cur.numericCode: '180'
   owl.deprecated: true
   cur.withdrawnOn: 1994-02
-ZMK:
+zmk:
   type: cur.Currency
   label: Zambian Kwacha
   cl.code: ZMK
   cur.numericCode: '894'
   owl.deprecated: true
   cur.withdrawnOn: 2012-12
-ZWC:
+zwc:
   type: cur.Currency
   label: Rhodesian Dollar
   cl.code: ZWC
   cur.numericCode: '716'
   owl.deprecated: true
   cur.withdrawnOn: 1989-12
-ZWD:
+zwd:
   type: cur.Currency
   label: Zimbabwe Dollar (old)
   cl.code: ZWD
@@ -1977,40 +1977,40 @@ ZWD:
   cur.numericCode: '716'
   owl.deprecated: true
   cur.withdrawnOn: 2008-08
-ZWN:
+zwn:
   type: cur.Currency
   label: Zimbabwe Dollar (new)
   cl.code: ZWN
   cur.numericCode: '942'
   owl.deprecated: true
   cur.withdrawnOn: 2006-09
-ZWR:
+zwr:
   type: cur.Currency
   label: Zimbabwe Dollar
   cl.code: ZWR
   cur.numericCode: '935'
   owl.deprecated: true
   cur.withdrawnOn: 2009-06
-ZWL:
+zwl:
   type: cur.Currency
   label: "Zimbabwe\_Dollar"
   cl.code: ZWL
   cur.numericCode: '932'
   owl.deprecated: true
   cur.withdrawnOn: 2024-09
-XFO:
+xfo:
   type: cur.Currency
   label: Gold-Franc
   cl.code: XFO
   owl.deprecated: true
   cur.withdrawnOn: 2006-10
-XRE:
+xre:
   type: cur.Currency
   label: RINET Funds Code
   cl.code: XRE
   owl.deprecated: true
   cur.withdrawnOn: 1999-11
-XFU:
+xfu:
   type: cur.Currency
   label: UIC-Franc
   cl.code: XFU

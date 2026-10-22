@@ -48,17 +48,27 @@ function parseList<T>(text: string, what: string): SpdxList<T> {
   return parsed;
 }
 
+/** The day of the list's `releaseDate`, an ISO 8601 instant such as `2026-09-16T00:00:00Z`. */
+function releaseDay(text: string, what: string): string {
+  const { releaseDate } = parseList(text, what);
+  const day = typeof releaseDate === 'string' ? /^(\d{4}-\d{2}-\d{2})T/.exec(releaseDate)?.[1] : undefined;
+  if (!day) throw new Error(`spdx-licenses: ${what} releaseDate ${JSON.stringify(releaseDate)} is not an ISO 8601 instant`);
+  return day;
+}
+
 const licensesSource: SourceSpec = {
   key: 'licenses',
   label: 'SPDX License List — licenses',
   url: 'https://spdx.org/licenses/licenses.json',
   version: (text) => parseList(text, 'licenses.json').licenseListVersion,
+  publishedOn: (text) => releaseDay(text, 'licenses.json'),
 };
 const exceptionsSource: SourceSpec = {
   key: 'exceptions',
   label: 'SPDX License List — exceptions',
   url: 'https://spdx.org/licenses/exceptions.json',
   version: (text) => parseList(text, 'exceptions.json').licenseListVersion,
+  publishedOn: (text) => releaseDay(text, 'exceptions.json'),
 };
 
 export const spdxLicenses: CodeListDefinition = {
@@ -68,14 +78,7 @@ export const spdxLicenses: CodeListDefinition = {
   sourceLabel: 'SPDX License List',
   sources: [licensesSource, exceptionsSource],
 
-  packageVersion(sourceVersion) {
-    const parts = sourceVersion.split('.').map(Number);
-    if (parts.length < 2 || parts.length > 3 || parts.some((n) => !Number.isInteger(n) || n < 0)) {
-      throw new Error(`spdx-licenses: licenseListVersion ${sourceVersion} is not a version`);
-    }
-    const [major, minor, patch = 0] = parts;
-    return `${major}.${minor}.${patch}`;
-  },
+  revision: 0,
 
   project(snapshots: Snapshots, ctx): Projection {
     const licenses = parseList<SpdxLicense>(snapshots.licenses!.text, 'licenses.json');

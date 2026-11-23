@@ -14,7 +14,7 @@
  * SPDX marks a retired identifier with `isDeprecatedLicenseId` but does not
  * name its successor, so a deprecated entry carries `owl.deprecated` alone.
  */
-import { VOCABULARY_PUBLISHER, oneOrMany, resourceName, type CodeListDefinition, type Projection, type Snapshots, type SourceSpec } from '../contract.js';
+import { importVocabulary, oneOrMany, resourceName, type CodeListDefinition, type Projection, type Snapshots, type SourceSpec } from '../contract.js';
 
 interface SpdxLicense {
   licenseId: string;
@@ -78,7 +78,7 @@ export const spdxLicenses: CodeListDefinition = {
   sourceLabel: 'SPDX License List',
   sources: [licensesSource, exceptionsSource],
 
-  revision: 0,
+  revision: 1,
 
   project(snapshots: Snapshots, ctx): Projection {
     const licenses = parseList<SpdxLicense>(snapshots.licenses!.text, 'licenses.json');
@@ -87,9 +87,9 @@ export const spdxLicenses: CodeListDefinition = {
       throw new Error(`spdx-licenses: licenses.json is at ${licenses.licenseListVersion} but exceptions.json at ${exceptions.licenseListVersion}`);
     }
     const { book } = ctx;
-    const spdx = book.ensure(VOCABULARY_PUBLISHER, 'core-spdx', '2.0.0', 'spdx');
-    const cl = book.ensure(VOCABULARY_PUBLISHER, 'code-lists', '1.0.0', 'cl');
-    const owl = book.ensure(VOCABULARY_PUBLISHER, 'core-owl', '2.2.0', 'owl');
+    const spdx = importVocabulary(book, 'core-spdx', 'spdx');
+    const cl = importVocabulary(book, 'code-lists', 'cl');
+    const owl = importVocabulary(book, 'core-owl', 'owl');
 
     const body: Record<string, unknown> = {};
     const emit = (key: string, resource: Record<string, unknown>) => {

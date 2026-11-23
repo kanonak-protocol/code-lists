@@ -2,7 +2,10 @@ name: Test
 
 # Every pull request and every push to main runs the producers' tests: each
 # list's fixtures project to its golden, byte for byte, deterministically,
-# with zero validation errors, under the package-producer contract.
+# with zero validation errors, under the package-producer contract. Then every
+# package in the newest version's closure of each list must hash at the
+# version that states it, and every published version must have its release
+# lock, so a list no consumer can hash is refused here, not downstream.
 
 on:
   pull_request:
@@ -29,3 +32,10 @@ jobs:
       - name: Test producers
         working-directory: producers
         run: npm test
+
+      - name: Every package in each list's closure hashes
+        working-directory: producers
+        run: node dist/src/closures.js
+
+      - name: Every published version has its release lock
+        run: producers/node_modules/.bin/kanonak release-lock --check

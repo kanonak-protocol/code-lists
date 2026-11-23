@@ -18,7 +18,7 @@
  * region, not the currency.
  */
 import { parseXml, many, text, attr, type XmlNode } from '../readers/xml.js';
-import { VOCABULARY_PUBLISHER, oneOrMany, resourceName, type CodeListDefinition, type Projection, type Snapshots, type SourceSpec } from '../contract.js';
+import { importVocabulary, oneOrMany, resourceName, type CodeListDefinition, type Projection, type Snapshots, type SourceSpec } from '../contract.js';
 
 const KNOWN_CURRENT = new Set(['CtryNm', 'CcyNm', 'Ccy', 'CcyNbr', 'CcyMnrUnts']);
 const KNOWN_HISTORIC = new Set(['CtryNm', 'CcyNm', 'Ccy', 'CcyNbr', 'WthdrwlDt']);
@@ -78,15 +78,15 @@ export const currencies: CodeListDefinition = {
   sourceLabel: 'ISO 4217 currency code lists',
   sources: [listOne, listThree],
 
-  revision: 0,
+  revision: 1,
 
   project(snapshots: Snapshots, ctx): Projection {
     const current = rows(snapshots.current!.text, 'CcyTbl', 'CcyNtry', KNOWN_CURRENT);
     const historic = rows(snapshots.historic!.text, 'HstrcCcyTbl', 'HstrcCcyNtry', KNOWN_HISTORIC);
     const { book } = ctx;
-    const cur = book.ensure(VOCABULARY_PUBLISHER, 'currency', '1.0.0', 'cur');
-    const cl = book.ensure(VOCABULARY_PUBLISHER, 'code-lists', '1.0.0', 'cl');
-    const owl = book.ensure(VOCABULARY_PUBLISHER, 'core-owl', '2.2.0', 'owl');
+    const cur = importVocabulary(book, 'currency', 'cur');
+    const cl = importVocabulary(book, 'code-lists', 'cl');
+    const owl = importVocabulary(book, 'core-owl', 'owl');
 
     interface Entry { code: string; names: string[]; isFund: boolean; numeric?: string; minorUnits?: number; withdrawn?: string }
     const entries = new Map<string, Entry>();

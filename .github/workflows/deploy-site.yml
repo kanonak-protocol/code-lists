@@ -4,7 +4,8 @@ name: Deploy Publisher Site
 # packages in this repository and deploys it to GitHub Pages. Same shape as
 # the kanonak.org site deploy: one `kanonak publish` produces the human pages
 # and the machine endpoints (.well-known/kanonak.json, kanonak.lock, raw
-# {package}/{version}.kan.yml sources); only CNAME and .nojekyll are
+# {package}/{version}.kan.yml sources and each version's release lock,
+# {package}/{version}.kanonak.lock); only CNAME and .nojekyll are
 # GitHub-Pages-specific.
 
 on:
@@ -32,14 +33,15 @@ jobs:
           node-version: 22
 
       - name: Install the Kanonak CLI
-        # Pinned, as every tool a workflow runs is: a newer CLI reaches the
-        # published site only by a reviewed change to this line.
-        run: npm install -g @kanonak-protocol/cli@6.9.0
+        # Pinned by the producers' package-lock.json, as every tool a workflow
+        # runs is: a newer CLI reaches the published site only by a reviewed
+        # change there. The same CLI records each version's release lock.
+        run: npm ci --prefix producers
 
       - name: Build the publisher origin
         # The vocabularies the lists are typed with (code-lists, language-tag)
         # live on kanonak.org and resolve over HTTP.
-        run: kanonak publish --workspace . --out _site
+        run: producers/node_modules/.bin/kanonak publish --workspace . --publisher codes.kanonak.org --out _site
 
       - name: Add GitHub Pages host specifics
         run: |

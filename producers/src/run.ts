@@ -20,16 +20,13 @@
  * Exit code is non-zero on any failure, so the workflow never opens a pull
  * request for a list that did not validate.
  */
-import { existsSync, readFileSync, readdirSync, writeFileSync, mkdirSync } from 'node:fs';
+import { existsSync, readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { dirname, join } from 'node:path';
-import { fileURLToPath } from 'node:url';
 import {
   KanonakParser,
   KanonakObjectValidator,
   PackageBuilder,
   buildLocalFirstRepository,
-  compareVersions,
-  parseVersionString,
   ValidationSeverity,
 } from '@kanonak-protocol/sdk';
 import {
@@ -43,8 +40,7 @@ import {
   type SourceFetcher,
 } from './contract.js';
 import { LISTS } from './lists/index.js';
-
-const REPO_ROOT = fileURLToPath(new URL('../../../', import.meta.url));
+import { REPO_ROOT, newestPublishedFile } from './published.js';
 
 interface Args { names: string[]; from: Map<string, string>; dryRun: boolean }
 
@@ -75,18 +71,10 @@ function fetcherFor(def: CodeListDefinition, from: Map<string, string>): SourceF
 
 /** The newest version of a list in this repository, if it has one. */
 function newestPublished(def: CodeListDefinition, parser: KanonakParser): PublishedVersion | undefined {
-  const dir = join(REPO_ROOT, def.name);
-  if (!existsSync(dir)) return undefined;
-  let newest: { name: string; version: NonNullable<ReturnType<typeof parseVersionString>> } | undefined;
-  for (const file of readdirSync(dir).filter((f) => f.endsWith('.kan.yml'))) {
-    const name = file.slice(0, -'.kan.yml'.length);
-    const version = parseVersionString(name);
-    if (!version) throw new Error(`${def.name}/${file} is not named for a version`);
-    if (!newest || compareVersions(version, newest.version) > 0) newest = { name, version };
-  }
+  const newest = newestPublishedFile(def);
   if (!newest) return undefined;
-  const document = parser.parse(readFileSync(join(dir, `${newest.name}.kan.yml`), 'utf8'));
-  return { version: newest.name, names: resourceNamesOf(document) };
+  const document = parser.parse(readFileSync(newest.file, 'utf8'));
+  return { version: newest.version, names: resourceNamesOf(document) };
 }
 
 async function main(): Promise<number> {

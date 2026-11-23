@@ -33,9 +33,9 @@ export const PUBLISHER = 'codes.kanonak.org';
 export const VOCABULARY_PUBLISHER = 'kanonak.org';
 
 /**
- * The floor each list states for each vocabulary, as `kanonak upgrade` raises them, but for `language-tag`'s move
- * to its 2.x line, which `upgrade` leaves to a person since it crosses a major. A floor is read when a list's
- * consumer is hashed (`stated-version-rule`), so one whose own closure can't be hashed makes every consumer of the
+ * The floor each list states for each vocabulary, as `kanonak upgrade` raises them. Each stays within the major the
+ * lists were typed with: every entry's type names its class at the version its import states, so moving to a new
+ * major of a vocabulary is a new major of the list. A floor is read when a list's consumer is hashed (`stated-version-rule`), so one whose own closure can't be hashed makes every consumer of the
  * list unhashable: `provenance` 1.0.0 named a term `core-prose` 1.0.0 doesn't define (code-lists#2).
  */
 export const VOCABULARY_FLOORS = {
@@ -45,7 +45,7 @@ export const VOCABULARY_FLOORS = {
   'core-rdf': '1.2.0',
   'core-spdx': '2.2.0',
   currency: '1.2.0',
-  'language-tag': '2.2.0',
+  'language-tag': '1.1.0',
   'media-type': '1.2.0',
   provenance: '1.2.0',
 } as const satisfies Record<string, string>;

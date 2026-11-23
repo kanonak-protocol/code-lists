@@ -45,7 +45,7 @@ export const VOCABULARY_FLOORS = {
   'core-rdf': '1.2.0',
   'core-spdx': '2.2.0',
   currency: '1.2.0',
-  'language-tag': '1.1.0',
+  'language-tag': '1.2.0',
   'media-type': '1.2.0',
   provenance: '1.2.0',
 } as const satisfies Record<string, string>;

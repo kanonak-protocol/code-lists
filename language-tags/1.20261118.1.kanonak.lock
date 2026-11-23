@@ -5,13 +5,13 @@ packages:
   codes.kanonak.org/language-tags:
     version: 1.20261118.1
     resolved: https://codes.kanonak.org/language-tags/1.20261118.1.kan.yml
-    integrity: sha256:19ae11d6274603cd4f0a3f16ecffcb0770a787fdd23e2ef19132e1530f05194c
+    integrity: sha256:264d964a757d91c0394559353b9fad4f2322932b06283d782affc334e0d5b5b0
     dependencies:
       kanonak.org/code-lists: 1.3.0
       kanonak.org/core-kanonak: 2.4.0
       kanonak.org/core-owl: 2.4.0
       kanonak.org/core-rdf: 1.2.0
-      kanonak.org/language-tag: 1.1.0
+      kanonak.org/language-tag: 1.2.0
       kanonak.org/provenance: 1.2.0
   kanonak.org/code-lists:
     version: 1.3.0
@@ -69,9 +69,9 @@ packages:
     dependencies:
       kanonak.org/core-rdf: 1.2.0
   kanonak.org/language-tag:
-    version: 1.1.0
-    resolved: https://kanonak.org/language-tag/1.1.0.kan.yml
-    integrity: sha256:ef1edcef1b035d62f4a638a4698f912bec62eb514cdf1f62e63ae018d61d9f86
+    version: 1.2.0
+    resolved: https://kanonak.org/language-tag/1.2.0.kan.yml
+    integrity: sha256:ad88b1ffcb44e1923412acdcf533d2d392e1a64eaf979f0ae436db664274f9a5
     dependencies:
       kanonak.org/code-lists: 1.3.0
       kanonak.org/core-kanonak: 2.4.0

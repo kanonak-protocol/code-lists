@@ -27,7 +27,7 @@
  * an error: the source format changing must fail the run, not drop data.
  */
 import { parseRecordJar, one, required, type Record_ } from '../readers/recordJar.js';
-import { VOCABULARY_PUBLISHER, type CodeListDefinition, type Projection, type Snapshots, type SourceSpec } from '../contract.js';
+import { importVocabulary, type CodeListDefinition, type Projection, type Snapshots, type SourceSpec } from '../contract.js';
 
 function fileDate(text: string): string {
   const date = required(parseRecordJar(text).header, 'File-Date');
@@ -82,15 +82,15 @@ export const languageTags: CodeListDefinition = {
   sourceLabel: 'IANA Language Subtag Registry',
   sources: [registrySource],
 
-  revision: 0,
+  revision: 1,
 
   project(snapshots: Snapshots, ctx): Projection {
     const jar = parseRecordJar(snapshots.registry!.text);
     const { book } = ctx;
-    const lt = book.ensure(VOCABULARY_PUBLISHER, 'language-tag', '1.0.0', 'lt');
-    const cl = book.ensure(VOCABULARY_PUBLISHER, 'code-lists', '1.0.0', 'cl');
-    const owl = book.ensure(VOCABULARY_PUBLISHER, 'core-owl', '2.2.0', 'owl');
-    const prov = book.ensure(VOCABULARY_PUBLISHER, 'provenance', '1.0.0', 'prov');
+    const lt = importVocabulary(book, 'language-tag', 'lt');
+    const cl = importVocabulary(book, 'code-lists', 'cl');
+    const owl = importVocabulary(book, 'core-owl', 'owl');
+    const prov = importVocabulary(book, 'provenance', 'prov');
 
     // Pass 1: index every entry so references (preferred value, macrolanguage,
     // suppress-script) are checked against the registry itself.

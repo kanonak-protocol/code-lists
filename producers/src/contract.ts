@@ -32,6 +32,31 @@ export const PUBLISHER = 'codes.kanonak.org';
 /** Where the vocabularies the lists are typed with live (core-rdf, code-lists, language-tag, ...). */
 export const VOCABULARY_PUBLISHER = 'kanonak.org';
 
+/**
+ * The floor each list states for each vocabulary, as `kanonak upgrade` raises them, but for `language-tag`'s move
+ * to its 2.x line, which `upgrade` leaves to a person since it crosses a major. A floor is read when a list's
+ * consumer is hashed (`stated-version-rule`), so one whose own closure can't be hashed makes every consumer of the
+ * list unhashable: `provenance` 1.0.0 named a term `core-prose` 1.0.0 doesn't define (code-lists#2).
+ */
+export const VOCABULARY_FLOORS = {
+  'code-lists': '1.3.0',
+  'core-kanonak': '2.4.0',
+  'core-owl': '2.4.0',
+  'core-rdf': '1.2.0',
+  'core-spdx': '2.2.0',
+  currency: '1.2.0',
+  'language-tag': '2.2.0',
+  'media-type': '1.2.0',
+  provenance: '1.2.0',
+} as const satisfies Record<string, string>;
+
+export type Vocabulary = keyof typeof VOCABULARY_FLOORS;
+
+/** Import a vocabulary at its floor, and return its alias. */
+export function importVocabulary(book: ImportBook, vocabulary: Vocabulary, alias: string): string {
+  return book.ensure(VOCABULARY_PUBLISHER, vocabulary, VOCABULARY_FLOORS[vocabulary], alias);
+}
+
 /** One source of truth a list is read from. */
 export interface SourceSpec {
   /** Short key the plugin and the runner's `--from <list>.<key>=<file>` use. */
@@ -245,9 +270,10 @@ export class CodeListProducer implements IPackageProducer {
     const version = packageVersionOf(primary.publishedOn(snapshots[primary.key]!.text), def.revision);
 
     const book = this.builder.imports();
-    book.ensure(VOCABULARY_PUBLISHER, 'core-rdf', '1.1.0', 'rdfs'); // so `label`/`comment` resolve identically everywhere
-    const cl = book.ensure(VOCABULARY_PUBLISHER, 'code-lists', '1.0.0', 'cl');
-    const prov = book.ensure(VOCABULARY_PUBLISHER, 'provenance', '1.0.0', 'prov');
+    importVocabulary(book, 'core-kanonak', 'kan'); // the home of `Package`, which the header names (builtin-import-rule)
+    importVocabulary(book, 'core-rdf', 'rdfs'); // so `label`/`comment` resolve identically everywhere
+    const cl = importVocabulary(book, 'code-lists', 'cl');
+    const prov = importVocabulary(book, 'provenance', 'prov');
 
     const projection = def.project(snapshots, { book, snapshots, sourceVersion });
 

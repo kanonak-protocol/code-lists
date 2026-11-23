@@ -20,7 +20,7 @@
  * `image-svg-xml`), matching the convention document-ast already uses.
  */
 import { parseXml, many, text, attr, type XmlNode } from '../readers/xml.js';
-import { VOCABULARY_PUBLISHER, oneOrMany, resourceName, type CodeListDefinition, type Projection, type Snapshots, type SourceSpec } from '../contract.js';
+import { importVocabulary, oneOrMany, resourceName, type CodeListDefinition, type Projection, type Snapshots, type SourceSpec } from '../contract.js';
 
 const TOP_LEVEL: Record<string, string> = {
   application: 'Application', audio: 'Audio', example: 'Example', font: 'Font', haptics: 'Haptics',
@@ -68,15 +68,15 @@ export const mediaTypes: CodeListDefinition = {
   sourceLabel: 'IANA Media Types registry',
   sources: [registrySource],
 
-  revision: 0,
+  revision: 1,
 
   project(snapshots: Snapshots, ctx): Projection {
     const registry = root(snapshots.registry!.text);
     const { book } = ctx;
-    const mt = book.ensure(VOCABULARY_PUBLISHER, 'media-type', '1.0.0', 'mt');
-    const cl = book.ensure(VOCABULARY_PUBLISHER, 'code-lists', '1.0.0', 'cl');
-    const owl = book.ensure(VOCABULARY_PUBLISHER, 'core-owl', '2.2.0', 'owl');
-    const prov = book.ensure(VOCABULARY_PUBLISHER, 'provenance', '1.0.0', 'prov');
+    const mt = importVocabulary(book, 'media-type', 'mt');
+    const cl = importVocabulary(book, 'code-lists', 'cl');
+    const owl = importVocabulary(book, 'core-owl', 'owl');
+    const prov = importVocabulary(book, 'provenance', 'prov');
 
     interface Entry { code: string; key: string; topLevel: string; record: XmlNode; retired?: { successor?: string } }
     const entries: Entry[] = [];

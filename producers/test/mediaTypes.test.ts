@@ -14,7 +14,7 @@ import { fixture, standardTests } from './harness.js';
 
 const producer = standardTests(mediaTypes, { registry: 'media-types.sample.xml' }, 'media-types.sample.golden.yml', {
   sourceVersion: '2026-09-22',
-  version: '1.20260922.0',
+  version: '1.20260922.1',
 });
 
 test('media-types: a successor the registry does not hold is an error, not a dropped fact', async () => {

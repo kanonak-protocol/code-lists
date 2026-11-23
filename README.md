@@ -34,13 +34,15 @@ A list's version is `1.{the day its source was published}.{the producer's revisi
 
 - **A list only adds entries.** A retired code stays, deprecated and pointing at its replacement, so every link to it keeps resolving. The runner refuses a new version that drops any name the newest version has, or that isn't later than it. So the major stays 1.
 - **A correction is a new version.** A change to a producer that changes what it makes from a source revision already published raises the producer's `revision`, the last number.
+- **Every package in a version's closure hashes, each at the version that states it.** A consumer's hash reads a list's imports at the floors it states, so a floor that can't be hashed makes every consumer of the list unhashable. The floors are in the producers' contract, raised by `kanonak upgrade`, and CI hashes the closure of each list's newest version (`node dist/src/closures.js`).
+- **Each version has its release lock beside it**, `{list}/{version}.kanonak.lock`: the closure it resolved to when it was published, recorded once by `kanonak release-lock` and never changed.
 
 ## Making a new version
 
 The `Code Lists` workflow runs only when someone starts it, and opens a pull request with whatever lists have a new source version. Locally:
 
 ```bash
-cd producers && npm ci && npm run build && node dist/src/run.js language-tags
+cd producers && npm ci && npm run build && node dist/src/run.js language-tags && node dist/src/closures.js && cd .. && producers/node_modules/.bin/kanonak release-lock
 ```
 
 Each new file is projected twice to prove it is deterministic, and validated before it is written. A file that already exists is never rewritten: if the projection differs from it, the run fails for a person to decide.
